@@ -21,7 +21,7 @@ class ErrorPageLayout extends Component {
                         <div className="image error"></div>
                     </div>
                 </header>
-                <section className="flex flex-wrap w-full bg-white slant--top">
+                <section className="flex flex-wrap w-full bg-white slant-top">
                     <Navigation {...this.props} />
                     <section className="flex flex-wrap w-full bg-white">
                         <div className="container mx-auto">
@@ -33,7 +33,7 @@ class ErrorPageLayout extends Component {
                             </div>
                         </div>
                     </section>
-                    <section className="flex flex-wrap w-full bg-light-gray slant--top--reverse">
+                    <section className="flex flex-wrap w-full bg-light-gray slant-top-reverse">
                         <div className="container mx-auto">
                             <div className="projects mtb-6">
                                 <span className="lrg-text-size bold flex">Recent Side Projects</span>
@@ -45,7 +45,7 @@ class ErrorPageLayout extends Component {
                             </div>
                         </div>
                     </section>
-                    <section className="flex flex-wrap w-full bg-white slant--top slant--top--bottom">
+                    <section className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
                         <Capabilities />
                     </section>
                 </section>

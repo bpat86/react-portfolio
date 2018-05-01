@@ -284,17 +284,17 @@ img {
         }
     }
 }
-.slant--top, .slant--top--reverse, .slant--top--bottom {
+.slant-top, .slant-top-reverse, .slant-top-bottom {
     position: relative;
     z-index: 1;
 }
 
-.slant--top--bottom::after {
+.slant-top-bottom::after {
     bottom: 0;
     transform: skewY(-2deg);
     transform-origin: 100% 100%;
 }
-.slant--top--bottom::after {
+.slant-top-bottom::after {
     background: inherit;
     content: '';
     display: block;
@@ -307,12 +307,12 @@ img {
     backface-visibility: hidden;
 }
 
-.slant--top::before {
+.slant-top::before {
     top: 0;
     transform: skewY(2deg);
     transform-origin: 100% 100%;
 }
-.slant--top::before {
+.slant-top::before {
     background: inherit;
     content: '';
     display: block;
@@ -325,12 +325,12 @@ img {
     backface-visibility: hidden;
 }
 
-.slant--top--reverse::before {
+.slant-top-reverse::before {
     top: 0;
     transform: skewY(-2deg);
     transform-origin: 0 0;
 }
-.slant--top--reverse::before {
+.slant-top-reverse::before {
     background: inherit;
     content: '';
     display: block;
@@ -343,23 +343,25 @@ img {
     backface-visibility: hidden;
 }
 
-.grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
-    grid-auto-flow: row;
-    grid-auto-rows: 1fr;
-    img {
-        padding: 0 24%;
-        filter: saturate(60%);
-        transition: all 0.2s ease;
-        &:hover {
-            filter: saturate(100%);
-        }
-        @include tablet {
-            padding: 0 .25rem;
-            transition: none;
-            filter: saturate(100%);
+.capabilities {
+    .grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+        grid-auto-flow: row;
+        grid-auto-rows: 1fr;
+        img {
+            padding: 0 24%;
+            filter: saturate(60%);
+            transition: all 0.2s ease;
+            &:hover {
+                filter: saturate(100%);
+            }
+            @include tablet {
+                padding: 0 .25rem;
+                transition: none;
+                filter: saturate(100%);
+            }
         }
     }
 }

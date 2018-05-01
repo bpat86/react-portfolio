@@ -24,10 +24,11 @@ export default class ProjectThumbnails extends Component {
 
 	render() {
 		const { projects } = this.state;
+		const gridClass = projects.length < 4 ? "three" : "four";
 
 		return (
 			<div>
-				<ul className="cards flex flex-wrap list-style-none">
+				<ul className={`cards flex flex-wrap list-style-none grid ${gridClass}`}>
 					{
 						projects.map(p =>
 							<li

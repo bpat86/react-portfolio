@@ -18,7 +18,7 @@ class AboutPageLayout extends Component {
                     <span title="Keep scrolling :)" className={`scroll-down ${isScrolled ? "" : "animate"}`}></span>
                     <VideoBackground showModal={showModal} />
                 </header>
-                <section className="flex flex-wrap w-full bg-white slant--top slant--top--bottom">
+                <section className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
                     <Navigation {...this.props} />
                     <div className="container mx-auto mtb-6">
                         <div>

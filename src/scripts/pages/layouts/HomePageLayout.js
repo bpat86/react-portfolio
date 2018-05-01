@@ -25,7 +25,7 @@ class HomePageLayout extends Component {
                         <div className="image about-me"></div>
                     </div>
                 </header>
-                <section className="flex flex-wrap w-full bg-white slant--top">
+                <section className="flex flex-wrap w-full bg-white slant-top">
                     <Navigation {...this.props} />
                     <section id="projects" className="flex flex-wrap w-full bg-white">
                         <div className="container mx-auto">
@@ -37,7 +37,7 @@ class HomePageLayout extends Component {
                             </div>
                         </div>
                     </section>
-                    <section id="work" className="flex flex-wrap w-full bg-light-gray slant--top--reverse">
+                    <section id="work" className="flex flex-wrap w-full bg-light-gray slant-top-reverse">
                         <div className="container mx-auto">
                             <div className="projects mtb-6">
                                 <span className="lrg-text-size bold flex">Featured Work Projects</span>
@@ -49,7 +49,7 @@ class HomePageLayout extends Component {
                             </div>
                         </div>
                     </section>
-                    <section id="capabilities" className="flex flex-wrap w-full bg-white slant--top slant--top--bottom">
+                    <section id="capabilities" className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
                         <Capabilities />
                     </section>
                 </section>

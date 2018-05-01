@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'tablet'.
-        on line 22 of src/theme/styles/scss/custom/components/instagramFeed.scss, in `tablet'
-        from line 22 of src/theme/styles/scss/custom/components/instagramFeed.scss
+Error: Undefined mixin 'phablet'.
+        on line 22 of src/assets/styles/scss/custom/components/instagramFeed.scss, in `phablet'
+        from line 22 of src/assets/styles/scss/custom/components/instagramFeed.scss
 
 17: 
 18:         display: grid;
 19:         grid-gap: 1rem;
 20:         grid-template-columns: 3fr 3fr 3fr 3fr;
 21:         grid-auto-flow: row;
-22:         @include tablet {
+22:         @include phablet {
 23:             grid-gap: 0.5rem;
 24:             grid-template-columns: 3fr 3fr 3fr;
 25:         }
-26:     }
-27:     .post {
+26:         @include phone {
+27:             grid-gap: 0.5rem;
 
 Backtrace:
-src/theme/styles/scss/custom/components/instagramFeed.scss:22:in `tablet'
-src/theme/styles/scss/custom/components/instagramFeed.scss:22
+src/assets/styles/scss/custom/components/instagramFeed.scss:22:in `phablet'
+src/assets/styles/scss/custom/components/instagramFeed.scss:22
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
@@ -70,17 +70,18 @@ src/theme/styles/scss/custom/components/instagramFeed.scss:22
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:22:in `load'
-/usr/local/bin/sass:22:in `<main>'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablet'.\A         on line 22 of src/theme/styles/scss/custom/components/instagramFeed.scss, in `tablet'\A         from line 22 of src/theme/styles/scss/custom/components/instagramFeed.scss\A \A 17: \A 18:         display: grid;\A 19:         grid-gap: 1rem;\A 20:         grid-template-columns: 3fr 3fr 3fr 3fr;\A 21:         grid-auto-flow: row;\A 22:         @include tablet {\A 23:             grid-gap: 0.5rem;\A 24:             grid-template-columns: 3fr 3fr 3fr;\A 25:         }\A 26:     }\A 27:     .post {"; }
+  content: "Error: Undefined mixin 'phablet'.\A         on line 22 of src/assets/styles/scss/custom/components/instagramFeed.scss, in `phablet'\A         from line 22 of src/assets/styles/scss/custom/components/instagramFeed.scss\A \A 17: \A 18:         display: grid;\A 19:         grid-gap: 1rem;\A 20:         grid-template-columns: 3fr 3fr 3fr 3fr;\A 21:         grid-auto-flow: row;\A 22:         @include phablet {\A 23:             grid-gap: 0.5rem;\A 24:             grid-template-columns: 3fr 3fr 3fr;\A 25:         }\A 26:         @include phone {\A 27:             grid-gap: 0.5rem;"; }

@@ -19,14 +19,16 @@
         grid-gap: 1rem;
         grid-template-columns: 3fr 3fr 3fr 3fr;
         grid-auto-flow: row;
-        @include tablet {
+        @include phablet {
             grid-gap: 0.5rem;
             grid-template-columns: 3fr 3fr 3fr;
         }
+        @include phone {
+            grid-gap: 0.5rem;
+            grid-template-columns: 3fr 3fr;
+        }
     }
     .post {
-        -webkit-box-flex: auto;
-        -ms-flex: auto;
         flex: auto;
         width: 100%;
         @include aspect-ratio(1,1);
