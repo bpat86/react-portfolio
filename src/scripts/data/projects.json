@@ -252,6 +252,29 @@
     "sideProjects": [
         {
             "id": 0,
+            "logo": "portfolio.svg",
+            "images" : [],
+            "videos" : [
+                {
+                    "videoId": 0,
+                    "videoTitle" : "Portfolio",
+                    "videoName" : "portfolio.mp4"
+                }
+            ],
+            "path": "side-projects/portfolio/",
+            "parent": "side-projects",
+            "slug": "portoflio",
+            "title": "Portfolio",
+            "subtitle": "The BobbyPatterson.me site redesign was built with React.js, Redux, Express.js and styled with Sass",
+            "role": "Development & Design",
+            "description": "The BobbyPatterson.me site redesign was built with React.js, Redux, Express.js and styled with Sass. View my recent side projects, my featured work projects, and my Instagram Viewer on the About page. Autoplaying videos will only play while visible in the viewport.",
+            "technology": "React.js, Redux, Express.js, Sass",
+            "year": "2018",
+            "externalUrl": "",
+            "gitHubUrl": "https://github.com/bpat86/react-portfolio"
+        },
+        {
+            "id": 1,
             "logo": "chatify.svg",
             "images" : [],
             "videos" : [
@@ -274,7 +297,7 @@
             "gitHubUrl": "https://github.com/bpat86/chatify"
         },
         {
-            "id": 1,
+            "id": 2,
             "logo": "insta.svg",
             "images" : [],
             "videos" : [
@@ -297,7 +320,7 @@
             "gitHubUrl": "https://github.com/bpat86/insta"
         },
         {
-            "id": 2,
+            "id": 3,
             "logo": "forum.svg",
             "images" : [],
             "videos" : [
