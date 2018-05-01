@@ -1,0 +1,86 @@
+.yt-loading-progress-indicator.available {
+    opacity: 0;
+}
+.yt-loading-progress-indicator {
+    background-color: #F7FAFE;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    pointer-events: none;
+    -webkit-transition: opacity cubic-bezier(.4, 0, .2, 1) 436ms;
+    -moz-transition: opacity cubic-bezier(.4, 0, .2, 1) 436ms;
+    transition: opacity cubic-bezier(.4, 0, .2, 1) 436ms;
+    z-index: 999999999999;
+    will-change: opacity, transform;
+    &.transparent {
+        background-color: transparent;
+    }
+}
+.yt-loading-progress-indicator-head {
+    background-color: #d7e5f4;
+    height: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.yt-loading-progress-indicator .first-indicator, .yt-loading-progress-indicator .second-indicator {
+    background-color: #4e65e1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transform-origin: 0;
+    -moz-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform: scaleX(0);
+}
+.yt-loading-progress-indicator .first-indicator {
+    -webkit-animation: first-indicator 1s linear infinite;
+    -moz-animation: first-indicator 1s linear infinite;
+    animation: first-indicator 1s linear infinite;
+}
+.yt-loading-progress-indicator .second-indicator {
+    -webkit-animation: second-indicator 1s linear infinite;
+    -moz-animation: second-indicator 1s linear infinite;
+    animation: second-indicator 1s linear infinite;
+}
+@keyframes first-indicator {
+    0% {
+      transform: translate(0%) scaleX(0);
+    }
+    25% {
+      transform: translate(0%) scaleX(0.5);
+    }
+    50% {
+      transform: translate(25%) scaleX(0.75);
+    }
+    75% {
+      transform: translate(100%) scaleX(0);
+    }
+    100% {
+      transform: translate(100%) scaleX(0);
+    }
+}
+@keyframes second-indicator {
+    0% {
+      transform: translate(0%) scaleX(0);
+    }
+    60% {
+      transform: translate(0%) scaleX(0);
+    }
+    80% {
+      transform: translate(0%) scaleX(0.6);
+    }
+    100% {
+      transform: translate(100%) scaleX(0.1);
+    }
+}

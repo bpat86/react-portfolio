@@ -1,0 +1,28 @@
+{
+	"routes" : [
+        {
+            "id": 0,
+            "route_name" : "Home",
+            "route_class" : "primary",
+            "path" : "/",
+            "visible_in_menu" : true,
+            "route_data_name" : "home"
+        },
+        {
+            "id": 1,
+            "route_name" : "About",
+            "route_class" : "primary",
+            "path"  : "/about",
+            "visible_in_menu" : true,
+            "route_data_name" : "about"
+        },
+        {
+            "id": 2,
+            "route_name" : "Contact",
+            "route_class" : "primary",
+            "path"  : "/contact",
+            "visible_in_menu" : false,
+            "route_data_name" : "contact"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+html.mobile-navigation-menu-visible {
+    overflow: hidden;
+    .navigation-bar .logo {
+        //visibility: hidden;
+    }
+}
+
+.Home, .About {
+    .mobile-navigation-menu {
+        background-color: $blue;
+        ul.mobile-navigation {
+            li.mobile-navigation-section {
+                .mobile-navigation-link {
+                    color: $intro;
+                }
+            }
+        }
+    }
+}
+
+.mobile-navigation-menu {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    visibility: hidden;
+    background-color: $white;
+    &.show {
+        visibility: visible;
+    }
+    ul.mobile-navigation {
+        user-select: none;
+        li.mobile-navigation-section {
+            height: 100vh;
+            @include font($sourceSans, 400);
+            .mobile-navigation-link {
+                font-size: 150%;
+                line-height: 2;
+                color: $black;
+            }
+        }
+    }
+}

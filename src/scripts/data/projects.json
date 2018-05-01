@@ -1,0 +1,328 @@
+{
+	"workProjects": [
+		{
+			"id": 0,
+			"logo": "envita.svg",
+			"images" : [],
+			"videos" : [
+                {
+                	"videoId": 0,
+                    "videoTitle" : "Envita 1",
+                    "videoName" : "envita-1.mp4"
+                },
+                {
+                	"videoId": 1,
+                    "videoTitle" : "Envita 2",
+                    "videoName" : "envita-2.mp4"
+                }
+            ],
+			"path": "projects/envita/",
+			"parent": "work-projects",
+			"slug": "envita",
+			"title": "Envita Medical Center",
+			"role": "Development & Design",
+			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Envita.com as well. The goal of the redesign was to improve the user experience with a more responsive and open UI as well as and making the content real-time searchable.",
+			"technology": "Laravel, MySQL, jQuery, Sass, Algolia, Illustrator, Photoshop",
+			"year": "2015",
+			"externalUrl": "https://www.envita.com"
+		},
+		{
+			"id": 1,
+			"logo": "vertisis.svg",
+			"images" : [],
+			"videos" : [
+                {
+                    "videoId": 0,
+                    "videoTitle" : "Vertisis",
+                    "videoName" : "vertisis-1.mp4"
+                },
+                {
+                    "videoId": 1,
+                    "videoTitle" : "Physician's Login Screen",
+                    "videoName" : "vertisis-2.mp4"
+                },
+                {
+                    "videoId": 2,
+                    "videoTitle" : "Osmolarity Calculator",
+                    "videoName" : "vertisis-3.mp4"
+                }
+            ],
+			"path": "projects/vertisis/",
+			"parent": "work-projects",
+			"slug": "vertisis",
+			"title": "Vertisis Custom Pharmacy",
+			"role": "Development & Design",
+			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Vertisis.com as well.",
+			"technology": "Laravel, MySQL, jQuery, Illustrator, Photoshop",
+			"year": "2016-2017",
+			"externalUrl": "https://vertisis.com"
+		},
+		{
+			"id": 2,
+			"logo": "unipathic.svg",
+			"images" : [],
+			"videos" : [
+                {
+                    "videoId": 0,
+                    "videoTitle" : "Unipathic Medicine",
+                    "videoName" : "unipathicmedicine.mp4"
+                }
+            ],
+			"path": "projects/unipathic/",
+			"parent": "work-projects",
+			"slug": "unipathic",
+			"title": "Unipathic Medicine",
+			"role": "Development & Design",
+			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Unipathic.com as well.",
+			"technology": "Laravel, MySQL, jQuery, Illustrator, Photoshop",
+			"year": "2017",
+			"externalUrl": "https://www.unipathicmedicine.com"
+		},
+		{
+			"id": 3,
+			"logo": "jegs.svg",
+			"images" : [
+				{
+                	"imageId": 0,
+                    "imageTitle" : "Jegs Home Page",
+                    "imageName" : "jegs_home-page_full.jpg"
+                },
+				{
+                	"imageId": 1,
+                    "imageTitle" : "Jegs Hover Menu",
+                    "imageName" : "jegs_home-page-menu.jpg"
+                },
+                {
+                	"imageId": 2,
+                    "imageTitle" : "Jegs Product Listing Page",
+                    "imageName" : "jegs_product-list.jpg"
+                },
+                {
+                	"imageId": 3,
+                    "imageTitle" : "Jegs Product Detail Page",
+                    "imageName" : "jegs_product-detail.jpg"
+                },
+                {
+                	"imageId": 4,
+                    "imageTitle" : "Jegs Mobile Browser View",
+                    "imageName" : "jegs-mobile.jpg"
+                }
+			],
+			"videos" : [],
+			"path": "projects/jegs/",
+			"parent": "work-projects",
+			"title": "Jegs",
+			"slug": "jegs",
+			"role": "Front-end Development",
+			"description": "A responsive Websphere commerce implementation. My role was Front-end Developer/UI Developer. I primarily worked on the product detail and list sections, shipping, billing, and user wishlist sections as well as wishlist dialogue popup modals. I also had a role in writing the HTML, CSS, and Javascript for the Navigation menu bar for both desktop and responsive mobile views.",
+			"technology": "Dojo Toolkit, Sass Bourbon Neat",
+			"year": "2014-2015",
+			"externalUrl": "https://www.jegs.com"
+		},
+		{
+			"id": 4,
+			"logo": "canon.svg",
+			"images" : [
+				{
+                	"imageId": 0,
+                    "imageTitle" : "Canon Checkout Page",
+                    "imageName" : "canon-checkout-desktop.jpg"
+                },
+				{
+                	"imageId": 1,
+                    "imageTitle" : "Canon Mobile Browser View",
+                    "imageName" : "canon-mobile.jpg"
+                }
+			],
+			"videos" : [],
+			"path": "projects/canon/",
+			"parent": "work-projects",
+			"slug": "canon",
+			"title": "Canon",
+			"role": "Design",
+			"description": "I created detailed mock-up illustrations for the \"Check Out\" process as well as the design assets for development while adhering to Canon's established style standards.",
+			"technology": "Illustrator",
+			"year": "2014",
+			"externalUrl": ""
+		},
+		{
+			"id": 5,
+			"logo": "toshiba.svg",
+			"images" : [
+				{
+                	"imageId": 0,
+                    "imageTitle" : "Toshiba Global Commerce Splash Screen",
+                    "imageName" : "toshiba-splash_nexus.jpg"
+                },
+                {
+                	"imageId": 1,
+                    "imageTitle" : "Toshiba Global Commerce",
+                    "imageName" : "toshiba_nexus.jpg"
+                },
+                {
+                	"imageId": 2,
+                    "imageTitle" : "Toshiba Global Commerce iPhone",
+                    "imageName" : "toshiba_iPhone5c.jpg"
+                }
+			],
+			"videos" : [],
+			"path": "projects/toshiba/",
+			"parent": "work-projects",
+			"slug": "toshiba",
+			"title": "Toshiba",
+			"role": "Design",
+			"description": "I designed the look and feel of the application as well as the design assets for development. \"The Toshiba Global Commerce application provides a view into the future of commerce.\"",
+			"technology": "Illustrator, Photoshop",
+			"year": "2014",
+			"externalUrl": ""
+		},
+		{
+			"id": 6,
+			"logo": "kaiser.svg",
+			"images" : [
+				{
+                	"imageId": 0,
+                    "imageTitle" : "kaiser Permanente",
+                    "imageName" : "kp_1.jpg"
+                },
+                {
+                	"imageId": 1,
+                    "imageTitle" : "kaiser Permanentee",
+                    "imageName" : "kp_2.jpg"
+                },
+                {
+                	"imageId": 2,
+                    "imageTitle" : "kaiser Permanente",
+                    "imageName" : "kp_3.jpg"
+                }
+			],
+			"videos" : [],
+			"path": "projects/kaiser-permanente/",
+			"parent": "work-projects",
+			"slug": "kaiser-permanente",
+			"title": "Kaiser Permanente",
+			"role": "Design",
+			"description": "I created detailed mock-up illustrations for a Kaiser Permanente \"MyHR\" intranet site redesign based on wireframes and documented style standards established by Kaiser Permanente.",
+			"technology": "Illustrator",
+			"year": "2014",
+			"externalUrl": ""
+		},
+        {
+            "id": 7,
+            "logo": "chanel.svg",
+            "images" : [
+                {
+                    "imageId": 0,
+                    "imageTitle" : "Chanel Mockup 1",
+                    "imageName" : "chanel_1.jpg"
+                },
+                {
+                    "imageId": 1,
+                    "imageTitle" : "Chanel Mockup 1",
+                    "imageName" : "chanel_2.jpg"
+                },
+                {
+                    "imageId": 2,
+                    "imageTitle" : "Chanel Mockup 3",
+                    "imageName" : "chanel_3.jpg"
+                },
+                {
+                    "imageId": 3,
+                    "imageTitle" : "Chanel Mockup 4",
+                    "imageName" : "chanel_4.jpg"
+                },
+                {
+                    "imageId": 4,
+                    "imageTitle" : "Chanel Mockup 5",
+                    "imageName" : "chanel_5.jpg"
+                }
+            ],
+            "videos" : [],
+            "path": "projects/chanel/",
+            "parent": "work-projects",
+            "slug": "chanel",
+            "title": "Chanel",
+            "role": "Design & Development",
+            "description": "I created a mock-up illustration for a Chanel mobile application. *NOT PICTURED* I also built a responsive mega-dropdown menu with jQuery for an employee-facing internal site.",
+            "technology": "Illustrator, Photoshop, jQuery",
+            "year": "2014",
+            "externalUrl": ""
+        }
+	],
+    "sideProjects": [
+        {
+            "id": 0,
+            "logo": "chatify.svg",
+            "images" : [],
+            "videos" : [
+                {
+                    "videoId": 0,
+                    "videoTitle" : "Chatify Demo",
+                    "videoName" : "chatify.mp4"
+                }
+            ],
+            "path": "side-projects/chatify/",
+            "parent": "side-projects",
+            "slug": "chatify",
+            "title": "Chatify",
+            "subtitle": "An open-sourced chatroom application built with React.js and Socket.io",
+            "role": "Development & Design",
+            "description": "An open-sourced chatroom application built with React.js and Socket.io. A user can chat with the \"community\" or chat with another user privately with the ability to add other users into an existing chat.",
+            "technology": "React.js, Socket.io",
+            "year": "2017",
+            "externalUrl": "",
+            "gitHubUrl": "https://github.com/bpat86/chatify"
+        },
+        {
+            "id": 1,
+            "logo": "insta.svg",
+            "images" : [],
+            "videos" : [
+                {
+                    "videoId": 0,
+                    "videoTitle" : "Insta Demo",
+                    "videoName" : "insta.mp4"
+                }
+            ],
+            "path": "side-projects/insta/",
+            "parent": "side-projects",
+            "slug": "insta",
+            "title": "Instagram Media Viewer",
+            "subtitle": "A Simple Instagram Media Viewer built with React.js",
+            "role": "Development & Design",
+            "description": "A Simple Instagram Media Viewer built with React.js. Similar to viewing your own user profile via the desktop web version of Instagram.com, click on a thumbnail to view it in the modal pop up window. From there you can view the next post as well as the previous post. If the post is a carousel, you'll see the dots at the bottom of the image as well as additional \"next\" and \"previous\" buttons within the edges of the image/carousel. If the post is a video, you can click to play the video. Video sounds are muted by default, however if you click the unmute button on the top right of the video, you'll enable the sound. Each post has a dedicated media page for when a user is linked directly to the post. All Autoplaying video thumbnails will only play while visible in the viewport.",
+            "technology": "React.js",
+            "year": "2017",
+            "externalUrl": "",
+            "gitHubUrl": "https://github.com/bpat86/insta"
+        },
+        {
+            "id": 2,
+            "logo": "forum.svg",
+            "images" : [],
+            "videos" : [
+                {
+                    "videoId": 0,
+                    "videoTitle" : "Forum Demo 1",
+                    "videoName" : "forum-1.mp4"
+                },
+                {
+                    "videoId": 1,
+                    "videoTitle" : "Forum Demo 2",
+                    "videoName" : "forum-2.mp4"
+                }
+            ],
+            "path": "side-projects/forum/",
+            "parent": "side-projects",
+            "slug": "forum",
+            "title": "Forum",
+            "subtitle": "A very basic forum built with Laravel",
+            "role": "Development & Design",
+            "description": "A very basic open-sourced forum built with Laravel, MySQL, and Vue.js. It is very much a work in progress and I do plan to update the UI from the existing boilerplate Bootstrap.css to something a bit more custom.",
+            "technology": "Laravel, MySQL, Vue.js, Reddis, Algolia",
+            "year": "2017-2018",
+            "externalUrl": "",
+            "gitHubUrl": "https://github.com/bpat86/forum"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+.aboutMe {
+	position: relative;
+	margin: 0;
+    margin-top: 6rem;
+    .socialButtons {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        .icons {
+            list-style: none;
+            li, li a {
+                display: inline-flex;
+                color: $white;
+                padding: 1rem;
+                @include font-size(16px);
+                &:first-of-type {
+                    padding-left: 0;
+                }
+                &:last-of-type {
+                    padding-right: 0;
+                }
+                &:hover, &:focus {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

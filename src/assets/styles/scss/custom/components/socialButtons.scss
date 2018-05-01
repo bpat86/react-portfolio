@@ -1,0 +1,20 @@
+ul.social {
+    height: 100%;
+    li {
+        display: inline-block;
+        margin: 1rem;
+        color: $black;
+        &:hover, &:focus {
+            opacity: 0.8;
+        }
+        a {
+            svg {
+                color: inherit;
+                padding: 2px;
+                @include tablet {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

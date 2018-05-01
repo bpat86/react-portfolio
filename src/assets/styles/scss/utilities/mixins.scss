@@ -1,0 +1,218 @@
+/* Color Variables */
+$black: #222936;
+$lightGray: rgba($black, 0.75);
+$bgGray: #ecf1f7;
+$white: #F7FAFE;
+$intro: #d7e5f4;
+$blue: #4e65e1;
+$darkBlue: #055FAA;
+
+/* Background variables */
+$fonzie: url(../../../assets/images/themes/fonzie.gif);
+$error: url(../../../assets/images/themes/static.gif);
+$aboutMe: url(../../../assets/images/themes/aboutme.jpg);
+$home: url(../../../assets/images/themes/home.jpg);
+
+/* Icons and Buttons */
+$carousel: url(../../../assets/images/buttons/carouselIcon.svg);
+$video: url(../../../assets/images/buttons/videoIcon.svg);
+$playButton: url(../../../assets/images/buttons/playButton.svg);
+$muteButton: url(../../../assets/images/buttons/muteButton.svg);
+$unmuteButton: url(../../../assets/images/buttons/unmuteButton.svg);
+$downArrow: url(../../../assets/images/buttons/down-arrow.svg);
+
+/* Font variables */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Fira+Mono:400,500|Fira+Sans:300,400');
+$sourceSans: 'Source Sans Pro', sans-serif;
+$menlo: 'Menlo-Regular', Menlo, monospace;
+$fira: 'Fira Mono', Menlo-Regular, Menlo, monospace;
+$firaSans: 'Fira Sans', Helvetica, sans-serif;
+
+/* Media Queries */
+$mobile: "only screen and (max-width: 40em)";
+$tablet: "only screen and (min-width: 48em)";
+$desktop: "only screen and (max-width: 60em)";
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+}
+
+@mixin background-opacity($color, $opacity: 1) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+// Vertical
+@mixin verticalGradient {
+    /* can be treated like a fallback */
+    background-color: red;
+
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient($light,$dark);
+
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: $light;
+    background: linear-gradient($light,$dark);
+}
+
+// Linear
+@mixin linearGradient {
+    background: -moz-linear-gradient(left,$dark 0,$light 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$dark),color-stop(100%,$light));
+    background: -webkit-linear-gradient(left,$dark 0,$light 100%);
+    background: -o-linear-gradient(left,$dark 0,$light 100%);
+    background: -ms-linear-gradient(left,$dark 0,$light 100%);
+    background: linear-gradient(to right,$dark 0,$light 100%);
+}
+
+// usage = @include transitions;
+@mixin transitions {
+    will-change: transform;
+    -webkit-transition: all 0.4s cubic-bezier(0.25,1,0.25,1);
+    -moz-transition: all 0.4s cubic-bezier(0.25,1,0.25,1);
+    -ms-transition: all 0.4s cubic-bezier(0.25,1,0.25,1);
+    -o-transition: all 0.4s cubic-bezier(0.25,1,0.25,1);
+    transition: all 0.4s cubic-bezier(0.25,1,0.25,1);
+}
+
+// usage - @include font(700)
+@mixin font($fontfamily,$fontweight) {
+    font-family: $fontfamily;
+    font-weight: $fontweight;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+// usage - @include font-size(14px)
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// usage - @include opacity(0.8)
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie) //IE8
+}
+
+@mixin fontawe($iconContent) {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: $iconContent;
+}
+
+// generic transform
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+// translate
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+//usage
+/*
+.test {
+    @include skew(25,10);
+    @include transform-origin(top left);
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    background-color: rgba(20,20,20,.5);
+}
+*/
+
+
+@mixin no-user-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin mobile-xs {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media only screen and (max-width: 823px) {
+        @content;
+    }
+}
+
+@mixin phablet {
+    @media only screen and (min-width: 824px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+// @include tablet
+@mixin tablet {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media only screen and (min-width: 1025px) {
+        @content;
+    }
+}

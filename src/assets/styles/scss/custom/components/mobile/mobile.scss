@@ -1,0 +1,15 @@
+.mobile {
+    display: none !important;
+    @include tablet {
+        display: block !important;
+    }
+}
+.desktop {
+    display: block !important;
+    @include tablet {
+        display: none !important;
+    }
+}
+
+@import '../mobile/hamburgerMenuButton';
+@import '../mobile/mobileNavigation';
