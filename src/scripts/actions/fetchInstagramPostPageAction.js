@@ -9,7 +9,7 @@ export function fetchInstagramData() {
 
     return dispatch => {
         dispatch(fetchInstagramDataBegin());
-        return axios.get(`//api.instagram.com/v1/users/${userId}/media/recent/?access_token=${apiKey}`)
+        return axios.get(`https://api.instagram.com/v1/users/${userId}/media/recent/?access_token=${apiKey}`)
             .then(response => {
                 const responseData = response.data.data;
                 const getPostIdFromUrlParam = window.location.pathname.split('/')[3]; // returns Id
