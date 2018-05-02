@@ -57,11 +57,12 @@ export default class VideoBackground extends Component {
                 <video
                     loop
                     muted
-                    preload
                     autoPlay
                     ref="video"
                     playsInline
+                    webkit-playsinline
                     className="video playing"
+                    poster="https://thumbs.gfycat.com/FancyBrilliantDugong-poster.jpg"
                     >
                     <source src="https://giant.gfycat.com/FancyBrilliantDugong.webm" type="video/webm"/>
                     <source src="https://giant.gfycat.com/FancyBrilliantDugong.mp4" type="video/mp4"/>
