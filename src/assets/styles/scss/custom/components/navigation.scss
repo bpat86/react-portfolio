@@ -74,8 +74,8 @@
                     top: 0.75rem;
                     line-height: initial;
                     @include tablet {
-                        @include font-size(15px);
-                        top: 0.6rem !important;
+                        @include font-size(16px);
+                        top: 0.5rem !important;
                     }
                     &.animate {
                         &:after {
@@ -125,7 +125,7 @@
                 }
                 @include tablet {
                     @include font-size(10px);
-                    bottom: 0.6rem !important;
+                    bottom: 0.5rem !important;
                 }
             }
             &.primary {

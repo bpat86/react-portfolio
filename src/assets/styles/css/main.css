@@ -3238,9 +3238,9 @@ img.responsive-img {
         line-height: initial; }
         @media only screen and (max-width: 1024px) {
           .navigation-bar ul.navigation li.navigation-section .logo .name-logo {
-            font-size: 15px;
-            font-size: 0.9375rem;
-            top: 0.6rem !important; } }
+            font-size: 16px;
+            font-size: 1rem;
+            top: 0.5rem !important; } }
         .navigation-bar ul.navigation li.navigation-section .logo .name-logo.animate:after {
           content: "_";
           font-weight: 500;
@@ -3286,7 +3286,7 @@ img.responsive-img {
           .navigation-bar ul.navigation li.navigation-section .tagline {
             font-size: 10px;
             font-size: 0.625rem;
-            bottom: 0.6rem !important; } }
+            bottom: 0.5rem !important; } }
       .navigation-bar ul.navigation li.navigation-section.primary {
         position: absolute;
         top: 0;
