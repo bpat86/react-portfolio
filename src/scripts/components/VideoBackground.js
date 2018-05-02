@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Fonzie from '../../assets/video/fonzie.mp4';
+//import Fonzie from '../../assets/video/fonzie.mp4';
 
 export default class VideoBackground extends Component {
     constructor(props){
@@ -57,13 +57,14 @@ export default class VideoBackground extends Component {
                 <video
                     loop
                     muted
+                    preload
                     autoPlay
                     ref="video"
                     playsInline
-                    //preload={true.toString()}
                     className="video playing"
                     >
-                    <source type="video/mp4" src={Fonzie}/>
+                    <source src="https://giant.gfycat.com/FancyBrilliantDugong.webm" type="video/webm"/>
+                    <source src="https://giant.gfycat.com/FancyBrilliantDugong.mp4" type="video/mp4"/>
                 </video>
                 <div className="image home"></div>
             </div>
