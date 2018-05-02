@@ -206,7 +206,7 @@ export default class Project extends Component {
                                     <div>
                                         <Link
                                             title="Go back to home"
-                                            className="back-button mt-2 mb-1"
+                                            className="back-button mb-1"
                                             to="/"
                                             >
                                             <LinkArrowBack />

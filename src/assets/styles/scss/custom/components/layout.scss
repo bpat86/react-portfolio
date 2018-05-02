@@ -167,6 +167,10 @@ a, div, span {
         max-width: 100%;
         padding: 0 4rem;
     }
+    @include phone {
+        min-width: 100%;
+        max-width: 100%;
+    }
 }
 .flex-container {
     width: auto;

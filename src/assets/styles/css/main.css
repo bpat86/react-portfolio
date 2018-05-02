@@ -2445,9 +2445,15 @@
 
 .mt-6 {
   margin-top: 6rem; }
+  @media only screen and (max-width: 767px) {
+    .mt-6 {
+      margin-top: 3rem; } }
 
 .mt-7 {
   margin-top: 7rem; }
+  @media only screen and (max-width: 767px) {
+    .mt-7 {
+      margin-top: 5rem; } }
 
 .mt-8 {
   margin-top: 8rem; }
@@ -2939,6 +2945,10 @@ a .cta-pill, div .cta-pill, span .cta-pill {
       min-width: 100%;
       max-width: 100%;
       padding: 0 4rem; } }
+  @media only screen and (max-width: 767px) {
+    .container {
+      min-width: 100%;
+      max-width: 100%; } }
 
 .flex-container {
   width: auto;
@@ -3254,7 +3264,7 @@ img.responsive-img {
         margin-right: 8px; }
       .navigation-bar ul.navigation li.navigation-section .tagline {
         font-family: "Source Sans Pro", sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -3263,7 +3273,8 @@ img.responsive-img {
         font-size: 0.75rem;
         letter-spacing: 0.02em;
         bottom: 0.75rem;
-        line-height: initial; }
+        line-height: initial;
+        opacity: 0.85; }
         .navigation-bar ul.navigation li.navigation-section .tagline.f-sm {
           font-size: 10px;
           font-size: 0.625rem; }

@@ -59,8 +59,7 @@ export default class VideoBackground extends Component {
                     muted
                     autoPlay
                     ref="video"
-                    playsInline
-                    webkit-playsinline
+                    playsInline="true"
                     className="video playing"
                     poster="https://thumbs.gfycat.com/FancyBrilliantDugong-poster.jpg"
                     >

@@ -111,11 +111,12 @@
                 }
             }
             .tagline {
-                @include font($sourceSans, 400);
+                @include font($sourceSans, 600);
                 @include font-size(12px);
                 letter-spacing: 0.02em;
                 bottom: 0.75rem;
                 line-height: initial;
+                opacity: 0.85;
                 &.f-sm {
                     @include font-size(10px);
                     @include tablet {
