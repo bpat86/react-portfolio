@@ -49,6 +49,30 @@ export default class Navigation extends Component {
         this.previousScrollPosition = newScrollPosition;
     }
 
+    clickHandler = (e) => {
+        const dataLink = e.currentTarget.getAttribute("href");
+        const scrollTop = document.documentElement.scrollTop;
+        const url = window.location.pathname;
+
+        if (dataLink === url && !scrollTop) {
+            this.screenShake();
+        }
+    }
+
+    screenShake = () => {
+        const html = document.getElementsByTagName("html")[0];
+        html.setAttribute("class", "shake");
+        let timerid;
+
+        if (timerid) {
+            clearTimeout(timerid);
+        }
+
+        timerid = setTimeout(() => {
+            html.setAttribute("class", "");
+        }, 2000);
+    }
+
     navigationBehaviorHandler = () => {
         this.navigationIsHidden();
         this.navigationIsScrolled();
@@ -171,6 +195,7 @@ export default class Navigation extends Component {
                                                 className="navigation-link"
                                                 name={route.route_data_name}
                                                 data-links={route.route_data_name}
+                                                onClick={(e) => this.clickHandler(e)}
                                                 >
                                                 {route.route_name}
                                             </Link>

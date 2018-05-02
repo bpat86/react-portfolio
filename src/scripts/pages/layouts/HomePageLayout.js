@@ -12,8 +12,7 @@ import { navigationIsHidden, navigationIsScrolled } from '../../actions/navigati
 
 class HomePageLayout extends Component {
 	render() {
-        const { history, isScrolled, initialPageLoading } = this.props;
-        console.log(initialPageLoading);
+        const { history, isScrolled } = this.props;
 
 		return (
 			<div className="Home">
