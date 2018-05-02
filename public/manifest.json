@@ -1,11 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "BobbyPatterson.me",
+  "name": "Bobby Patterson | Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "./favicons/favicon-196x196.png",
+      "sizes": "196x196 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon/png"
     }
   ],
   "start_url": "./index.html",
