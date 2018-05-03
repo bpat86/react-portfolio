@@ -17,6 +17,15 @@ if (! dev) {
 
     app.use(express.static(path.resolve(__dirname, 'build')));
 
+    app.use(function forceLiveDomain(req, res, next) {
+        // Don't allow user to hit Heroku now that we have a domain
+        const host = req.get('Host');
+        if (host === 'bp-reactjs-portfolio.herokuapp.com') {
+            return res.redirect(301, 'https://bobbypatterson.me/' + req.originalUrl);
+        }
+        return next();
+    });
+
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
     });
