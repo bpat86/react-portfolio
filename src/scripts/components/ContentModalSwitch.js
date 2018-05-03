@@ -19,7 +19,7 @@ class ContentModalSwitch extends Component {
 
     componentWillUpdate(nextProps) {
         const { location } = this.props;
-        const currentUrlContainsInstagramData = location.pathname.includes('_');
+        const currentUrlContainsInstagramData = location.pathname.indexOf('_') >= 0;
         const instagramPostReloaded = (nextProps.history.action !== 'POP') && ((! location.state) || (! location.state.showModal) || !currentUrlContainsInstagramData);
 
         if (instagramPostReloaded) {
@@ -35,7 +35,7 @@ class ContentModalSwitch extends Component {
 	render() {
 		const { location, isMobile } = this.props;
 	    const isModal = !!(
-            location.pathname.includes('_') &&
+            location.pathname.indexOf('_') >= 0 &&
             this.previousLocation !== location &&
             !isMobile
 	    )
