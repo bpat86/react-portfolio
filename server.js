@@ -19,7 +19,7 @@ if (! dev) {
         // Don't allow user to hit Heroku now that we have a domain
         const host = req.get('Host');
         if (host === 'bp-reactjs-portfolio.herokuapp.com') {
-            return res.redirect(301, 'https://bobbypatterson.me/' + req.originalUrl);
+            return res.redirect(301, 'https://bobbypatterson.me/');
         }
         return next();
     });
