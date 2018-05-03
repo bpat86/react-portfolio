@@ -18,14 +18,7 @@ if (! dev) {
     app.use(express.static(path.resolve(__dirname, 'build')));
 
     app.get('*', (req, res) => {
-        const host = req.hostname;
-        const url = req.url;
-
-        if (host === "bp-reactjs-portfolio.herokuapp.com") {
-            res.redirect(301, "https://bobbypatterson.me" + url);
-        } else {
-            res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-        }
+        res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
     });
 }
 
