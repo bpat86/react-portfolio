@@ -1,5 +1,4 @@
 html.modal-visible {
-    overflow: hidden;
     body {
         overflow: hidden;
     }
@@ -7,9 +6,6 @@ html.modal-visible {
         opacity: 1;
         pointer-events: auto;
         overflow: hidden;
-    }
-    .contentModalBackground {
-        //filter: blur(3px);
     }
 }
 

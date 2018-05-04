@@ -3814,14 +3814,12 @@ header .scroll-down.animate {
     opacity: 0;
     z-index: 0; }
 
-html.modal-visible {
+html.modal-visible body {
   overflow: hidden; }
-  html.modal-visible body {
-    overflow: hidden; }
-  html.modal-visible .contentModalContainer {
-    opacity: 1;
-    pointer-events: auto;
-    overflow: hidden; }
+html.modal-visible .contentModalContainer {
+  opacity: 1;
+  pointer-events: auto;
+  overflow: hidden; }
 
 @media only screen and (max-width: 1024px) {
   .mobile-positioning {
