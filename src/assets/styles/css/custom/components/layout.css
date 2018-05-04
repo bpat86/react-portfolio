@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 10 of src/assets/styles/scss/custom/components/layout.scss
+        on line 9 of src/assets/styles/scss/custom/components/layout.scss
 
+4: body, html {
 5:     height: 100%;
-6:     overflow-x: hidden;
-7:     //-webkit-scroll-behavior: smooth;
-8: }
-9: body {
-10:     background-color: $white;
-11:     font-family: $sourceSans;
+6:     //-webkit-scroll-behavior: smooth;
+7: }
+8: body {
+9:     background-color: $white;
+10:     font-family: $sourceSans;
+11:     overflow-x: hidden;
 12:     font-size: 16px;
 13:     width: 100%;
 14:     height: 100%;
-15:     margin: 0;
 
 Backtrace:
-src/assets/styles/scss/custom/components/layout.scss:10
+src/assets/styles/scss/custom/components/layout.scss:9
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -69,4 +69,4 @@ src/assets/styles/scss/custom/components/layout.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 10 of src/assets/styles/scss/custom/components/layout.scss\A \A 5:     height: 100%;\A 6:     overflow-x: hidden;\A 7:     //-webkit-scroll-behavior: smooth;\A 8: }\A 9: body {\A 10:     background-color: $white;\A 11:     font-family: $sourceSans;\A 12:     font-size: 16px;\A 13:     width: 100%;\A 14:     height: 100%;\A 15:     margin: 0;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 9 of src/assets/styles/scss/custom/components/layout.scss\A \A 4: body, html {\A 5:     height: 100%;\A 6:     //-webkit-scroll-behavior: smooth;\A 7: }\A 8: body {\A 9:     background-color: $white;\A 10:     font-family: $sourceSans;\A 11:     overflow-x: hidden;\A 12:     font-size: 16px;\A 13:     width: 100%;\A 14:     height: 100%;"; }
