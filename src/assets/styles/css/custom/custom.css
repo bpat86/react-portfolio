@@ -1,9 +1,8 @@
 /*
 Error: Undefined variable: "$white".
-        on line 9 of src/assets/styles/scss/custom/components/layout.scss
+        on line 10 of src/assets/styles/scss/custom/components/layout.scss
         from line 2 of src/assets/styles/scss/custom/custom.scss
 
-4: @import 'components/header';
 5: @import 'components/hero';
 6: @import 'components/aboutMe';
 7: @import 'components/projectThumbnails';
@@ -14,7 +13,7 @@ Error: Undefined variable: "$white".
 12: @import 'components/mobile/mobile';
 
 Backtrace:
-src/assets/styles/scss/custom/components/layout.scss:9
+src/assets/styles/scss/custom/components/layout.scss:10
 src/assets/styles/scss/custom/custom.scss:2
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
@@ -82,4 +81,4 @@ src/assets/styles/scss/custom/custom.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 9 of src/assets/styles/scss/custom/components/layout.scss\A         from line 2 of src/assets/styles/scss/custom/custom.scss\A \A 4: @import 'components/header';\A 5: @import 'components/hero';\A 6: @import 'components/aboutMe';\A 7: @import 'components/projectThumbnails';\A 8: @import 'components/instagramFeed';\A 9: @import 'components/contentModal';\A 10: @import 'components/instagramSinglePage';\A 11: @import 'components/socialButtons';\A 12: @import 'components/mobile/mobile';"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 10 of src/assets/styles/scss/custom/components/layout.scss\A         from line 2 of src/assets/styles/scss/custom/custom.scss\A \A 5: @import 'components/hero';\A 6: @import 'components/aboutMe';\A 7: @import 'components/projectThumbnails';\A 8: @import 'components/instagramFeed';\A 9: @import 'components/contentModal';\A 10: @import 'components/instagramSinglePage';\A 11: @import 'components/socialButtons';\A 12: @import 'components/mobile/mobile';"; }
