@@ -10,7 +10,31 @@ import ProjectThumbnails from '../../components/work/ProjectThumbnails';
 import SideProjectThumbnails from '../../components/projects/ProjectThumbnails';
 
 class HomePageLayout extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            headerHeight: null
+        };
+    }
+    getHeaderHeight = () => {
+        const header = document.querySelector('header').offsetHeight;
+
+        const headerStyle = {
+            width: '100%',
+            height: header
+        }
+
+        this.setState({
+            headerHeight: headerStyle
+        })
+    }
+
+    componentDidMount() {
+        this.getHeaderHeight();
+    }
+
 	render() {
+        const { headerHeight } = this.state;
         const { history, isScrolled } = this.props;
 
 		return (
