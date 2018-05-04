@@ -9,12 +9,35 @@ import ProjectThumbnails from '../../components/work/ProjectThumbnails';
 import SideProjectThumbnails from '../../components/projects/ProjectThumbnails';
 
 class ErrorPageLayout extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            height: null
+        };
+    }
+    getHeaderHeight = () => {
+        const header = document.querySelector('header').offsetHeight;
+        const headerStyle = {
+            width: '100%',
+            height: header
+        }
+
+        this.setState({
+            height: headerStyle
+        })
+    }
+
+    componentDidMount() {
+        this.getHeaderHeight();
+    }
+
     render() {
+        const { height } = this.state;
         const { history } = this.props;
 
         return (
             <div className="Home">
-                <header className="flex flex-wrap vh-100">
+                <header style={height} className="flex flex-wrap vh-100">
                     <PageNotFound />
                     <div className="bg-image">
                         <div className="image error"></div>

@@ -7,12 +7,35 @@ import VideoBackground from '../../components/VideoBackground';
 import InstagramFeedContainer from '../../containers/InstagramFeedContainer';
 
 class AboutPageLayout extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            height: null
+        };
+    }
+    getHeaderHeight = () => {
+        const header = document.querySelector('header').offsetHeight;
+        const headerStyle = {
+            width: '100%',
+            height: header
+        }
+
+        this.setState({
+            height: headerStyle
+        })
+    }
+
+    componentDidMount() {
+        this.getHeaderHeight();
+    }
+
 	render() {
+        const { height } = this.state;
         const { history, showModal, isScrolled } = this.props;
 
 		return (
 			<div className="About">
-				<header className="flex flex-wrap vh-100">
+				<header style={height} className="flex flex-wrap vh-100">
                     <AboutMe />
                     <span title="Keep scrolling :)" className={`scroll-down ${isScrolled ? "" : "animate"}`}></span>
                     <VideoBackground showModal={showModal} />

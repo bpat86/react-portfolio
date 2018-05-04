@@ -13,19 +13,18 @@ class HomePageLayout extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            headerHeight: null
+            height: null
         };
     }
     getHeaderHeight = () => {
         const header = document.querySelector('header').offsetHeight;
-
         const headerStyle = {
             width: '100%',
             height: header
         }
 
         this.setState({
-            headerHeight: headerStyle
+            height: headerStyle
         })
     }
 
@@ -34,12 +33,12 @@ class HomePageLayout extends Component {
     }
 
 	render() {
-        const { headerHeight } = this.state;
+        const { height } = this.state;
         const { history, isScrolled } = this.props;
 
 		return (
 			<div className="Home">
-                <header className="flex flex-wrap vh-100">
+                <header style={height} className="flex flex-wrap vh-100">
                     <Hero />
                     <ProfessionalProfile />
                     <span title="Keep scrolling :)" className={`scroll-down ${isScrolled ? "" : "animate"}`}></span>

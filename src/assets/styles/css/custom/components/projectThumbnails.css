@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phablet'.
-        on line 25 of src/assets/styles/scss/custom/components/projectThumbnails.scss, in `phablet'
-        from line 25 of src/assets/styles/scss/custom/components/projectThumbnails.scss
+        on line 26 of src/assets/styles/scss/custom/components/projectThumbnails.scss, in `phablet'
+        from line 26 of src/assets/styles/scss/custom/components/projectThumbnails.scss
 
-20:             grid-gap: 2.5rem;
-21:             grid-auto-flow: row;
-22:             justify-content: center;
-23:             align-content: center;
-24:             &.four, &.three {
-25:                 @include phablet {
-26:                     grid-template-columns: 3fr 3fr;
-27:                 }
-28:                 @include phone {
-29:                     grid-template-columns: 3fr;
-30:                 }
+21:             grid-gap: 2.5rem;
+22:             grid-auto-flow: row;
+23:             justify-content: center;
+24:             align-content: center;
+25:             &.four, &.three {
+26:                 @include phablet {
+27:                     -ms-grid-columns: 3fr 3fr;
+28:                     grid-template-columns: 3fr 3fr;
+29:                 }
+30:                 @include phone {
+31:                     -ms-grid-columns: 3fr;
 
 Backtrace:
-src/assets/styles/scss/custom/components/projectThumbnails.scss:25:in `phablet'
-src/assets/styles/scss/custom/components/projectThumbnails.scss:25
+src/assets/styles/scss/custom/components/projectThumbnails.scss:26:in `phablet'
+src/assets/styles/scss/custom/components/projectThumbnails.scss:26
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
@@ -106,4 +106,4 @@ src/assets/styles/scss/custom/components/projectThumbnails.scss:25
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phablet'.\A         on line 25 of src/assets/styles/scss/custom/components/projectThumbnails.scss, in `phablet'\A         from line 25 of src/assets/styles/scss/custom/components/projectThumbnails.scss\A \A 20:             grid-gap: 2.5rem;\A 21:             grid-auto-flow: row;\A 22:             justify-content: center;\A 23:             align-content: center;\A 24:             &.four, &.three {\A 25:                 @include phablet {\A 26:                     grid-template-columns: 3fr 3fr;\A 27:                 }\A 28:                 @include phone {\A 29:                     grid-template-columns: 3fr;\A 30:                 }"; }
+  content: "Error: Undefined mixin 'phablet'.\A         on line 26 of src/assets/styles/scss/custom/components/projectThumbnails.scss, in `phablet'\A         from line 26 of src/assets/styles/scss/custom/components/projectThumbnails.scss\A \A 21:             grid-gap: 2.5rem;\A 22:             grid-auto-flow: row;\A 23:             justify-content: center;\A 24:             align-content: center;\A 25:             &.four, &.three {\A 26:                 @include phablet {\A 27:                     -ms-grid-columns: 3fr 3fr;\A 28:                     grid-template-columns: 3fr 3fr;\A 29:                 }\A 30:                 @include phone {\A 31:                     -ms-grid-columns: 3fr;"; }
