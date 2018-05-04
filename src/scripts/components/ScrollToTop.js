@@ -11,6 +11,8 @@ class ScrollToTop extends Component {
 
 		if (pageUrlHasChanged && !bothUrlsContainInstagramData) {
             window.scrollTo(0, 0);
+        } else if (bothUrlsContainInstagramData) {
+            return false;
         }
 	}
 

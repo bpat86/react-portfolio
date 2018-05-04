@@ -14,12 +14,8 @@ export default class InstagramFeed extends Component {
     }
 
     toggleInstagramModal = (post, index) => {
-        const { dispatch, history, isMobile, showModal } = this.props;
-        const html = document.getElementsByTagName("html")[0];
-
+        const { dispatch, history, isMobile } = this.props;
         if (isMobile) return false;
-
-        html.setAttribute("class", `${!showModal ? "modal-visible" : ""}`);
         dispatch(toggleModalVisibility(types.TOGGLE_MODAL_OPEN, post, index, history));
     }
 

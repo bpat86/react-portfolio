@@ -3,12 +3,15 @@ import * as types from '../constants/ActionTypes';
 
 export const toggleModalVisibility = (actionType, currentPost, currentPostIndex, propHistory) => {
     return dispatch => {
+        const html = document.getElementsByTagName("html")[0];
         if (actionType === types.TOGGLE_MODAL_OPEN) {
             //propHistory.push("/about/instagram/"+currentPost.id+"/?taken-by="+currentPost.user.username);
+            html.setAttribute("class", "modal-visible");
             dispatch(postTypeHandler(actionType, currentPost, currentPostIndex, propHistory));
         }
         if (actionType === types.TOGGLE_MODAL_CLOSED) {
             propHistory.push("/about");
+            html.setAttribute("class", "");
             dispatch(closeInstagramModal());
         }
     };

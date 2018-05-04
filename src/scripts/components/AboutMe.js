@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import LinkArrow from './LinkArrow';
 import SocialButtons from './SocialButtons';
 import Email from './Email';

@@ -12,7 +12,6 @@ export default class App extends Component {
                 progress.classList.add("available")
                     setTimeout(() => {
                         const html = document.getElementsByTagName("html")[0];
-
                         html.setAttribute("class", "");
                         progress.outerHTML = "";
                     }, 250);

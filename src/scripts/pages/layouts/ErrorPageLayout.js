@@ -7,7 +7,6 @@ import Capabilities from '../../components/Capabilities';
 import { getCurrentYear } from '../../utilities/helpers';
 import ProjectThumbnails from '../../components/work/ProjectThumbnails';
 import SideProjectThumbnails from '../../components/projects/ProjectThumbnails';
-import { navigationIsHidden, navigationIsScrolled } from '../../actions/navigationAction';
 
 class ErrorPageLayout extends Component {
     render() {

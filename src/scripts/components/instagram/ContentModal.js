@@ -25,7 +25,6 @@ export default class ContentModal extends Component {
 
 	changeCarouselPost = (changeType) => {
 		const { dispatch, history, currentPost, currentPostIndex, currentCarouselPost, currentCarouselPosts, currentCarouselPostIndex } = this.props;
-
 		dispatch(changeCarouselPost(changeType, currentPost, currentPostIndex, currentCarouselPost, currentCarouselPosts, currentCarouselPostIndex, history));
 	}
 
@@ -38,7 +37,6 @@ export default class ContentModal extends Component {
 
 	getMediaDimensions = () => {
 		const { mediaWidth, mediaHeight } = this.props;
-
 		const square = mediaWidth === mediaHeight;
 		const maxMediaWidth = (! square && mediaHeight >= 640) ? mediaWidth - 120 : 620;
 		const maxMediaHeight = (! square && mediaHeight >= 640) ? mediaHeight - 120 : 620;

@@ -8,7 +8,6 @@ import Capabilities from '../../components/Capabilities';
 import ProfessionalProfile from '../../components/ProfessionalProfile';
 import ProjectThumbnails from '../../components/work/ProjectThumbnails';
 import SideProjectThumbnails from '../../components/projects/ProjectThumbnails';
-import { navigationIsHidden, navigationIsScrolled } from '../../actions/navigationAction';
 
 class HomePageLayout extends Component {
 	render() {

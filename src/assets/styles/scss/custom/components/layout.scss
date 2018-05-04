@@ -3,10 +3,9 @@
 }
 body, html {
     height: 100%;
-    //-webkit-scroll-behavior: smooth;
 }
 body {
-    background-color: $white;
+    background: $white;
     font-family: $sourceSans;
     overflow-x: hidden;
     font-size: 16px;

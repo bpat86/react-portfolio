@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Footer from '../../../components/Footer';
 import Navigation from '../../../components/Navigation';
 import SideProjectMedia from '../../../components/projects/ProjectMedia';
-import { navigationIsHidden, navigationIsScrolled } from '../../../actions/navigationAction';
 
 class ProjectPageLayout extends Component {
 	render() {

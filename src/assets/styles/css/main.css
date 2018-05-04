@@ -2808,7 +2808,7 @@ body, html {
   height: 100%; }
 
 body {
-  background-color: #F7FAFE;
+  background: #F7FAFE;
   font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
   font-size: 16px;
@@ -3455,10 +3455,8 @@ header .scroll-down.animate {
 .heroName {
   margin: 0.25rem 0; }
   .heroName img {
-    width: 100%;
     max-width: 100%;
-    height: 34px;
-    height: auto; }
+    height: 34px; }
     @media only screen and (max-width: 1024px) {
       .heroName img {
         height: 21px; } }
@@ -3749,7 +3747,6 @@ header .scroll-down.animate {
       top: 5px;
       right: 5px;
       z-index: 1;
-      transition: 0.4s ease;
       opacity: 1; }
     .instagramFeed .post .postLinks .carouselContainer .carouselControlsSprite {
       display: block;
@@ -3760,8 +3757,7 @@ header .scroll-down.animate {
       margin-top: -67px;
       top: 50%;
       width: 135px;
-      z-index: 1;
-      transition: 0.4s ease; }
+      z-index: 1; }
   .instagramFeed .post .postLinks .videoContainer {
     position: absolute;
     top: 0;
@@ -3784,7 +3780,6 @@ header .scroll-down.animate {
       top: 5px;
       right: 5px;
       z-index: 1;
-      transition: 0.4s ease;
       opacity: 1; }
     .instagramFeed .post .postLinks .videoContainer .videoControlsSprite {
       display: block;
@@ -3795,39 +3790,38 @@ header .scroll-down.animate {
       margin-top: -67px;
       top: 50%;
       width: 135px;
-      z-index: 1;
-      transition: 0.4s ease; }
+      z-index: 1; }
   .instagramFeed .post .postLinks img, .instagramFeed .post .postLinks video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    /* default value: image is centered*/
-    transition: 0.2s ease; }
+    /* default value: image is centered*/ }
   .instagramFeed .post .postLinks:hover img, .instagramFeed .post .postLinks:hover video {
     opacity: 0.2; }
   .instagramFeed .post .postLinks:hover .content {
     background: #ecf1f7; }
   .instagramFeed .post .postLinks:hover .info {
     opacity: 1;
-    transform: translate(-50%, 0px); }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .instagramFeed .post .postLinks:hover .carouselContainer .carouselThumbnailControlsSprite {
     opacity: 0;
-    transform: scale(0.6);
     z-index: 0; }
   .instagramFeed .post .postLinks:hover .videoContainer .videoThumbnailControlsSprite {
     opacity: 0;
-    transform: scale(0.6);
     z-index: 0; }
 
 html.modal-visible {
   overflow: hidden; }
+  html.modal-visible body {
+    overflow: hidden; }
   html.modal-visible .contentModalContainer {
     opacity: 1;
     pointer-events: auto;
     overflow: hidden; }
-  html.modal-visible .contentModalBackground {
-    filter: blur(3px); }
 
 @media only screen and (max-width: 1024px) {
   .mobile-positioning {

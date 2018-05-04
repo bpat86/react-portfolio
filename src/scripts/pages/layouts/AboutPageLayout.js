@@ -5,7 +5,6 @@ import AboutMe from '../../components/AboutMe';
 import Navigation from '../../components/Navigation';
 import VideoBackground from '../../components/VideoBackground';
 import InstagramFeedContainer from '../../containers/InstagramFeedContainer';
-import { navigationIsHidden, navigationIsScrolled } from '../../actions/navigationAction';
 
 class AboutPageLayout extends Component {
 	render() {

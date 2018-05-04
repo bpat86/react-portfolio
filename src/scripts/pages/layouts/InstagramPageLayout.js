@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Navigation';
 import InstagramSinglePageContainer from '../../containers/InstagramSinglePageContainer';
-import { navigationIsHidden, navigationIsScrolled } from '../../actions/navigationAction';
 
 class InstagramPageLayout extends Component {
 	render() {
