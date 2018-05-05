@@ -39,7 +39,7 @@ export default class InstagramFeed extends Component {
                         ref="video"
                         playsInline
                         type="video/mp4"
-                        //preload={true.toString()}
+                        preload={true.toString()}
                         src={post.videos.low_resolution.url}
                         poster={post.images.standard_resolution.url}
                         >

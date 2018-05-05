@@ -65,12 +65,12 @@ export default class Project extends Component {
                     className="project-media"
                     >
                     <video
-                        ref="video"
-                        //preload={true.toString()}
-                        src={require("../../../assets/video/" + video.videoName)}
-                        type="video/mp4"
-                        playsInline
                         autoPlay
+                        ref="video"
+                        playsInline
+                        type="video/mp4"
+                        preload={true.toString()}
+                        src={require("../../../assets/video/" + video.videoName)}
                         >
                     </video>
                 </div>

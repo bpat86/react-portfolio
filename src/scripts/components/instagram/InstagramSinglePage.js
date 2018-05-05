@@ -260,7 +260,7 @@ export default class InstagramSinglePage extends Component {
                         muted
                         playsInline
                         type="video/mp4"
-                        //preload={true.toString()}
+                        preload={true.toString()}
                         src={currentCarouselPost.videos.standard_resolution.url}
                         >
                     </video>

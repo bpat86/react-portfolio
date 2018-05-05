@@ -331,7 +331,7 @@ export default class ContentModal extends Component {
 								playsInline
 								type="video/mp4"
 								className="z-index-3"
-								//preload={true.toString()}
+								preload={true.toString()}
 								src={currentPost.videos.standard_resolution.url}
 								poster={currentPost.images.standard_resolution.url}
 								>
@@ -402,7 +402,7 @@ export default class ContentModal extends Component {
 						muted
 						playsInline
 						type="video/mp4"
-						//preload={true.toString()}
+						preload={true.toString()}
 						src={currentCarouselPost.videos.standard_resolution.url}
 						>
 					</video>
