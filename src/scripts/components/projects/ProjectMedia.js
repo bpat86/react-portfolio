@@ -114,8 +114,10 @@ export default class Project extends Component {
         const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
         const leftSide = (rect.left >= 0);
         const rightSide = (rect.right <= windowWidth);
-        const topSide = (rect.top + (windowHeight * 0.5) >= 0);
-        const bottomSide = (rect.bottom - (windowHeight * 0.5) <= windowHeight);
+        //const topSide = (rect.top + (windowHeight * 0.5) >= 0);
+        const topSide = (rect.top + (windowHeight) >= 0);
+        //const bottomSide = (rect.bottom - (windowHeight * 0.5) <= windowHeight);
+        const bottomSide = (rect.bottom - (windowHeight) <= windowHeight);
         const verticalSidesInView = (topSide && bottomSide);
         const horizontalSidesInView = (leftSide && rightSide);
 
