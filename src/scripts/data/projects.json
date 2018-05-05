@@ -3,17 +3,23 @@
 		{
 			"id": 0,
 			"logo": "envita.svg",
-			"images" : [],
-			"videos" : [
+			"images": [],
+			"videos": [
                 {
                 	"videoId": 0,
-                    "videoTitle" : "Envita 1",
-                    "videoName" : "envita-1.mp4"
+                    "videoTitle": "Envita 1",
+                    "videoName": "envita-1.mp4",
+                    "mp4Source": "https://giant.gfycat.com/MiserlyUnfitAmericanrobin.mp4",
+                    "webmSource": "https://giant.gfycat.com/MiserlyUnfitAmericanrobin.webm",
+                    "poster": "https://thumbs.gfycat.com/MiserlyUnfitAmericanrobin-poster.jpg"
                 },
                 {
                 	"videoId": 1,
-                    "videoTitle" : "Envita 2",
-                    "videoName" : "envita-2.mp4"
+                    "videoTitle": "Envita 2",
+                    "videoName": "envita-2.mp4",
+                    "mp4Source": "https://giant.gfycat.com/DistantUnluckyJay.mp4",
+                    "webmSource": "https://giant.gfycat.com/DistantUnluckyJay.webm",
+                    "poster": "https://thumbs.gfycat.com/DistantUnluckyJay-poster.jpg"
                 }
             ],
 			"path": "projects/envita/",
@@ -29,22 +35,31 @@
 		{
 			"id": 1,
 			"logo": "vertisis.svg",
-			"images" : [],
-			"videos" : [
+			"images": [],
+			"videos": [
                 {
                     "videoId": 0,
-                    "videoTitle" : "Vertisis",
-                    "videoName" : "vertisis-1.mp4"
+                    "videoTitle": "Vertisis",
+                    "videoName": "vertisis-1.mp4",
+                    "mp4Source": "https://giant.gfycat.com/PortlyDistantAntipodesgreenparakeet.mp4",
+                    "webmSource": "https://giant.gfycat.com/PortlyDistantAntipodesgreenparakeet.webm",
+                    "poster": "https://thumbs.gfycat.com/PortlyDistantAntipodesgreenparakeet-poster.jpg"
                 },
                 {
                     "videoId": 1,
-                    "videoTitle" : "Physician's Login Screen",
-                    "videoName" : "vertisis-2.mp4"
+                    "videoTitle": "Physician's Login Screen",
+                    "videoName": "vertisis-2.mp4",
+                    "mp4Source": "https://giant.gfycat.com/AlarmedPowerlessGoat.mp4",
+                    "webmSource": "https://giant.gfycat.com/AlarmedPowerlessGoat.webm",
+                    "poster": "https://thumbs.gfycat.com/AlarmedPowerlessGoat-poster.jpg"
                 },
                 {
                     "videoId": 2,
-                    "videoTitle" : "Osmolarity Calculator",
-                    "videoName" : "vertisis-3.mp4"
+                    "videoTitle": "Osmolarity Calculator",
+                    "videoName": "vertisis-3.mp4",
+                    "mp4Source": "https://giant.gfycat.com/ValidSecondGoldenmantledgroundsquirrel.mp4",
+                    "webmSource": "https://giant.gfycat.com/ValidSecondGoldenmantledgroundsquirrel.webm",
+                    "poster": "https://thumbs.gfycat.com/ValidSecondGoldenmantledgroundsquirrel-poster.jpg"
                 }
             ],
 			"path": "projects/vertisis/",
@@ -60,12 +75,15 @@
 		{
 			"id": 2,
 			"logo": "unipathic.svg",
-			"images" : [],
-			"videos" : [
+			"images": [],
+			"videos": [
                 {
                     "videoId": 0,
-                    "videoTitle" : "Unipathic Medicine",
-                    "videoName" : "unipathicmedicine.mp4"
+                    "videoTitle": "Unipathic Medicine",
+                    "videoName": "unipathicmedicine.mp4",
+                    "mp4Source": "https://giant.gfycat.com/PopularEachFerret.mp4",
+                    "webmSource": "https://giant.gfycat.com/PopularEachFerret.webm",
+                    "poster": "https://thumbs.gfycat.com/PopularEachFerret-poster.jpg"
                 }
             ],
 			"path": "projects/unipathic/",
@@ -81,34 +99,34 @@
 		{
 			"id": 3,
 			"logo": "jegs.svg",
-			"images" : [
+			"images": [
 				{
                 	"imageId": 0,
-                    "imageTitle" : "Jegs Home Page",
-                    "imageName" : "jegs_home-page_full.jpg"
+                    "imageTitle": "Jegs Home Page",
+                    "imageName": "jegs_home-page_full.jpg"
                 },
 				{
                 	"imageId": 1,
-                    "imageTitle" : "Jegs Hover Menu",
-                    "imageName" : "jegs_home-page-menu.jpg"
+                    "imageTitle": "Jegs Hover Menu",
+                    "imageName": "jegs_home-page-menu.jpg"
                 },
                 {
                 	"imageId": 2,
-                    "imageTitle" : "Jegs Product Listing Page",
-                    "imageName" : "jegs_product-list.jpg"
+                    "imageTitle": "Jegs Product Listing Page",
+                    "imageName": "jegs_product-list.jpg"
                 },
                 {
                 	"imageId": 3,
-                    "imageTitle" : "Jegs Product Detail Page",
-                    "imageName" : "jegs_product-detail.jpg"
+                    "imageTitle": "Jegs Product Detail Page",
+                    "imageName": "jegs_product-detail.jpg"
                 },
                 {
                 	"imageId": 4,
-                    "imageTitle" : "Jegs Mobile Browser View",
-                    "imageName" : "jegs-mobile.jpg"
+                    "imageTitle": "Jegs Mobile Browser View",
+                    "imageName": "jegs-mobile.jpg"
                 }
 			],
-			"videos" : [],
+			"videos": [],
 			"path": "projects/jegs/",
 			"parent": "work-projects",
 			"title": "Jegs",
@@ -122,19 +140,19 @@
 		{
 			"id": 4,
 			"logo": "canon.svg",
-			"images" : [
+			"images": [
 				{
                 	"imageId": 0,
-                    "imageTitle" : "Canon Checkout Page",
-                    "imageName" : "canon-checkout-desktop.jpg"
+                    "imageTitle": "Canon Checkout Page",
+                    "imageName": "canon-checkout-desktop.jpg"
                 },
 				{
                 	"imageId": 1,
-                    "imageTitle" : "Canon Mobile Browser View",
-                    "imageName" : "canon-mobile.jpg"
+                    "imageTitle": "Canon Mobile Browser View",
+                    "imageName": "canon-mobile.jpg"
                 }
 			],
-			"videos" : [],
+			"videos": [],
 			"path": "projects/canon/",
 			"parent": "work-projects",
 			"slug": "canon",
@@ -148,24 +166,24 @@
 		{
 			"id": 5,
 			"logo": "toshiba.svg",
-			"images" : [
+			"images": [
 				{
                 	"imageId": 0,
-                    "imageTitle" : "Toshiba Global Commerce Splash Screen",
-                    "imageName" : "toshiba-splash_nexus.jpg"
+                    "imageTitle": "Toshiba Global Commerce Splash Screen",
+                    "imageName": "toshiba-splash_nexus.jpg"
                 },
                 {
                 	"imageId": 1,
-                    "imageTitle" : "Toshiba Global Commerce",
-                    "imageName" : "toshiba_nexus.jpg"
+                    "imageTitle": "Toshiba Global Commerce",
+                    "imageName": "toshiba_nexus.jpg"
                 },
                 {
                 	"imageId": 2,
-                    "imageTitle" : "Toshiba Global Commerce iPhone",
-                    "imageName" : "toshiba_iPhone5c.jpg"
+                    "imageTitle": "Toshiba Global Commerce iPhone",
+                    "imageName": "toshiba_iPhone5c.jpg"
                 }
 			],
-			"videos" : [],
+			"videos": [],
 			"path": "projects/toshiba/",
 			"parent": "work-projects",
 			"slug": "toshiba",
@@ -179,24 +197,24 @@
 		{
 			"id": 6,
 			"logo": "kaiser.svg",
-			"images" : [
+			"images": [
 				{
                 	"imageId": 0,
-                    "imageTitle" : "kaiser Permanente",
-                    "imageName" : "kp_1.jpg"
+                    "imageTitle": "kaiser Permanente",
+                    "imageName": "kp_1.jpg"
                 },
                 {
                 	"imageId": 1,
-                    "imageTitle" : "kaiser Permanentee",
-                    "imageName" : "kp_2.jpg"
+                    "imageTitle": "kaiser Permanentee",
+                    "imageName": "kp_2.jpg"
                 },
                 {
                 	"imageId": 2,
-                    "imageTitle" : "kaiser Permanente",
-                    "imageName" : "kp_3.jpg"
+                    "imageTitle": "kaiser Permanente",
+                    "imageName": "kp_3.jpg"
                 }
 			],
-			"videos" : [],
+			"videos": [],
 			"path": "projects/kaiser-permanente/",
 			"parent": "work-projects",
 			"slug": "kaiser-permanente",
@@ -210,34 +228,34 @@
         {
             "id": 7,
             "logo": "chanel.svg",
-            "images" : [
+            "images": [
                 {
                     "imageId": 0,
-                    "imageTitle" : "Chanel Mockup 1",
-                    "imageName" : "chanel_1.jpg"
+                    "imageTitle": "Chanel Mockup 1",
+                    "imageName": "chanel_1.jpg"
                 },
                 {
                     "imageId": 1,
-                    "imageTitle" : "Chanel Mockup 1",
-                    "imageName" : "chanel_2.jpg"
+                    "imageTitle": "Chanel Mockup 1",
+                    "imageName": "chanel_2.jpg"
                 },
                 {
                     "imageId": 2,
-                    "imageTitle" : "Chanel Mockup 3",
-                    "imageName" : "chanel_3.jpg"
+                    "imageTitle": "Chanel Mockup 3",
+                    "imageName": "chanel_3.jpg"
                 },
                 {
                     "imageId": 3,
-                    "imageTitle" : "Chanel Mockup 4",
-                    "imageName" : "chanel_4.jpg"
+                    "imageTitle": "Chanel Mockup 4",
+                    "imageName": "chanel_4.jpg"
                 },
                 {
                     "imageId": 4,
-                    "imageTitle" : "Chanel Mockup 5",
-                    "imageName" : "chanel_5.jpg"
+                    "imageTitle": "Chanel Mockup 5",
+                    "imageName": "chanel_5.jpg"
                 }
             ],
-            "videos" : [],
+            "videos": [],
             "path": "projects/chanel/",
             "parent": "work-projects",
             "slug": "chanel",
@@ -253,12 +271,12 @@
         {
             "id": 0,
             "logo": "portfolio.svg",
-            "images" : [],
-            "videos" : [
+            "images": [],
+            "videos": [
                 {
                     "videoId": 0,
-                    "videoTitle" : "Portfolio",
-                    "videoName" : "portfolio.mp4"
+                    "videoTitle": "Portfolio",
+                    "videoName": "portfolio.mp4"
                 }
             ],
             "path": "side-projects/portfolio/",
@@ -276,12 +294,14 @@
         {
             "id": 1,
             "logo": "chatify.svg",
-            "images" : [],
-            "videos" : [
+            "images": [],
+            "videos": [
                 {
                     "videoId": 0,
-                    "videoTitle" : "Chatify Demo",
-                    "videoName" : "chatify.mp4"
+                    "videoTitle": "Chatify Demo",
+                    "videoName": "chatify.mp4",
+                    "mp4Source": "https://giant.gfycat.com/ThatDistantAnole.mp4",
+                    "webmSource": "https://giant.gfycat.com/ThatDistantAnole.webm"
                 }
             ],
             "path": "side-projects/chatify/",
@@ -299,12 +319,14 @@
         {
             "id": 2,
             "logo": "insta.svg",
-            "images" : [],
-            "videos" : [
+            "images": [],
+            "videos": [
                 {
                     "videoId": 0,
-                    "videoTitle" : "Insta Demo",
-                    "videoName" : "insta.mp4"
+                    "videoTitle": "Insta Demo",
+                    "videoName": "insta.mp4",
+                    "mp4Source": "https://giant.gfycat.com/DenseDelectableGoldenretriever.mp4",
+                    "webmSource": "https://giant.gfycat.com/DenseDelectableGoldenretriever.webm"
                 }
             ],
             "path": "side-projects/insta/",
@@ -322,17 +344,22 @@
         {
             "id": 3,
             "logo": "forum.svg",
-            "images" : [],
-            "videos" : [
+            "images": [],
+            "videos": [
                 {
                     "videoId": 0,
-                    "videoTitle" : "Forum Demo 1",
-                    "videoName" : "forum-1.mp4"
+                    "videoTitle": "Forum Demo 1",
+                    "videoName": "forum-1.mp4",
+                    "mp4Source": "https://giant.gfycat.com/HoarseColorfulCommabutterfly.mp4",
+                    "webmSource": "https://giant.gfycat.com/HoarseColorfulCommabutterfly.webm"
                 },
                 {
                     "videoId": 1,
-                    "videoTitle" : "Forum Demo 2",
-                    "videoName" : "forum-2.mp4"
+                    "videoTitle": "Forum Demo 2",
+                    "videoName": "forum-2.mp4",
+                    "mp4Source": "https://giant.gfycat.com/SourIckyBlackfootedferret.mp4",
+                    "webmSource": "https://giant.gfycat.com/SourIckyBlackfootedferret.webm"
+
                 }
             ],
             "path": "side-projects/forum/",

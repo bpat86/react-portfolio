@@ -75,8 +75,10 @@ export default class Project extends Component {
                         type="video/mp4"
                         ref={this.videoRef}
                         preload={true.toString()}
-                        src={require("../../../assets/video/" + video.videoName)}
+                        //src={require("../../../assets/video/" + video.videoName)}
                         >
+                        <source src={video.webmSource} type="video/webm"/>
+                        <source src={video.mp4Source} type="video/mp4"/>
                     </video>
                 </div>
             )
