@@ -16,6 +16,7 @@ export default class Project extends Component {
             isPlaying: false,
             propHistory: []
         };
+        this.videoRef = React.createRef();
     }
 
     getProject = () => {
@@ -66,9 +67,9 @@ export default class Project extends Component {
                     >
                     <video
                         autoPlay
-                        ref="video"
                         playsInline
                         type="video/mp4"
+                        ref={this.videoRef}
                         preload={true.toString()}
                         src={require("../../../assets/video/" + video.videoName)}
                         >
@@ -98,7 +99,7 @@ export default class Project extends Component {
 
     prepareVideosForAutoPlay = () => {
         // Wait for videos to render before doing anything
-        if (! this.refs.video) return false;
+        if (! this.videoRef.current) return false;
 
         let videoElement = document.querySelectorAll('.project-media');
         videoElement = Array.prototype.slice.call(videoElement);
@@ -114,10 +115,8 @@ export default class Project extends Component {
         const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
         const leftSide = (rect.left >= 0);
         const rightSide = (rect.right <= windowWidth);
-        //const topSide = (rect.top + (windowHeight * 0.5) >= 0);
-        const topSide = (rect.top + (windowHeight) >= 0);
-        //const bottomSide = (rect.bottom - (windowHeight * 0.5) <= windowHeight);
-        const bottomSide = (rect.bottom - (windowHeight) <= windowHeight);
+        const topSide = (rect.top + (windowHeight * 0.5) >= 0);
+        const bottomSide = (rect.bottom - (windowHeight * 0.5) <= windowHeight);
         const verticalSidesInView = (topSide && bottomSide);
         const horizontalSidesInView = (leftSide && rightSide);
 

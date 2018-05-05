@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import Fonzie from '../../assets/video/fonzie.mp4';
+import Fonzie from '../../assets/video/fonzie.mp4';
 
 export default class VideoBackground extends Component {
     constructor(props){
@@ -7,9 +7,11 @@ export default class VideoBackground extends Component {
         this.state = {
             isScrolled: false
         };
+        this.backgroundVideoRef = React.createRef();
     }
 
     viewportScrollHandler = () => {
+        if (! this.backgroundVideoRef) return false;
         const { isScrolled, isMobile } = this.state;
         const { showModal } = this.props;
         const newScrollPosition = window.scrollY;
@@ -58,13 +60,12 @@ export default class VideoBackground extends Component {
                     loop
                     muted
                     autoPlay
-                    ref="video"
                     playsInline="true"
                     className="video playing"
+                    ref={this.backgroundVideoRef}
                     poster="https://thumbs.gfycat.com/FancyBrilliantDugong-poster.jpg"
                     >
-                    <source src="https://giant.gfycat.com/FancyBrilliantDugong.webm" type="video/webm"/>
-                    <source src="https://giant.gfycat.com/FancyBrilliantDugong.mp4" type="video/mp4"/>
+                    <source src={Fonzie} type="video/mp4"/>
                 </video>
                 <div className="image home"></div>
             </div>
