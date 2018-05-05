@@ -31,14 +31,17 @@ class AboutPageLayout extends Component {
 
 	render() {
         const { height } = this.state;
-        const { history, showModal, isScrolled } = this.props;
+        const { history, isMobile, showModal, isScrolled } = this.props;
 
 		return (
 			<div className="About">
 				<header style={height} className="flex flex-wrap vh-100">
                     <AboutMe />
                     <span title="Keep scrolling :)" className={`scroll-down ${isScrolled ? "" : "animate"}`}></span>
-                    <VideoBackground showModal={showModal} />
+                    <VideoBackground
+                        showModal={showModal}
+                        isMobile={isMobile}
+                        />
                 </header>
                 <section className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
                     <Navigation {...this.props} />
@@ -60,6 +63,7 @@ class AboutPageLayout extends Component {
 }
 
 const mapStateToProps = state => ({
+    isMobile: state.environmentReducer.isMobile,
     showModal: state.instagramModalReducer.isModalOpen,
     isHidden: state.navigationReducer.isHidden,
     isScrolled: state.navigationReducer.isScrolled

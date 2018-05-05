@@ -10,8 +10,9 @@ export default class VideoBackground extends Component {
     }
 
     viewportScrollHandler = () => {
-        const { isScrolled, isMobile } = this.state;
-        const { showModal } = this.props;
+        const { isScrolled } = this.state;
+        const { isMobile, showModal } = this.props;
+        if (isMobile) return false;
         const newScrollPosition = window.scrollY;
         const bgVideo = document.querySelector(".video");
         const bgVideoHeight = bgVideo.offsetHeight + 100;
@@ -52,22 +53,33 @@ export default class VideoBackground extends Component {
     }
 
     getMedia = () => {
-        return (
-            <div>
-                <video
-                    loop
-                    muted
-                    autoPlay
-                    className="video playing"
-                    preload={true.toString()}
-                    poster="https://thumbs.gfycat.com/FancyBrilliantDugong-poster.jpg"
-                    >
-                    <source src="https://giant.gfycat.com/FancyBrilliantDugong.webm" type="video/webm"/>
-                    <source src="https://giant.gfycat.com/FancyBrilliantDugong.mp4" type="video/mp4"/>
-                </video>
-                <div className="image home"></div>
-            </div>
-        );
+        const { isMobile } = this.props;
+
+        if (isMobile) {
+            return (
+                <div>
+                    <div className="image home"></div>
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <video
+                        loop
+                        muted
+                        autoPlay
+                        playsInline
+                        className="video playing"
+                        preload={true.toString()}
+                        poster="https://thumbs.gfycat.com/FancyBrilliantDugong-poster.jpg"
+                        >
+                        <source src="https://giant.gfycat.com/FancyBrilliantDugong.webm" type="video/webm"/>
+                        <source src="https://giant.gfycat.com/FancyBrilliantDugong.mp4" type="video/mp4"/>
+                    </video>
+                    <div className="image home"></div>
+                </div>
+            );
+        }
     }
 
     addEventListeners = () => {
@@ -79,6 +91,8 @@ export default class VideoBackground extends Component {
     }
 
     componentDidMount() {
+        const { isMobile } = this.props;
+
         this.viewportScrollHandler();
         this.addEventListeners();
     }
