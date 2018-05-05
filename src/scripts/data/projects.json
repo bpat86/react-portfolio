@@ -276,7 +276,10 @@
                 {
                     "videoId": 0,
                     "videoTitle": "Portfolio",
-                    "videoName": "portfolio.mp4"
+                    "videoName": "portfolio.mp4",
+                    "mp4Source": "https://giant.gfycat.com/SizzlingAjarHoopoe.mp4",
+                    "webmSource": "https://giant.gfycat.com/SizzlingAjarHoopoe.webm",
+                    "poster": "https://thumbs.gfycat.com/SizzlingAjarHoopoe-poster.jpg"
                 }
             ],
             "path": "side-projects/portfolio/",
@@ -368,7 +371,7 @@
             "title": "Forum",
             "subtitle": "A very basic forum built with Laravel",
             "role": "Development & Design",
-            "description": "A very basic open-sourced forum built with Laravel, MySQL, and Vue.js. It is very much a work in progress and I do plan to update the UI from the existing boilerplate Bootstrap.css to something a bit more custom.",
+            "description": "A very basic open-sourced forum built with Laravel, MySQL, and Vue.js following test-driven development (TDD) principles. Register as a user, create threads, reply to threads, \"like\" comments, search the forum, etc. It is very much a work in progress and I do plan to update the UI from the existing boilerplate Bootstrap.css to something a bit more custom in the near future.",
             "technology": "Laravel, MySQL, Vue.js, Reddis, Algolia",
             "year": "2017-2018",
             "externalUrl": "",
