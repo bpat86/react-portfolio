@@ -5,13 +5,12 @@ export default class VideoBackground extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isScrolled: false
+            isScrolled: false,
+            playing: false
         };
-        this.backgroundVideoRef = React.createRef();
     }
 
     viewportScrollHandler = () => {
-        if (! this.backgroundVideoRef) return false;
         const { isScrolled, isMobile } = this.state;
         const { showModal } = this.props;
         const newScrollPosition = window.scrollY;
@@ -21,11 +20,11 @@ export default class VideoBackground extends Component {
         const videoIsPlaying = videoTag.currentTime > 0 && !videoTag.paused && !videoTag.ended && videoTag.readyState > 2;
         const videoNotInView = this.previousScrollPosition > bgVideoHeight || newScrollPosition > bgVideoHeight;
 
-        if ((videoNotInView && !isScrolled && videoIsPlaying) || showModal) {
+        if ((videoNotInView && !isScrolled) || showModal) {
             this.setState({ isScrolled: true });
             this.pauseVideo(videoTag);
         }
-        if (!videoNotInView && isScrolled && !videoIsPlaying && !showModal) {
+        if (!videoNotInView && isScrolled && !showModal) {
             this.setState({ isScrolled: false });
             this.playVideo(videoTag);
         }
@@ -38,19 +37,37 @@ export default class VideoBackground extends Component {
     }
 
     playVideo = (videoTag) => {
-        videoTag.classList.add("playing");
-        videoTag.muted = true;
-        videoTag.loop = true;
-        videoTag.play();
-        console.log("playing");
+        const { playing } = this.state;
+
+        if (! playing) {
+            videoTag.classList.add("playing");
+            videoTag.muted = true;
+            videoTag.loop = true;
+            videoTag.play();
+
+            this.setState({
+                playing: true
+            });
+
+            console.log("playing");
+        }
     }
 
     pauseVideo = (videoTag) => {
-        videoTag.classList.remove("playing");
-        videoTag.muted = false;
-        videoTag.loop = false;
-        videoTag.pause();
-        console.log("paused");
+        const { playing } = this.state;
+
+        if (playing) {
+            videoTag.classList.remove("playing");
+            videoTag.muted = false;
+            videoTag.loop = false;
+            videoTag.pause();
+
+            this.setState({
+                playing: false
+            });
+
+            console.log("paused");
+        }
     }
 
     getMedia = () => {
@@ -62,7 +79,6 @@ export default class VideoBackground extends Component {
                     autoPlay
                     playsInline="true"
                     className="video playing"
-                    ref={this.backgroundVideoRef}
                     poster="https://thumbs.gfycat.com/FancyBrilliantDugong-poster.jpg"
                     >
                     <source src={Fonzie} type="video/mp4"/>
