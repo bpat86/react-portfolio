@@ -284,7 +284,7 @@
             ],
             "path": "side-projects/portfolio/",
             "parent": "side-projects",
-            "slug": "portoflio",
+            "slug": "portfolio",
             "title": "Portfolio",
             "subtitle": "The BobbyPatterson.me site redesign was built with React.js, Redux, Express.js and styled with Sass",
             "role": "Development & Design",

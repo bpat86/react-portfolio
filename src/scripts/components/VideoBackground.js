@@ -91,8 +91,6 @@ export default class VideoBackground extends Component {
     }
 
     componentDidMount() {
-        const { isMobile } = this.props;
-
         this.viewportScrollHandler();
         this.addEventListeners();
     }

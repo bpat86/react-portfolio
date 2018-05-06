@@ -70,7 +70,6 @@ export default class Project extends Component {
                     >
                     <video
                         autoPlay
-                        ref="video"
                         playsInline
                         type="video/mp4"
                         ref={this.videoRef}

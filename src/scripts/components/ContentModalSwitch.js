@@ -5,6 +5,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import { connect } from 'react-redux';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 import { initEnvironment } from '../actions/environmentAction';
 import ErrorPageLayout from '../pages/layouts/ErrorPageLayout';
 import HomePageLayout from '../pages/layouts/HomePageLayout';
@@ -42,6 +43,7 @@ class ContentModalSwitch extends Component {
 
 	    return (
 			<div>
+                { GoogleAnalytics.init() && <GoogleAnalytics.RouteTracker /> }
 			    <Switch location={isModal ? this.previousLocation : location}>
 			        <Route exact path='/' component={HomePageLayout} />
 			        <Route exact path='/work-projects/:project' component={ProjectPageLayout}></Route>
