@@ -3133,22 +3133,25 @@ img.responsive-img {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
-  -ms-grid-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
-  grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+  -ms-grid-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
+  grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
   grid-auto-flow: row;
   grid-auto-rows: 1fr; }
   .capabilities .grid img {
     height: auto;
-    padding: 0 24%;
+    padding: 0 35%;
     filter: saturate(60%);
     transition: all 0.2s ease; }
     .capabilities .grid img:hover {
       filter: saturate(100%); }
     @media only screen and (max-width: 1024px) {
       .capabilities .grid img {
-        padding: 0 .25rem;
+        padding: 0 25%;
         transition: none;
         filter: saturate(100%); } }
+    @media only screen and (max-width: 767px) {
+      .capabilities .grid img {
+        padding: 0 15%; } }
 
 .shake {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;

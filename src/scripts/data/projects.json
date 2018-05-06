@@ -27,7 +27,7 @@
 			"slug": "envita",
 			"title": "Envita Medical Center",
 			"role": "Development & Design",
-			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Envita.com as well. The goal of the redesign was to improve the user experience with a more responsive and open UI as well as and making the content real-time searchable.",
+			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Envita.com as well. The goal of the redesign was to improve the user experience with a more responsive and open UI as well as making the content searchable with Algolia.",
 			"technology": "Laravel, MySQL, jQuery, Sass, Algolia, Illustrator, Photoshop",
 			"year": "2015",
 			"externalUrl": "https://www.envita.com"

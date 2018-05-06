@@ -105,6 +105,18 @@ export default class Capabilities extends Component {
                             className="responsive-img"
                             src={require('../../assets/images/logos/capabilities/adobe-illustrator.svg')}
                             />
+                        <img
+                            alt="Adobe Premiere"
+                            title="Adobe Premiere"
+                            className="responsive-img"
+                            src={require('../../assets/images/logos/capabilities/adobe-premiere.svg')}
+                            />
+                        <img
+                            alt="Adobe After Effects"
+                            title="Adobe After Effects"
+                            className="responsive-img"
+                            src={require('../../assets/images/logos/capabilities/adobe-after-effects.svg')}
+                            />
                     </div>
                 </div>
             </div>
