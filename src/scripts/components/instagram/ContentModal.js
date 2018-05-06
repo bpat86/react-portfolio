@@ -432,19 +432,6 @@ export default class ContentModal extends Component {
 		this.getMediaDimensions();
 	}
 
-	componentWillUpdate(nextProps) {
-		const { currentPostIndex, currentCarouselPostIndex } = this.props;
-
-		if (currentPostIndex !== nextProps.currentPostIndex) {
-			this.resetVideo();
-			this.getMediaDimensions();
-		}
-
-		if (currentCarouselPostIndex !== nextProps.currentCarouselPostIndex) {
-			this.resetVideo();
-		}
-	}
-
 	componentDidUpdate(prevProps) {
 		const { currentPostIndex, currentCarouselPostIndex } = this.props;
 
