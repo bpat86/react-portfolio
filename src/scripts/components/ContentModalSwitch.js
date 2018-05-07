@@ -55,8 +55,6 @@ class ContentModalSwitch extends Component {
                         <Route exact path='/about/instagram/:id/:user?' component={InstagramPageLayout} />
                     }
                     <Route exact path='/404-page-not-found' component={ErrorPageLayout} />
-                    <Route exact path='/sitemap.xml' />
-                    <Route exact path='/robots.txt' />
                     <Redirect to="/404-page-not-found" />
 			    </Switch>
 			</div>
