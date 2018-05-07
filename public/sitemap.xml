@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex>
-	<sitemap>
+<urlset>
+	<url>
 		<loc>https://bobbypatterson.me</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/about</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/side-projects/portfolio</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/side-projects/chatify</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/side-projects/insta</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/side-projects/forum</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/envita</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/vertisis</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/unipathic</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/jegs</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/canon</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/toshiba</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/kaiser-permanente</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-	<sitemap>
+	</url>
+	<url>
 		<loc>https://bobbypatterson.me/work-projects/chanel</loc>
 		<lastmod>2018-05-07</lastmod>
-	</sitemap>
-</sitemapindex>
+	</url>
+</urlset>
