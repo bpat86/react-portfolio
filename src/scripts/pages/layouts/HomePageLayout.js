@@ -62,7 +62,7 @@ class HomePageLayout extends Component {
                         <div className="container mx-auto">
                             <div className="projects mtb-6">
                                 <span className="lrg-text-size bold flex">Featured Work Projects</span>
-                                <span className="md-text-size flex faded mb-1">{`2017 – ${ getCurrentYear() }`}</span>
+                                <span className="md-text-size flex faded mb-1">{`2014 – ${ getCurrentYear() }`}</span>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
                 				<ProjectThumbnails
                                     history={history}

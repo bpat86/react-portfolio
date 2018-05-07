@@ -37,7 +37,7 @@ export default class Navigation extends Component {
     navigationIsScrolled = () => {
         const { dispatch, isScrolled } = this.props;
         const newScrollPosition = window.scrollY;
-        const maximumScrollLengthAchieved = this.previousScrollPosition > 60 || newScrollPosition > 60;
+        const maximumScrollLengthAchieved = this.previousScrollPosition > 10 || newScrollPosition > 10;
 
         if (maximumScrollLengthAchieved && !isScrolled) {
             dispatch(navigationIsScrolled(types.NAVIGATION_CHANGE_TYPES.SCROLLED_TO_TARGET));
