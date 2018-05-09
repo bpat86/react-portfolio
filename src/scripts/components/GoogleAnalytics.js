@@ -54,9 +54,12 @@ const RouteTracker = () => {
 const init = (options = {}) => {
     const env = process.env || {};
     const isGAEnabled = !!env.REACT_APP_GA_TRACKING_ID;
-    let gaScriptExists = document.querySelectorAll("script[src='https://www.google-analytics.com/analytics.js']").length > 0;
+    const gaScript = document.querySelector("script[src='https://www.google-analytics.com/analytics.js']");
 
-    if (gaScriptExists) return false;
+    if (gaScript) {
+        gaScript.remove();
+    }
+
     if (isGAEnabled) {
         ReactGA.initialize(
             env.REACT_APP_GA_TRACKING_ID, {
