@@ -66,6 +66,7 @@ export default class Project extends Component {
                     className="project-media"
                     >
                     <video
+                        muted
                         autoPlay
                         playsInline
                         type="video/mp4"
