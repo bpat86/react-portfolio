@@ -15,7 +15,7 @@ export default class VideoBackground extends Component {
         if (isMobile) return false;
         const newScrollPosition = window.scrollY;
         const bgVideo = document.querySelector(".video");
-        const bgVideoHeight = bgVideo.offsetHeight + 100;
+        const bgVideoHeight = bgVideo.offsetHeight;
         const videoTag = bgVideo;
         const videoIsPlaying = videoTag.currentTime > 0 && !videoTag.paused && !videoTag.ended && videoTag.readyState > 2;
         const videoNotInView = this.previousScrollPosition > bgVideoHeight || newScrollPosition > bgVideoHeight;

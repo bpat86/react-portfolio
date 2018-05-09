@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import LinkArrow from '../LinkArrow';
@@ -17,6 +18,29 @@ export default class InstagramSinglePage extends Component {
             mediaInlineStyle: null,
             buttonContainerInlineStyle: null
         };
+    }
+
+    addMetaTags = (currentPost) => {
+        return (
+            <Helmet>
+                <meta name="robots" content="noindex, nofollow" />
+                <title>Bobby Patterson | {currentPost.caption.text || currentPost.user.username}</title>
+                <meta name="description" content={`${currentPost.caption.text || currentPost.user.username}`} />
+                <meta name="keywords" content={`${currentPost.user.username}, Instagram, Bobby Patterson`} />
+                <meta property="og:url" content={`https://bobbypatterson.me/about/instagram/${currentPost.id}/?taken-by=${currentPost.user.username}`} />
+                <meta property="og:title" content={`Bobby Patterson | ${currentPost.caption.text || currentPost.user.username}`} />
+                <meta property="og:site_name" content={`Bobby Patterson | ${currentPost.caption.text || currentPost.user.username}`} />
+                <meta property="og:description" content={`${currentPost.caption.text || currentPost.user.username}`} />
+                <meta property="og:image" content="https://bobbypatterson.me/aboutme.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@bobbypatterson" />
+                <meta name="twitter:creator" content="@bobbypatterson" />
+                <meta name="twitter:title" content={`Bobby Patterson | ${currentPost.caption.text || currentPost.user.username}`} />
+                <meta name="twitter:description" content={`${currentPost.caption.text || currentPost.user.username}`} />
+                <meta name="twitter:image" content="https://bobbypatterson.me/aboutme.jpg" />
+                <link rel="canonical" href={`https://bobbypatterson.me/about/instagram/${currentPost.id}/?taken-by=${currentPost.user.username}`} />
+            </Helmet>
+        );
     }
 
     getMediaDimensions = () => {
@@ -302,6 +326,7 @@ export default class InstagramSinglePage extends Component {
                 {
                     loading ? <LoadingSpinner /> :
                     <div className="flex-container">
+                        { this.addMetaTags(currentPost) }
                         <div className="InstagramSinglePage">
                             <Link
                                 title="Go back"

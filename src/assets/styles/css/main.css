@@ -3169,15 +3169,15 @@ img.responsive-img {
   40%, 60% {
     transform: translate3d(4px, 0, 0); } }
 /* navigation */
-.Home .navigation-bar, .About .navigation-bar {
+.Home .navigation-bar, .About .navigation-bar, .Error .navigation-bar {
   background-color: transparent;
   border-top: 2px solid transparent;
   border-bottom: 1px solid transparent; }
-  .Home .navigation-bar.scrolled, .About .navigation-bar.scrolled {
+  .Home .navigation-bar.scrolled, .About .navigation-bar.scrolled, .Error .navigation-bar.scrolled {
     background-color: rgba(78, 101, 225, 0.96); }
-  .Home .navigation-bar li.navigation-section a, .Home .navigation-bar li.navigation-section div, .Home .navigation-bar li.navigation-section span, .About .navigation-bar li.navigation-section a, .About .navigation-bar li.navigation-section div, .About .navigation-bar li.navigation-section span {
+  .Home .navigation-bar li.navigation-section a, .Home .navigation-bar li.navigation-section div, .Home .navigation-bar li.navigation-section span, .About .navigation-bar li.navigation-section a, .About .navigation-bar li.navigation-section div, .About .navigation-bar li.navigation-section span, .Error .navigation-bar li.navigation-section a, .Error .navigation-bar li.navigation-section div, .Error .navigation-bar li.navigation-section span {
     color: #d7e5f4; }
-  .Home .navigation-bar li.navigation-section h1, .About .navigation-bar li.navigation-section h1 {
+  .Home .navigation-bar li.navigation-section h1, .About .navigation-bar li.navigation-section h1, .Error .navigation-bar li.navigation-section h1 {
     color: #F7FAFE; }
 
 .navigation-bar {

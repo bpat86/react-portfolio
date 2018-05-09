@@ -52,7 +52,7 @@ const init = (options = {}) => {
     const env = process.env || {};
     const isGAEnabled = !!env.REACT_APP_GA_TRACKING_ID;
 
-    if (env.REACT_APP_ENVIRONMENT_IS_DEVELOPMENT === 'true') return false;
+    //if (env.REACT_APP_ENVIRONMENT_IS_DEVELOPMENT === 'true') return false;
     if (isGAEnabled) {
         ReactGA.initialize(
             env.REACT_APP_GA_TRACKING_ID, {

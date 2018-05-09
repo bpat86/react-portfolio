@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import Hero from '../../components/Hero';
@@ -16,6 +17,30 @@ class HomePageLayout extends Component {
             height: null
         };
     }
+
+    addMetaTags = () => {
+        return (
+            <Helmet>
+                <title>Bobby Patterson | Portfolio</title>
+                <meta name="robots" content="index, follow" />
+                <meta name="description" content="Hello! I'm Bobby Patterson, a multidisciplinary developer and UI designer living in Tempe, Arizona. I have experience in all aspects of the development life-cycle, but I specialize in front-end development. I am experienced in an agency setting and I've built sites for smaller businesses. I have been fortunate in my career to have worked on projects for Canon, Toshiba, and Kaiser Permanente as a designer or developer. I really enjoy finding solutions to complicated problems." />
+                <meta name="keywords" content="Bobby Patterson, Full Stack Developer, Front-end Developer, UI designer, Tempe, Phoenix, Scottsdale" />
+                <meta property="og:url" content="https://bobbypatterson.me" />
+                <meta property="og:title" content="Bobby Patterson | Portfolio" />
+                <meta property="og:site_name" content="Bobby Patterson | Portfolio" />
+                <meta property="og:description" content="Hello! I'm Bobby Patterson, a multidisciplinary developer and UI designer living in Tempe, Arizona. I have experience in all aspects of the development life-cycle, but I specialize in front-end development. I am experienced in an agency setting and I've built sites for smaller businesses. I have been fortunate in my career to have worked on projects for Canon, Toshiba, and Kaiser Permanente as a designer or developer. I really enjoy finding solutions to complicated problems." />
+                <meta property="og:image" content="https://bobbypatterson.me/aboutme.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@bobbypatterson" />
+                <meta name="twitter:creator" content="@bobbypatterson" />
+                <meta name="twitter:title" content="Bobby Patterson | Portfolio" />
+                <meta name="twitter:description" content="Hello! I'm Bobby Patterson, a multidisciplinary developer and UI designer living in Tempe, Arizona. I have experience in all aspects of the development life-cycle, but I specialize in front-end development. I am experienced in an agency setting and I've built sites for smaller businesses. I have been fortunate in my career to have worked on projects for Canon, Toshiba, and Kaiser Permanente as a designer or developer. I really enjoy finding solutions to complicated problems." />
+                <meta name="twitter:image" content="https://bobbypatterson.me/aboutme.jpg" />
+                <link rel="canonical" href="https://bobbypatterson.me" />
+            </Helmet>
+        );
+    }
+
     getHeaderHeight = () => {
         const header = document.querySelector('header').offsetHeight;
         const headerStyle = {
@@ -38,6 +63,7 @@ class HomePageLayout extends Component {
 
 		return (
 			<div className="Home">
+                { this.addMetaTags() }
                 <header style={height} className="flex flex-wrap vh-100">
                     <Hero />
                     <ProfessionalProfile />

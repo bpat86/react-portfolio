@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { throttle } from 'lodash';
@@ -17,6 +18,29 @@ export default class Project extends Component {
             propHistory: []
         };
         this.videoRef = React.createRef();
+    }
+
+    addMetaTags = (project) => {
+        return (
+            <Helmet>
+                <title>Bobby Patterson | {project.title}</title>
+                <meta name="robots" content="index, follow" />
+                <meta name="description" content={project.description} />
+                <meta name="keywords" content={`${project.title}, ${project.technology}, ${project.role}, Bobby Patterson`} />
+                <meta property="og:url" content={`https://bobbypatterson.me/${project.parent}/${project.slug}`} />
+                <meta property="og:title" content={`Bobby Patterson | ${project.title}`} />
+                <meta property="og:site_name" content={`Bobby Patterson | ${project.title}`} />
+                <meta property="og:description" content={project.description} />
+                <meta property="og:image" content="https://bobbypatterson.me/aboutme.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@bobbypatterson" />
+                <meta name="twitter:creator" content="@bobbypatterson" />
+                <meta name="twitter:title" content={`Bobby Patterson | ${project.title}`} />
+                <meta name="twitter:description" content={project.description} />
+                <meta name="twitter:image" content="https://bobbypatterson.me/aboutme.jpg" />
+                <link rel="canonical" href={`https://bobbypatterson.me/${project.parent}/${project.slug}`} />
+            </Helmet>
+        );
     }
 
     getProject = () => {
@@ -208,6 +232,7 @@ export default class Project extends Component {
                                 {
                                     loading ? <Loader /> :
                                     <div>
+                                        { this.addMetaTags(project) }
                                         <Link
                                             title="Go back to home"
                                             className="back-button mb-1"

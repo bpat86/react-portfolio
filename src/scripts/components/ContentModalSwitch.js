@@ -10,7 +10,6 @@ import { initEnvironment } from '../actions/environmentAction';
 import ErrorPageLayout from '../pages/layouts/ErrorPageLayout';
 import HomePageLayout from '../pages/layouts/HomePageLayout';
 import AboutPageLayout from '../pages/layouts/AboutPageLayout';
-import ContactPageLayout from '../pages/layouts/ContactPageLayout';
 import InstagramPageLayout from '../pages/layouts/InstagramPageLayout';
 import ProjectPageLayout from '../pages/layouts/work/ProjectPageLayout';
 import SideProjectPageLayout from '../pages/layouts/projects/ProjectPageLayout';
