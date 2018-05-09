@@ -45,14 +45,18 @@ GoogleAnalytics.propTypes = {
     options: PropTypes.object
 }
 
-const RouteTracker = () =>
-    <Route component={GoogleAnalytics} />
+const RouteTracker = () => {
+    return (
+        <Route component={GoogleAnalytics} />
+    );
+}
 
 const init = (options = {}) => {
     const env = process.env || {};
     const isGAEnabled = !!env.REACT_APP_GA_TRACKING_ID;
+    let gaScriptExists = document.querySelectorAll("script[src='https://www.google-analytics.com/analytics.js']").length > 0;
 
-    //if (env.REACT_APP_ENVIRONMENT_IS_DEVELOPMENT === 'true') return false;
+    if (gaScriptExists) return false;
     if (isGAEnabled) {
         ReactGA.initialize(
             env.REACT_APP_GA_TRACKING_ID, {

@@ -38,7 +38,7 @@ class ContentModalSwitch extends Component {
             location.pathname.includes('_') &&
             this.previousLocation !== location &&
             !isMobile
-	    )
+	    );
 
 	    return (
 			<div>
