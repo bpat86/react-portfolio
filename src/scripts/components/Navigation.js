@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../data/routes';
 import taglines from '../data/taglines';
-import NameTerminal from './NameTerminal';
 import * as types from '../constants/ActionTypes';
 import MobileNavigation from '../components/mobile/MobileNavigation';
 import HamburgerMenuButton from '../components/mobile/HamburgerMenuButton';
@@ -180,7 +179,7 @@ export default class Navigation extends Component {
                                         <h1
                                             className={`name-logo absolute ${isHidden ? "" : "animate"}`}
                                             >
-                                            <NameTerminal />
+                                            bobbypatterson:~$
                                         </h1>
                                         <div className="tagline absolute">{taglines}</div>
                                     </Link>
