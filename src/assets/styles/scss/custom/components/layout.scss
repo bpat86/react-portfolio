@@ -72,12 +72,11 @@ a {
             margin-left: 8px;
             fill: $black;
             @include tablet {
-                margin-bottom: 1px;
+                margin-bottom: 0;
             }
         }
     }
     &.paragraph-link {
-        display: inline-block;
         line-height: inherit;
         font-size: inherit;
         &.bg-round {
