@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../assets/images/logos/bobbypattersonWhite.svg';
+import Name from './Name';
 
 export default class Hero extends Component {
     constructor () {
@@ -77,7 +78,7 @@ export default class Hero extends Component {
         return (
         	<div className="hero flex-align-center w-full flex-column mt-4 px-3">
 			    <div className="heroName">
-                    <img alt="Bobby Patterson" src={logo} />
+                    <Name />
                 </div>
                 <div
                     className={`heroTitle ${isComplete ? "done" : "typing"}`}

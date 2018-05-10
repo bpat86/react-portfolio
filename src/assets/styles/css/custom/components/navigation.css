@@ -10,9 +10,9 @@ Error: Undefined variable: "$blue".
 8:             background-color: rgba($blue, 0.96);
 9:         }
 10:         li.navigation-section {
-11:             a, div, span {
-12:                 color: $intro;
-13:             }
+11:             .logo {
+12:                 svg {
+13:                     fill: $white !important;
 
 Backtrace:
 src/assets/styles/scss/custom/components/navigation.scss:8
@@ -99,4 +99,4 @@ src/assets/styles/scss/custom/components/navigation.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 8 of src/assets/styles/scss/custom/components/navigation.scss\A \A 3:     .navigation-bar {\A 4:         background-color: transparent;\A 5:         border-top: 2px solid transparent;\A 6:         border-bottom: 1px solid transparent;\A 7:         &.scrolled {\A 8:             background-color: rgba($blue, 0.96);\A 9:         }\A 10:         li.navigation-section {\A 11:             a, div, span {\A 12:                 color: $intro;\A 13:             }"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 8 of src/assets/styles/scss/custom/components/navigation.scss\A \A 3:     .navigation-bar {\A 4:         background-color: transparent;\A 5:         border-top: 2px solid transparent;\A 6:         border-bottom: 1px solid transparent;\A 7:         &.scrolled {\A 8:             background-color: rgba($blue, 0.96);\A 9:         }\A 10:         li.navigation-section {\A 11:             .logo {\A 12:                 svg {\A 13:                     fill: $white !important;"; }

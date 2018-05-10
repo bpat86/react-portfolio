@@ -17,6 +17,6 @@ export default class LinkArrowBack extends Component {
                     >
                 </path>
             </svg>
-        )
+        );
     }
 }

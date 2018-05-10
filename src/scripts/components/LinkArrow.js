@@ -16,6 +16,6 @@ export default class LinkArrow extends Component {
                     >
                 </path>
             </svg>
-        )
+        );
     }
 }

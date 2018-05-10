@@ -8,6 +8,11 @@
             background-color: rgba($blue, 0.96);
         }
         li.navigation-section {
+            .logo {
+                svg {
+                    fill: $white !important;
+                }
+            }
             a, div, span {
                 color: $intro;
             }
@@ -102,6 +107,14 @@
                                 opacity: 0;
                             }
                         }
+                    }
+                }
+                svg {
+                    max-width: 100%;
+                    height: 20px;
+                    fill: $black;
+                    @include tablet {
+                        height: 17px;
                     }
                 }
                 img {
