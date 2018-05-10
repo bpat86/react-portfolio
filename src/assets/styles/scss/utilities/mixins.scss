@@ -22,11 +22,9 @@ $unmuteButton: url(../../../assets/images/buttons/unmuteButton.svg);
 $downArrow: url(../../../assets/images/buttons/down-arrow.svg);
 
 /* Font variables */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Fira+Mono:400,500|Fira+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Fira+Mono:500');
 $sourceSans: 'Source Sans Pro', sans-serif;
-$menlo: 'Menlo-Regular', Menlo, monospace;
 $fira: 'Fira Mono', Menlo-Regular, Menlo, monospace;
-$firaSans: 'Fira Sans', Helvetica, sans-serif;
 
 /* Media Queries */
 $mobile: "only screen and (max-width: 40em)";

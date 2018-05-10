@@ -74,7 +74,7 @@
                 user-select: none;          /* Likely future */
                 opacity: 0;
                 .likes {
-                    @include font($firaSans, 600);
+                    @include font($sourceSans, 600);
                     letter-spacing: 0.03em;
                     .fa {
                         margin: 0;

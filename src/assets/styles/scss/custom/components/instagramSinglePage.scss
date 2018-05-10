@@ -10,7 +10,7 @@ article.contentContainer {
     border: 1px solid #efefef;
     .mediaContainer {
         .likes {
-            @include font($sourceSans, 400);
+            @include font($sourceSans, 600);
             @include font-size(15px);
             letter-spacing: 0.025rem;
             position: absolute;
@@ -350,7 +350,7 @@ article.contentContainer {
                 opacity: 0.7;
             }
             .postedLocation {
-                @include font($sourceSans, 400);
+                @include font($sourceSans, 600);
                 @include font-size(15px);
                 text-decoration: underline;
                 height: auto;
@@ -360,11 +360,11 @@ article.contentContainer {
                 .fa {
                     margin-left: 3px;
                     margin-right: 9px;
-                    @include font-size(14px);
+                    @include font-size(13px);
                 }
             }
             .likes {
-                @include font($sourceSans, 400);
+                @include font($sourceSans, 600);
                 @include font-size(15px);
                 letter-spacing: 0.025rem;
                 position: relative;
@@ -374,7 +374,7 @@ article.contentContainer {
                 .fa {
                     margin: 0;
                     margin-right: 2px;
-                    @include font-size(14px);
+                    @include font-size(13px);
                 }
             }
             .captions, .comments {

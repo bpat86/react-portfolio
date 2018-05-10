@@ -5,7 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Fira+Mono:400,500|Fira+Sans:300,400");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Fira+Mono:500");
 @font-face {
   font-family: 'FontAwesome';
   src: url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -3730,7 +3730,7 @@ header .scroll-down.animate {
     /* Likely future */
     opacity: 0; }
     .instagramFeed .post .postLinks .info .likes {
-      font-family: "Fira Sans", Helvetica, sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -3963,7 +3963,7 @@ article.contentModal {
     user-select: none; }
     article.contentModal .mediaContainer .likes {
       font-family: "Source Sans Pro", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -4283,7 +4283,7 @@ article.contentModal {
       opacity: 0.7; }
     article.contentModal .contentSideBar .sideBarInfo .postedLocation {
       font-family: "Source Sans Pro", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -4297,11 +4297,11 @@ article.contentModal {
       article.contentModal .contentSideBar .sideBarInfo .postedLocation .fa {
         margin-left: 4px;
         margin-right: 10px;
-        font-size: 14px;
-        font-size: 0.875rem; }
+        font-size: 13px;
+        font-size: 0.8125rem; }
     article.contentModal .contentSideBar .sideBarInfo .likes {
       font-family: "Source Sans Pro", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -4316,8 +4316,8 @@ article.contentModal {
         margin: 0;
         margin-left: 1px;
         margin-right: 2px;
-        font-size: 14px;
-        font-size: 0.875rem; }
+        font-size: 13px;
+        font-size: 0.8125rem; }
     article.contentModal .contentSideBar .sideBarInfo .captions, article.contentModal .contentSideBar .sideBarInfo .comments {
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 400;
@@ -4372,7 +4372,7 @@ article.contentContainer {
   border: 1px solid #efefef; }
   article.contentContainer .mediaContainer .likes {
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -4688,7 +4688,7 @@ article.contentContainer {
       opacity: 0.7; }
     article.contentContainer .contentSideBar .sideBarInfo .postedLocation {
       font-family: "Source Sans Pro", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -4703,11 +4703,11 @@ article.contentContainer {
       article.contentContainer .contentSideBar .sideBarInfo .postedLocation .fa {
         margin-left: 3px;
         margin-right: 9px;
-        font-size: 14px;
-        font-size: 0.875rem; }
+        font-size: 13px;
+        font-size: 0.8125rem; }
     article.contentContainer .contentSideBar .sideBarInfo .likes {
       font-family: "Source Sans Pro", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -4722,8 +4722,8 @@ article.contentContainer {
       article.contentContainer .contentSideBar .sideBarInfo .likes .fa {
         margin: 0;
         margin-right: 2px;
-        font-size: 14px;
-        font-size: 0.875rem; }
+        font-size: 13px;
+        font-size: 0.8125rem; }
     article.contentContainer .contentSideBar .sideBarInfo .captions, article.contentContainer .contentSideBar .sideBarInfo .comments {
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 400;
