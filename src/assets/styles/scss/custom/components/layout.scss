@@ -125,9 +125,6 @@ a, div, span {
         border-radius: 25px;
         line-height: 1.5rem;
         width: auto !important;
-        @include tablet {
-            line-height: 1.2rem;
-        }
         &.light {
             background-color: rgba(#B89AF3, 0.15);
             padding-bottom: 1px;

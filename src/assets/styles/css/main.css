@@ -2912,9 +2912,6 @@ a.bg-round, div.bg-round, span.bg-round {
   border-radius: 25px;
   line-height: 1.5rem;
   width: auto !important; }
-  @media only screen and (max-width: 1024px) {
-    a.bg-round, div.bg-round, span.bg-round {
-      line-height: 1.2rem; } }
   a.bg-round.light, div.bg-round.light, span.bg-round.light {
     background-color: rgba(184, 154, 243, 0.15);
     padding-bottom: 1px;
