@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../assets/images/logos/bobbypattersonWhite.svg';
+//import logo from '../../assets/images/logos/bobbypattersonWhite.svg';
 import Name from './Name';
 
 export default class Hero extends Component {

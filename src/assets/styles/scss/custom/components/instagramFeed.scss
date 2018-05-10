@@ -78,8 +78,8 @@
                     letter-spacing: 0.03em;
                     .fa {
                         margin: 0;
-                        margin-right: 5px;
-                        font-size: 90%;
+                        margin-right: 6px;
+                        @include font-size(13px);
                     }
                 }
             }

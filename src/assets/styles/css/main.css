@@ -3739,8 +3739,9 @@ header .scroll-down.animate {
       letter-spacing: 0.03em; }
       .instagramFeed .post .postLinks .info .likes .fa {
         margin: 0;
-        margin-right: 5px;
-        font-size: 90%; }
+        margin-right: 6px;
+        font-size: 13px;
+        font-size: 0.8125rem; }
   .instagramFeed .post .postLinks .carouselContainer {
     position: absolute;
     top: 0;
