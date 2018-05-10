@@ -24,7 +24,7 @@ if (! dev) {
         return next();
     });
 
-    app.use(express.static(path.resolve(__dirname, 'build')));
+    app.use(express.static(path.resolve(__dirname, 'build'), {maxAge: '30d'}));
 
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
