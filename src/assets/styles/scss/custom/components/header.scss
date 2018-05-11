@@ -140,6 +140,10 @@ header {
                 bottom: 3rem;
                 left: -1.5rem;
             }
+            @include phablet {
+                bottom: 3rem;
+                left: 1.25rem;
+            }
             &:after {
                 position: absolute;
                 content: '';
