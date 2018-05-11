@@ -175,7 +175,7 @@ a, div, span {
         top: 50px;
     }
 }
-p, .label, .md-text-size, .lrg-text-size {
+p, .label, .sm-text-size, .md-text-size, .lrg-text-size {
     @include font($sourceSans, 400);
     letter-spacing: .02em;
     color: $black;
@@ -192,6 +192,12 @@ p {
 .label {
     margin-right: .6rem;
     font-weight: 600;
+}
+.sm-text-size {
+    @include font-size(12px);
+    @include mobile-xs {
+        @include font-size(10px);
+    }
 }
 .md-text-size, .label {
     @include font-size(14px);
@@ -268,7 +274,7 @@ img {
 .Home, .About, .Error {
     .footer {
         &.bg-transparent {
-            p, .label, .md-text-size, .lrg-text-size {
+            p, .label, .sm-text-size, .md-text-size, .lrg-text-size {
                 color: $white;
             }
         }

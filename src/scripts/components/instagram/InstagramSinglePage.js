@@ -414,7 +414,7 @@ export default class InstagramSinglePage extends Component {
                                         </Link>
                                         <Link
                                             target="blank"
-                                            className="button mb-1"
+                                            className="button bg-round mb-1"
                                             to={currentPost.link}
                                             >
                                             View on Instagram.com

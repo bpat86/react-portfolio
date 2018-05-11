@@ -212,7 +212,7 @@ export default class ContentModal extends Component {
 							</Link>
 							<Link
 								title="View on Instagram.com"
-								className="button mb-1"
+								className="button bg-round mb-1"
 								target="blank"
 								to={currentPost.link}
 								>
