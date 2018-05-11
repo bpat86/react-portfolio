@@ -2847,6 +2847,8 @@ a {
   a:hover {
     color: inherit; }
   a.paragraph-link, a.button, a.back-button {
+    display: inline-flex;
+    align-items: center;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -2869,32 +2871,22 @@ a {
       a.paragraph-link:hover svg, a.button:hover svg, a.back-button:hover svg {
         fill: #4e65e1; }
     a.paragraph-link svg, a.button svg, a.back-button svg {
-      margin-bottom: 2px;
       margin-left: 8px;
       fill: #222936; }
-      @media only screen and (max-width: 1024px) {
-        a.paragraph-link svg, a.button svg, a.back-button svg {
-          margin-bottom: 0; } }
   a.paragraph-link {
     line-height: inherit;
     font-size: inherit; }
-    a.paragraph-link.bg-round {
-      padding-bottom: 2px; }
-      a.paragraph-link.bg-round svg {
-        fill: #F7FAFE; }
+    a.paragraph-link.bg-round svg {
+      fill: #F7FAFE; }
     a.paragraph-link.blue {
       color: #4e65e1; }
       a.paragraph-link.blue svg {
         fill: #4e65e1; }
   a.button {
-    display: inline-block;
     position: relative;
     line-height: inherit;
     font-weight: 600; }
-    a.button svg {
-      margin-bottom: 1px; }
   a.back-button {
-    display: inline-block;
     position: relative;
     font-weight: 600; }
     a.back-button.blue {
@@ -2902,7 +2894,6 @@ a {
       a.back-button.blue svg {
         fill: #4e65e1; }
     a.back-button svg {
-      margin-bottom: 1px;
       margin-left: 0;
       margin-right: 8px; }
 
@@ -2910,15 +2901,14 @@ a.bg-round, div.bg-round, span.bg-round {
   background-color: rgba(0, 0, 140, 0.15);
   padding: 0 0.6rem;
   border-radius: 25px;
-  line-height: 1.5rem;
   width: auto !important; }
   a.bg-round.light, div.bg-round.light, span.bg-round.light {
     background-color: rgba(184, 154, 243, 0.15);
-    padding-bottom: 1px;
     color: #F7FAFE; }
     a.bg-round.light:hover, div.bg-round.light:hover, span.bg-round.light:hover {
       color: #F7FAFE; }
     a.bg-round.light svg, div.bg-round.light svg, span.bg-round.light svg {
+      height: 1.5rem;
       fill: #F7FAFE; }
 a .cta-pill, div .cta-pill, span .cta-pill {
   padding: 0 0.5rem;

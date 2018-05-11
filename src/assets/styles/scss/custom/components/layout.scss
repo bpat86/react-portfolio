@@ -48,6 +48,8 @@ a {
         color: inherit;
     }
     &.paragraph-link, &.button, &.back-button {
+        display: inline-flex;
+        align-items: center;
         @include font($sourceSans, 400);
         @include font-size(14px);
         letter-spacing: .02em;
@@ -68,19 +70,14 @@ a {
             }
         }
         svg {
-            margin-bottom: 2px;
             margin-left: 8px;
             fill: $black;
-            @include tablet {
-                margin-bottom: 0;
-            }
         }
     }
     &.paragraph-link {
         line-height: inherit;
         font-size: inherit;
         &.bg-round {
-            padding-bottom: 2px;
             svg {
                 fill: $white;
             }
@@ -93,16 +90,11 @@ a {
         }
     }
     &.button {
-        display: inline-block;
         position: relative;
         line-height: inherit;
         font-weight: 600;
-        svg {
-            margin-bottom: 1px;
-        }
     }
     &.back-button {
-        display: inline-block;
         position: relative;
         font-weight: 600;
         &.blue {
@@ -112,7 +104,6 @@ a {
             }
         }
         svg {
-            margin-bottom: 1px;
             margin-left: 0;
             margin-right: 8px;
         }
@@ -123,16 +114,15 @@ a, div, span {
         background-color: rgba(0,0,140,0.15);
         padding: 0 0.6rem;
         border-radius: 25px;
-        line-height: 1.5rem;
         width: auto !important;
         &.light {
             background-color: rgba(#B89AF3, 0.15);
-            padding-bottom: 1px;
             color: $white;
             &:hover {
                 color: $white;
             }
             svg {
+                height: 1.5rem;
                 fill: $white;
             }
         }
