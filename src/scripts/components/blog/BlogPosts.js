@@ -24,7 +24,7 @@ export default class BlogPosts extends Component {
                     posts: responseData
                 });
 
-                console.log(responseData);
+                //console.log(responseData);
                 return responseData;
             })
             .catch(error => {

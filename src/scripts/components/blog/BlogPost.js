@@ -53,7 +53,7 @@ export default class BlogPost extends Component {
                     post: postIndex
                 });
 
-                console.log(postIndex);
+                //console.log(postIndex);
                 return responseData;
             })
             .catch(error => {
