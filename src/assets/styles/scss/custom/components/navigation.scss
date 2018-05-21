@@ -22,6 +22,29 @@
         }
     }
 }
+.Blog {
+    .navigation-bar {
+        background-color: transparent;
+        border-top: 2px solid transparent;
+        border-bottom: 1px solid transparent;
+        &.scrolled {
+            background-color: rgba($white, 0.96);
+        }
+        li.navigation-section {
+            .logo {
+                svg {
+                    fill: $black !important;
+                }
+            }
+            a, div, span {
+                color: $black;
+            }
+            h1 {
+                color: $black;
+            }
+        }
+    }
+}
 .navigation-bar {
     left: 0;
     top: 0;

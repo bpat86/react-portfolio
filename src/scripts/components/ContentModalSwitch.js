@@ -10,9 +10,11 @@ import { initEnvironment } from '../actions/environmentAction';
 import ErrorPageLayout from '../pages/layouts/ErrorPageLayout';
 import HomePageLayout from '../pages/layouts/HomePageLayout';
 import AboutPageLayout from '../pages/layouts/AboutPageLayout';
+import BlogPostsPageLayout from '../pages/layouts/BlogPostsPageLayout';
 import InstagramPageLayout from '../pages/layouts/InstagramPageLayout';
 import ProjectPageLayout from '../pages/layouts/work/ProjectPageLayout';
 import SideProjectPageLayout from '../pages/layouts/projects/ProjectPageLayout';
+import BlogSinglePostPageLayout from '../pages/layouts/blog/BlogSinglePostPageLayout';
 
 class ContentModalSwitch extends Component {
 	previousLocation = this.props.location;
@@ -53,6 +55,8 @@ class ContentModalSwitch extends Component {
                         <Route exact path='/about/instagram/:id/:user?' component={AboutPageLayout} /> :
                         <Route exact path='/about/instagram/:id/:user?' component={InstagramPageLayout} />
                     }
+                    <Route exact path='/blog' component={BlogPostsPageLayout} />
+                    <Route exact path='/blog/:post' component={BlogSinglePostPageLayout} />
                     <Route exact path='/404-page-not-found' component={ErrorPageLayout} />
                     <Redirect to="/404-page-not-found" />
 			    </Switch>

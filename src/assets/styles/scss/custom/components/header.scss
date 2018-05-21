@@ -1,5 +1,60 @@
+.fixed-bg {
+    .bg-image {
+        position: fixed;
+        background-color: $white;
+        width: 100%;
+        width: 100vw;
+        height: 100%;
+        height: 100vh;
+        z-index: -1;
+        pointer-events: none;
+    }
+    .image {
+        position: absolute;
+        background-size: cover;
+        background-position: 0 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        @include tablet {
+            background-position: right;
+        }
+        &.home {
+            opacity: 0;
+            background-image: $home;
+            animation: fadeIn 1s ease-out forwards;
+            @include tablet {
+                opacity: 1;
+                animation: none;
+            }
+        }
+        &.about-me {
+            opacity: 0;
+            background-image: $aboutMe;
+            animation: fadeIn 1s ease-out forwards;
+            @include tablet {
+                opacity: 1;
+                animation: none;
+                background-image: $home;
+            }
+        }
+        &.blog {
+            background-image: $blog;
+            opacity: 0.18;
+            @include tablet {
+                background-image: none;
+            }
+        }
+        &.error {
+            opacity: 0.06;
+            background-image: $error;
+        }
+    }
+}
 header {
-    .lrg-text-size, .md-text-size {
+    .sm-text-size, .md-text-size, .lrg-text-size, .xl-text-size {
         color: $white;
     }
     ul.social {
@@ -27,6 +82,15 @@ header {
     mark {
         background-color: transparent;
         color: $intro;
+    }
+    p {
+        @include font-size(19px);
+        @include tablet {
+            @include font-size(15px);
+        }
+        @include mobile-xs {
+            @include font-size(12px);
+        }
     }
     a {
         svg {
@@ -117,6 +181,16 @@ header {
         &.about-me {
             opacity: 0;
             background-image: $aboutMe;
+            animation: fadeIn 1s ease-out forwards;
+            @include tablet {
+                opacity: 1;
+                animation: none;
+                background-image: $home;
+            }
+        }
+        &.blog {
+            opacity: 0;
+            background-image: $blog;
             animation: fadeIn 1s ease-out forwards;
             @include tablet {
                 opacity: 1;

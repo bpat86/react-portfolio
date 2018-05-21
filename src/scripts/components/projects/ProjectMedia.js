@@ -275,7 +275,7 @@ export default class Project extends Component {
                                             <div>
                                                 <Link
                                                     target="blank"
-                                                    className="button bg-round mb-2"
+                                                    className="button bg-round mt-1 mb-2"
                                                     to={project.gitHubUrl}
                                                     >
                                                     View this project on GitHub

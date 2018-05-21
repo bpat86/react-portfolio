@@ -10,6 +10,10 @@
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .15);
 }
 
+.rounded-corners {
+    border-radius: 2px;
+}
+
 .fa {
     &.small {
         transform: scale(.75);
@@ -30,6 +34,9 @@
 .bg-transparent {
     background-color: transparent;
 }
+.bg-intro {
+    background-color: $intro;
+}
 .bg-white {
     background-color: $white;
 }
@@ -42,6 +49,24 @@
 .bg-blue {
     background-color: $blue;
 }
+.bg-blue-lightest {
+    background-color: #e6ebfb;
+}
+
+.border-left-blue {
+    border-left: 4px solid $blue;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.py-3 {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+.text-blue-darkest {
+    color: #12283a;
+}
 
 .color-black {
     color: $black;
@@ -49,7 +74,6 @@
 .color-blue {
     color: $blue;
 }
-
 .fw-light {
     font-weight: 300;
 }
@@ -158,10 +182,15 @@
 .mb-3 {
     margin-bottom: 3rem;
 }
+.mb-4 {
+    margin-bottom: 4rem;
+}
 .mb-6 {
     margin-bottom: 6rem;
 }
-
+.nmt-1 {
+    margin-top: -1rem;
+}
 .nmt-2 {
     margin-top: -2px;
 }
@@ -249,7 +278,27 @@
     opacity: 0.75;
 
 }
-
+.h-auto {
+    height: auto;
+}
+.bg-cover {
+    background-size: cover;
+}
+.bg-100 {
+    background-size: 100% 100%;
+}
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.rounded {
+    border-radius: .25rem;
+}
+.border {
+    border: 1px solid #dae1e7;
+}
 .vh-100 {
     height: auto;
     min-height: 108vh;
@@ -294,6 +343,9 @@
 .flex {
     display: flex;
 }
+.flex-none {
+    flex: none;
+}
 
 .flex-wrap {
     flex-flow: wrap;
@@ -310,7 +362,7 @@
 .flex-row {
     flex-direction: row;
     @include tablet {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 .flex-column {
@@ -323,7 +375,9 @@
 .flex-space-between {
     justify-content: space-between;
 }
-
+.justify-center {
+    justify-content: center;
+}
 .flex-align-center {
     display: flex;
     align-items: center;
@@ -368,7 +422,21 @@
 .rounded-full {
     border-radius: 9999px;
 }
-
+.p-4 {
+    padding: 1rem;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include tablet {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 .py-1 {
     padding-top: .25rem;
     padding-bottom: .25rem;
@@ -429,4 +497,10 @@
 .fade-exit-active {
     opacity: 0.01;
     transition: opacity 1s ease-in;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+    @include tablet {
+        flex-direction: column;
+    }
 }

@@ -18,11 +18,11 @@
         },
         {
             "id": 2,
-            "route_name" : "Contact",
+            "route_name" : "Blog ?",
             "route_class" : "primary",
-            "path"  : "/contact",
-            "visible_in_menu" : false,
-            "route_data_name" : "contact"
+            "path"  : "/blog",
+            "visible_in_menu" : true,
+            "route_data_name" : "blog"
         }
     ]
 }

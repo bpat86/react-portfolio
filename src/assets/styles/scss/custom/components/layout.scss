@@ -114,7 +114,7 @@ a, div, span {
         background-color: rgba(0,0,140,0.15);
         padding: 0 0.6rem;
         border-radius: 25px;
-        width: auto !important;
+        width: auto;
         &.light {
             background-color: rgba(#B89AF3, 0.15);
             color: $white;
@@ -175,13 +175,19 @@ a, div, span {
         top: 50px;
     }
 }
-p, .label, .sm-text-size, .md-text-size, .lrg-text-size {
+p, .label, .sm-text-size, .md-text-size, .lrg-text-size, .xl-text-size {
     @include font($sourceSans, 400);
     letter-spacing: .02em;
     color: $black;
+    p {
+        font-family: inherit;
+        font-size: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+    }
 }
 p {
-    @include font-size(19px);
+    @include font-size(17px);
     @include tablet {
         @include font-size(15px);
     }
@@ -206,7 +212,16 @@ p {
     }
 }
 .lrg-text-size {
-    @include font-size(21px);
+    @include font-size(17px);
+    @include tablet {
+        @include font-size(15px);
+    }
+    @include mobile-xs {
+        @include font-size(15px);
+    }
+}
+.xl-text-size {
+    @include font-size(19px);
     @include tablet {
         @include font-size(17px);
     }
@@ -216,6 +231,9 @@ p {
 }
 .faded {
     opacity: .7;
+}
+.slightly-faded {
+    opacity: .9;
 }
 strong, .bold {
     font-weight: 600;
@@ -274,7 +292,7 @@ img {
 .Home, .About, .Error {
     .footer {
         &.bg-transparent {
-            p, .label, .sm-text-size, .md-text-size, .lrg-text-size {
+            p, .label, .sm-text-size, .md-text-size, .lrg-text-size, .xl-text-size {
                 color: $white;
             }
         }
@@ -389,5 +407,93 @@ img {
 
     40%, 60% {
         transform: translate3d(4px, 0, 0);
+    }
+}
+
+.BlogPosts, .BlogPost {
+    blockquote {
+        background-color: #e6ebfb;
+        color: #12283a;
+        margin-bottom: 2rem;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-left: 4px solid #4e65e1;
+        a {
+            font-weight: 600;
+            text-decoration: underline;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    a {
+        &.paragraph-link, &.button, &.back-button {
+            &.bg-round {
+                background-color: rgba($blue, 0.1);
+                padding: 0 0.6rem;
+                border-radius: 25px;
+                width: auto;
+                svg {
+                    fill: $black;
+                }
+                &:hover {
+                    svg {
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+    }
+    .more-link {
+        display: none;
+    }
+    .wh-blog-img {
+        width: 18rem;
+        @include tablet {
+            width: 100%;
+            height: 18rem !important;
+            margin-bottom: 1rem;
+        }
+    }
+    .blog-post {
+        p {
+            margin-bottom: 2rem;
+            &:first-of-type {
+                margin-top: 0;
+            }
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .blog-post-image {
+        width: 60px;
+        max-width: 100%;
+        max-height: 60px;
+        margin-right: 1rem;
+        padding: 0px;
+    }
+    .col-3 {
+        flex-basis: 10%;
+        max-width: 10%;
+        @include tablet {
+            flex-basis: 10%;
+            max-width: 10%;
+        }
+    }
+    .col-9 {
+        flex-basis: 90%;
+        max-width: 90%;
+        @include tablet {
+            flex-basis: 90%;
+            max-width: 90%;
+        }
+    }
+}
+.BlogPost {
+    .flex-row {
+        flex-direction: row;
     }
 }

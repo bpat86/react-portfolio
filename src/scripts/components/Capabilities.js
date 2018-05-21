@@ -70,16 +70,16 @@ export default class Capabilities extends Component {
                             src={require('../../assets/images/logos/capabilities/nodejs.svg')}
                             />
                         <img
-                            alt="Dojo"
-                            title="Dojo"
-                            className="responsive-img"
-                            src={require('../../assets/images/logos/capabilities/dojo.svg')}
-                            />
-                        <img
                             alt="Laravel"
                             title="Laravel"
                             className="responsive-img"
                             src={require('../../assets/images/logos/capabilities/laravel.svg')}
+                            />
+                        <img
+                            alt="WordPress"
+                            title="WordPress"
+                            className="responsive-img"
+                            src={require('../../assets/images/logos/capabilities/wordpress.svg')}
                             />
                         <img
                             alt="MySQL"
