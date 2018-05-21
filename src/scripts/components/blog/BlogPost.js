@@ -41,7 +41,7 @@ export default class BlogPost extends Component {
     }
 
     getBlogPostData = () => {
-        axios.get(`http://206.189.220.243/wp-json/wp/v2/blog_posts?_embed`)
+        axios.get(`https://api.bobbypatterson.me/wp-json/wp/v2/blog_posts?_embed`)
             .then(response => {
                 const responseData = response.data;
                 const getBlogPostSlugFromUrl = window.location.pathname.split('/')[2];

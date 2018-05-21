@@ -15,7 +15,7 @@ export default class BlogPosts extends Component {
     }
 
     getBlogPostsData = () => {
-        axios.get(`http://206.189.220.243/wp-json/wp/v2/blog_posts?_embed`)
+        axios.get(`https://api.bobbypatterson.me/wp-json/wp/v2/blog_posts?_embed`)
             .then(response => {
                 const responseData = response.data;
 

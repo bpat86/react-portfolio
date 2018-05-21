@@ -21,7 +21,7 @@
             "route_name" : "Blog ?",
             "route_class" : "primary",
             "path"  : "/blog",
-            "visible_in_menu" : false,
+            "visible_in_menu" : true,
             "route_data_name" : "blog"
         }
     ]
