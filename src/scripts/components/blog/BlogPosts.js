@@ -73,7 +73,12 @@ export default class BlogPosts extends Component {
                             posts.map((post, index) =>
                                 <div className="blog-post mb-2" key={index}>
                                     <div className={`flex flex-row justify-center mb-1 overflow-hidden rounded shadow-lg bg-white ${this.rowReverse(index)}`}>
-                                        <div className="wh-blog-img h-auto bg-cover bg-no-repeat overflow-hidden flex-none text-centered" style={this.getStyle(post)}></div>
+                                        <Link
+                                            title={post.title.rendered}
+                                            className="wh-blog-img h-auto bg-cover bg-no-repeat overflow-hidden flex-none text-centered" style={this.getStyle(post)}
+                                            to={{pathname: `/blog/${post.slug}`}}
+                                            >
+                                        </Link>
                                         <div className="w-full p-4">
                                             <div
                                                 className="lrg-text-size lh-normal bold"

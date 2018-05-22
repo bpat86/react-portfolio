@@ -47,7 +47,9 @@ class BlogPostsPageLayout extends Component {
                             />
                     </div>
                 </div>
-                <Footer />
+                <section className="flex flex-wrap w-full bg-transparent">
+                    <Footer />
+                </section>
             </div>
         )
     }
