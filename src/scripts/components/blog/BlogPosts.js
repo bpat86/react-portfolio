@@ -89,7 +89,7 @@ export default class BlogPosts extends Component {
                                             <div
                                                 className="md-text-size slightly-faded lh-normal letter-spacing mb-1"
                                                 >
-                                                {"Published " + this.showDate(post.date) + (post.modified ? " · " + "Edited " + this.showDate(post.modified) : null)}
+                                                {"Published " + this.showDate(post.date)}
                                             </div>
                                             <div
                                                 className="md-text-size faded lh-normal"
