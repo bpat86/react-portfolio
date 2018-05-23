@@ -1,23 +1,21 @@
 /*
-Error: Undefined variable: "$white".
-        on line 8 of src/assets/styles/scss/custom/components/layout.scss
-        from line 2 of src/assets/styles/scss/custom/custom.scss
+Error: Undefined variable: "$blue".
+        on line 15 of src/assets/styles/scss/custom/components/blog.scss
 
-3: @import 'components/blog';
-4: @import 'components/navigation';
-5: @import 'components/header';
-6: @import 'components/hero';
-7: @import 'components/aboutMe';
-8: @import 'components/projectThumbnails';
-9: @import 'components/instagramFeed';
-10: @import 'components/contentModal';
-11: @import 'components/instagramSinglePage';
-12: @import 'components/socialButtons';
-13: @import 'components/mobile/mobile';
+10:         border-left: 4px solid #4e65e1;
+11:         a {
+12:             font-weight: 600;
+13:             text-decoration: underline;
+14:             &:hover {
+15:                 color: $blue;
+16:             }
+17:         }
+18:     }
+19:     a {
+20:         &.paragraph-link, &.button, &.back-button {
 
 Backtrace:
-src/assets/styles/scss/custom/components/layout.scss:8
-src/assets/styles/scss/custom/custom.scss:2
+src/assets/styles/scss/custom/components/blog.scss:15
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -38,13 +36,33 @@ src/assets/styles/scss/custom/custom.scss:2
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -84,4 +102,4 @@ src/assets/styles/scss/custom/custom.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 8 of src/assets/styles/scss/custom/components/layout.scss\A         from line 2 of src/assets/styles/scss/custom/custom.scss\A \A 3: @import 'components/blog';\A 4: @import 'components/navigation';\A 5: @import 'components/header';\A 6: @import 'components/hero';\A 7: @import 'components/aboutMe';\A 8: @import 'components/projectThumbnails';\A 9: @import 'components/instagramFeed';\A 10: @import 'components/contentModal';\A 11: @import 'components/instagramSinglePage';\A 12: @import 'components/socialButtons';\A 13: @import 'components/mobile/mobile';"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 15 of src/assets/styles/scss/custom/components/blog.scss\A \A 10:         border-left: 4px solid #4e65e1;\A 11:         a {\A 12:             font-weight: 600;\A 13:             text-decoration: underline;\A 14:             &:hover {\A 15:                 color: $blue;\A 16:             }\A 17:         }\A 18:     }\A 19:     a {\A 20:         &.paragraph-link, &.button, &.back-button {"; }

@@ -3321,6 +3321,12 @@ img.responsive-img {
       flex-basis: 90%;
       max-width: 90%; } }
 
+.BlogPosts .blog-post {
+  transition: all 0.4s;
+  transform: translate3d(0, 0, 0); }
+  .BlogPosts .blog-post:hover {
+    transform: translateY(-0.25rem); }
+
 .BlogPost .flex-row {
   flex-direction: row; }
 
