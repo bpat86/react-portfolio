@@ -365,6 +365,12 @@
         flex-direction: column;
     }
 }
+.flex-row-reverse {
+    flex-direction: row;
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+}
 .flex-column {
     flex-direction: column;
 }

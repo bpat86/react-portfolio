@@ -8,7 +8,7 @@ export default class PageNotFound extends Component {
     render() {
         return (
             <div className="container mx-auto flex-align-center ">
-                <div className="flex-align-center w-full">
+                <div className="flex-align-center w-full flex-row-reverse">
                     <div className="col-3 flex-align-vertical-center mt-2">
                         <SocialButtons />
                     </div>

@@ -2681,6 +2681,12 @@
     .flex-row {
       flex-direction: column; } }
 
+.flex-row-reverse {
+  flex-direction: row; }
+  @media only screen and (max-width: 1024px) {
+    .flex-row-reverse {
+      flex-direction: column-reverse; } }
+
 .flex-column {
   flex-direction: column; }
 
@@ -5094,9 +5100,9 @@ ul.social {
 html.mobile-navigation-menu-visible {
   overflow: hidden; }
 
-.Home .mobile-navigation-menu, .About .mobile-navigation-menu {
+.Home .mobile-navigation-menu, .About .mobile-navigation-menu, .Error .mobile-navigation-menu {
   background-color: #4e65e1; }
-  .Home .mobile-navigation-menu ul.mobile-navigation li.mobile-navigation-section .mobile-navigation-link, .About .mobile-navigation-menu ul.mobile-navigation li.mobile-navigation-section .mobile-navigation-link {
+  .Home .mobile-navigation-menu ul.mobile-navigation li.mobile-navigation-section .mobile-navigation-link, .About .mobile-navigation-menu ul.mobile-navigation li.mobile-navigation-section .mobile-navigation-link, .Error .mobile-navigation-menu ul.mobile-navigation li.mobile-navigation-section .mobile-navigation-link {
     color: #d7e5f4; }
 
 .mobile-navigation-menu {

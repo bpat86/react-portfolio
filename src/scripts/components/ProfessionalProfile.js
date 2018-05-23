@@ -8,7 +8,7 @@ export default class ProfessionalProfile extends Component {
     render() {
         return (
             <div className="container mx-auto flex-align-center nmt-8">
-            	<div className="flex-align-center w-full flex-row">
+            	<div className="flex-align-center w-full flex-row-reverse">
                     <div className="col-3 flex-align-vertical-center mb-1">
                         <SocialButtons />
                     </div>
