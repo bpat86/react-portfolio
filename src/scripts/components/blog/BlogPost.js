@@ -80,7 +80,7 @@ export default class BlogPost extends Component {
             <div className="BlogPost">
                 <div className="blog-post">
                     <Link
-                        title="Go back to home"
+                        title="Go back"
                         className="back-button mb-1"
                         to="/blog"
                         >

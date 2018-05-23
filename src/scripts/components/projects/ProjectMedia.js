@@ -231,7 +231,7 @@ export default class Project extends Component {
                                     <div>
                                         { this.addMetaTags(project) }
                                         <Link
-                                            title="Go back to home"
+                                            title="Go back"
                                             className="back-button mb-1"
                                             to="/"
                                             >
