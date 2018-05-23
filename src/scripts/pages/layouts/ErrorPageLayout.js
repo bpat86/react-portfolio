@@ -61,7 +61,7 @@ class ErrorPageLayout extends Component {
         const { history } = this.props;
 
         return (
-            <div className="Error">
+            <div className="Home">
                 { this.addMetaTags() }
                 <header style={height} className="flex flex-wrap vh-100">
                     <PageNotFound />
@@ -71,21 +71,21 @@ class ErrorPageLayout extends Component {
                 </header>
                 <section className="flex flex-wrap w-full bg-white slant-top">
                     <Navigation {...this.props} />
-                    <section className="flex flex-wrap w-full bg-white">
+                    <section id="projects" className="flex flex-wrap w-full bg-white">
                         <div className="container mx-auto">
                             <div className="projects mtb-6">
-                                <span className="lrg-text-size bold flex">Featured Work Projects</span>
-                                <span className="md-text-size flex faded mb-1">{`2014 – ${ getCurrentYear() }`}</span>
+                                <span className="lrg-text-size bold flex">Recent Side Projects</span>
+                                <span className="md-text-size flex faded mb-1">{`2017 – ${ getCurrentYear() }`}</span>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
                                 <SideProjectThumbnails history={history} />
                             </div>
                         </div>
                     </section>
-                    <section className="flex flex-wrap w-full bg-light-gray slant-top-reverse">
+                    <section id="work" className="flex flex-wrap w-full bg-light-gray slant-top-reverse">
                         <div className="container mx-auto">
                             <div className="projects mtb-6">
-                                <span className="lrg-text-size bold flex">Recent Side Projects</span>
-                                <span className="md-text-size flex faded mb-1">{`2017 – ${ getCurrentYear() }`}</span>
+                                <span className="lrg-text-size bold flex">Featured Work Projects</span>
+                                <span className="md-text-size flex faded mb-1">{`2014 – ${ getCurrentYear() }`}</span>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
                                 <ProjectThumbnails
                                     history={history}
@@ -93,7 +93,7 @@ class ErrorPageLayout extends Component {
                             </div>
                         </div>
                     </section>
-                    <section className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
+                    <section id="capabilities" className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
                         <Capabilities />
                     </section>
                 </section>

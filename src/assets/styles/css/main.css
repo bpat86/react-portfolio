@@ -3351,9 +3351,7 @@ img.responsive-img {
     color: #F7FAFE; }
 
 .Blog .navigation-bar {
-  background-color: transparent;
-  border-top: 2px solid transparent;
-  border-bottom: 1px solid transparent; }
+  background-color: transparent; }
   .Blog .navigation-bar.scrolled {
     background-color: rgba(247, 250, 254, 0.96); }
   .Blog .navigation-bar li.navigation-section .logo svg {
