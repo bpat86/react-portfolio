@@ -79,7 +79,7 @@ export default class BlogPosts extends Component {
                                             to={{pathname: `/blog/${post.slug}`}}
                                             >
                                         </Link>
-                                        <div className="w-full p-4">
+                                        <div className="w-full p-6">
                                             <div
                                                 className="lrg-text-size lh-normal bold"
                                                 dangerouslySetInnerHTML={{__html: post.title.rendered}}

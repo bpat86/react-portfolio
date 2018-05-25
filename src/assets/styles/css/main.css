@@ -2739,6 +2739,12 @@
 .p-4 {
   padding: 1rem; }
 
+.p-6 {
+  padding: 1.5rem; }
+
+.p-8 {
+  padding: 2rem; }
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem; }

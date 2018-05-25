@@ -48,7 +48,7 @@ export default class ProjectThumbnails extends Component {
 						                    	/>
 										</div>
 									</Link>
-									<div className="flex flex-wrap flex-column p-1">
+									<div className="flex flex-wrap flex-column p-6">
 										<div className="lrg-text-size lh-normal mb-1">{p.title}</div>
 										<div className="md-text-size faded lh-normal mb-1">
 											{
