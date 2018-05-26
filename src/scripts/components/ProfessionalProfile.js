@@ -13,10 +13,10 @@ export default class ProfessionalProfile extends Component {
                         <SocialButtons />
                     </div>
                     <div className="col-9 pr-3">
-                        <div className="xl-text-size bold mb-1">Professional Profile</div>
+                        <h2 className="xl-text-size bold mb-1">Professional Profile</h2>
                         <div className="line-seperator mb-1 bg-white faded"></div>
     					<p className="intro lh-normal mb-2">Hello! I'm Bobby Patterson, a multidisciplinary developer and UI designer living in Tempe, Arizona. I have experience in all aspects of the development life-cycle, but I specialize in front-end development. I am experienced in an agency setting and I've built sites for smaller businesses. I have been fortunate in my career to have worked on projects for <Link title="Canon" className="paragraph-link bg-round" to="/work-projects/canon">Canon<LinkArrow /></Link>, <Link title="Toshiba" className="paragraph-link bg-round" to="/work-projects/toshiba">Toshiba<LinkArrow /></Link>, and <Link title="Kaiser Permanente" className="paragraph-link bg-round" to="/work-projects/kaiser-permanente">Kaiser Permanente<LinkArrow /></Link> as a designer or developer. I really enjoy finding solutions to complicated problems.</p>
-                        <div className="xl-text-size bold mb-1">Get in Touch</div>
+                        <h2 className="xl-text-size bold mb-1">Get in Touch</h2>
                         <div className="line-seperator mb-1 bg-white faded"></div>
                         <p className="intro lh-normal mb-2">
                             <Email /><br/>

@@ -18,6 +18,15 @@ export default class ProjectThumbnails extends Component {
         });
     }
 
+    getStyle = (project) => {
+    	let logo = require(`../../../assets/images/projects/logos/${project.logo}`);
+        const divStyle = {
+            backgroundImage: 'url(' + logo + ')'
+        };
+
+        return divStyle;
+    }
+
     componentDidMount() {
     	this.getProjects();
     }
@@ -30,30 +39,28 @@ export default class ProjectThumbnails extends Component {
 			<div>
 				<ul className={`cards flex flex-wrap list-style-none grid ${gridClass}`}>
 					{
-						projects.map(p =>
+						projects.map(project =>
 							<li
-								key={p.id}
+								key={project.id}
 								className="item flex"
 								>
 
 							    <div className="card flex flex-column shadow-lg rounded-lg">
-							    	<Link
-							        	title={p.title}
-								        className="project-links"
-						        		to={{pathname: `/${p.parent}/${p.slug}`}}
-						        		>
-										<div className="image bg-white">
-											<img
-												alt={p.title}
-						                    	src={require('../../../assets/images/projects/logos/' + p.logo)}
-						                    	/>
-										</div>
-									</Link>
-									<div className="flex flex-wrap flex-column p-6">
-										<div className="lrg-text-size lh-normal mb-1">{p.title}</div>
+									<Link
+                                        title={project.title}
+                                        className="project-links"
+                                        to={{pathname: `/${project.parent}/${project.slug}`}}
+                                        >
+                                        <div
+                                        	title={project.title}
+                                        	className="block bg-cover aspect-16x9" style={this.getStyle(project)}>
+                                        </div>
+                                    </Link>
+									<div className="flex flex-wrap justify-between flex-column p-6">
+										<h3 className="lrg-text-size bold lh-normal mb-1">{project.title}</h3>
 										<div className="md-text-size faded lh-normal mb-1">
 											{
-												truncate(p.description, {
+												truncate(project.description, {
 													'length': 100,
 													'separator': /,?.?-? +/
 												})
@@ -61,9 +68,9 @@ export default class ProjectThumbnails extends Component {
 										</div>
 										<div className="cta mt-1">
 					                    	<Link
-									        	title={p.title}
+									        	title={project.title}
 										        className="button bg-round"
-								        		to={{pathname: `/${p.parent}/${p.slug}`}}
+								        		to={{pathname: `/${project.parent}/${project.slug}`}}
 								        		>
 								        		View Project
 								        		<LinkArrow />

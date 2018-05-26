@@ -284,6 +284,9 @@
 .bg-cover {
     background-size: cover;
 }
+.aspect-16x9 {
+    padding-bottom: 56.25%;
+}
 .bg-100 {
     background-size: 100% 100%;
 }
@@ -332,7 +335,9 @@
         right: 0;
     }
 }
-
+.block {
+    display: block;
+}
 .inline {
     display: inline-block;
 }
@@ -354,9 +359,11 @@
 .flex-start {
     justify-content: flex-start;
 }
-
 .flex-end {
     justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
 }
 
 .flex-row {

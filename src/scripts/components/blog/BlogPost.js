@@ -95,11 +95,11 @@ export default class BlogPost extends Component {
                             <div className="flex w-full flex-row flex-align-vertical-center mb-2">
                                 <img className="blog-post-image col-3" src={post.acf.media.url} />
                                 <div className="col-9">
-                                    <div
+                                    <h2
                                         className="lrg-text-size lh-normal bold"
                                         dangerouslySetInnerHTML={{__html: post.title.rendered}}
                                         >
-                                    </div>
+                                    </h2>
                                     <div className="md-text-size slightly-faded lh-normal bold">{post.acf.subtitle}</div>
                                     <div
                                         className="md-text-size slightly-faded lh-normal letter-spacing"

@@ -80,11 +80,11 @@ export default class BlogPosts extends Component {
                                             >
                                         </Link>
                                         <div className="w-full p-6">
-                                            <div
+                                            <h2
                                                 className="lrg-text-size lh-normal bold"
                                                 dangerouslySetInnerHTML={{__html: post.title.rendered}}
                                                 >
-                                            </div>
+                                            </h2>
                                             <div className="md-text-size slightly-faded lh-normal bold">{post.acf.subtitle}</div>
                                             <div
                                                 className="md-text-size slightly-faded lh-normal letter-spacing mb-1"

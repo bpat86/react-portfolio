@@ -5,7 +5,7 @@ export default class Capabilities extends Component {
         return (
             <div className="container mx-auto">
                 <div className="capabilities mtb-6">
-                    <span className="lrg-text-size bold">Capabilities</span>
+                    <h2 className="lrg-text-size bold">Capabilities</h2>
                     <span className="md-text-size flex faded mb-1">Things I use and/or tinker around with</span>
                     <div className="line-seperator mb-2 bg-black faded"></div>
                     <div className="flex grid w-full flex-align-center">

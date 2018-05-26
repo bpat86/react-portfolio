@@ -73,8 +73,8 @@ class AboutPageLayout extends Component {
                     <Navigation {...this.props} />
                     <div className="container mx-auto mtb-6">
                         <div>
-                            <span className="lrg-text-size bold flex">My Life As It Appears on Instagram</span>
-                            <span className="md-text-size faded flex mb-1">I don't expect you to care about my Instagram pics, I really just felt like using their soon-to-be deprecated API (deep sigh) in a project. Click one to see the overlay!</span>
+                            <h2 className="lrg-text-size bold flex">My Life As It Appears on Instagram</h2>
+                            <div className="md-text-size faded flex mb-1">I don't expect you to care about my Instagram pics, I really just felt like using their soon-to-be deprecated API (deep sigh) in a project. Click one to see the overlay!</div>
                             <div className="line-seperator mb-2 bg-black faded"></div>
                         </div>
 					   <InstagramFeedContainer history={history} />

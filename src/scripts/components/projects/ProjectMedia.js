@@ -240,7 +240,7 @@ export default class Project extends Component {
                                         </Link>
                                         <div className="line-seperator mb-2 bg-black faded"></div>
                                         <div className="mtb-1">
-                                            <div className="lrg-text-size lh-normal mb-1">{project.title}</div>
+                                            <h2 className="lrg-text-size bold lh-normal mb-1">{project.title}</h2>
                                             <div className="md-text-size lh-normal">
                                                 <span className="label inline">Tech:</span>
                                                 {project.technology}
