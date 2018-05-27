@@ -240,22 +240,21 @@ export default class Project extends Component {
                                         </Link>
                                         <div className="line-seperator mb-2 bg-black faded"></div>
                                         <div className="mtb-1">
-                                            <h2 className="lrg-text-size bold lh-normal mb-1">{project.title}</h2>
-                                            <div className="md-text-size lh-normal">
-                                                <span className="label inline">Tech:</span>
+                                            <h2 className="xl-text-size text-black fw-bold mb-1">{project.title}</h2>
+                                            <div className="md-text-size fw-regular text-black lh-normal mb-1">
+                                                {project.description}
+                                            </div>
+                                            <div className="md-text-size fw-regular text-black lh-normal">
+                                                <span class="label inline">Technology:</span>
                                                 {project.technology}
                                             </div>
-                                            <div className="md-text-size lh-normal">
-                                                <span className="label inline">Role:</span>
+                                            <div className="md-text-size fw-regular text-black lh-normal">
+                                                <span class="label inline">Role:</span>
                                                 {project.role}
                                             </div>
-                                            <div className="md-text-size lh-normal mb-1">
-                                                <span className="label inline">Year:</span>
+                                            <div className="md-text-size fw-regular text-black lh-normal">
+                                                <span class="label inline">Year:</span>
                                                 {project.year}
-                                            </div>
-                                            <div className="md-text-size lh-normal pr-3">
-                                                <span className="label inline">Description:</span>
-                                                {project.description}
                                             </div>
                                         </div>
                                         { !project.externalUrl ? null :
@@ -275,7 +274,7 @@ export default class Project extends Component {
                                             <div>
                                                 <Link
                                                     target="blank"
-                                                    className="button bg-round mt-1 mb-2"
+                                                    className="button bg-round mb-1"
                                                     to={project.gitHubUrl}
                                                     >
                                                     View this project on GitHub

@@ -57,11 +57,11 @@ export default class ProjectThumbnails extends Component {
                                         </div>
                                     </Link>
 									<div className="flex flex-wrap justify-between flex-column p-6">
-										<h3 className="lrg-text-size bold lh-normal mb-1">{project.title}</h3>
-										<div className="md-text-size faded lh-normal mb-1">
+										<h3 className="xl-text-size text-black fw-bold lh-normal mb-1">{project.title}</h3>
+										<div className="md-text-size text-gray fw-regular lh-normal mb-1">
 											{
 												truncate(project.description, {
-													'length': 100,
+													'length': 85,
 													'separator': /,?.?-? +/
 												})
 											}

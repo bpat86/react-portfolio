@@ -96,13 +96,13 @@ export default class BlogPost extends Component {
                                 <img className="blog-post-image col-3" src={post.acf.media.url} />
                                 <div className="col-9">
                                     <h2
-                                        className="lrg-text-size lh-normal bold"
+                                        className="xl-text-size lh-normal text-black fw-bold"
                                         dangerouslySetInnerHTML={{__html: post.title.rendered}}
                                         >
                                     </h2>
-                                    <div className="md-text-size slightly-faded lh-normal bold">{post.acf.subtitle}</div>
+                                    <div className="lrg-text-size text-gray fw-semi-bold lh-normal">{post.acf.subtitle}</div>
                                     <div
-                                        className="md-text-size slightly-faded lh-normal letter-spacing"
+                                        className="md-text-size text-light-gray fw-regular lh-normal"
                                         >
                                         {"Published " + this.showDate(post.date)}
                                     </div>
@@ -113,6 +113,15 @@ export default class BlogPost extends Component {
                                 dangerouslySetInnerHTML={{__html: post.content.rendered}}
                                 >
                             </div>
+                            <div className="line-seperator mtb-2 bg-black faded"></div>
+                            <Link
+                                title="Go back"
+                                className="back-button mb-1"
+                                to="/blog"
+                                >
+                                <LinkArrowBack />
+                                Go back
+                            </Link>
                         </div>
                     }
                 </div>

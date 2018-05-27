@@ -87,6 +87,16 @@
     font-weight: 700;
 }
 
+.text-black {
+    color: $black;
+}
+.text-gray {
+    color: $gray;
+}
+.text-light-gray {
+    color: $lightGray;
+}
+
 .hidden {
     visibility: hidden;
 }

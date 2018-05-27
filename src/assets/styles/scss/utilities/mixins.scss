@@ -1,11 +1,11 @@
 /* Color Variables */
-$black: #222936;
-$lightGray: rgba($black, 0.75);
-$bgGray: #ecf1f7;
-$white: #F7FAFE;
-$intro: #d7e5f4;
-$blue: #4e65e1;
-$darkBlue: #055FAA;
+$white: hsl(214, 78%, 98%);
+$bgGray: hsl(213, 41%, 95%);
+$black: #212835;
+$gray: rgba($black, 0.71);
+$lightGray: rgba($black, 0.55);
+$intro: hsl(211, 57%, 90%);
+$blue: hsl(231, 71%, 59%);
 
 /* Background variables */
 $fonzie: url(../../../assets/images/themes/fonzie.gif);
@@ -23,7 +23,7 @@ $unmuteButton: url(../../../assets/images/buttons/unmuteButton.svg);
 $downArrow: url(../../../assets/images/buttons/down-arrow.svg);
 
 /* Font variables */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Fira+Mono:500');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Fira+Mono:500');
 $sourceSans: 'Source Sans Pro', sans-serif;
 $fira: 'Fira Mono', Menlo-Regular, Menlo, monospace;
 
@@ -97,6 +97,14 @@ $desktop: "only screen and (max-width: 60em)";
 @mixin font($fontfamily,$fontweight) {
     font-family: $fontfamily;
     font-weight: $fontweight;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+@mixin font-family($fontfamily) {
+    font-family: $fontfamily;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

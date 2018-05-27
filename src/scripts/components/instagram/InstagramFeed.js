@@ -149,7 +149,7 @@ export default class InstagramFeed extends Component {
 
     render() {
         const { loading, instagramPosts } = this.props;
-        console.log(instagramPosts);
+
         return (
             <div>
                 {

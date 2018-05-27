@@ -27,8 +27,8 @@
 			"slug": "envita",
 			"title": "Envita Medical Center",
 			"role": "Development & Design",
-			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Envita.com as well. The goal of the redesign was to improve the user experience with a more responsive and open UI as well as making the content searchable with Algolia.",
-			"technology": "Laravel, MySQL, jQuery, Sass, Algolia, Illustrator, Photoshop",
+			"description": "I built the back end in Laravel and the front end with jQuery and Sass/SCSS. I created most of the design assets for Envita.com as well. The goal of the redesign was to improve the user experience with a more responsive and open UI as well as making the content searchable with Algolia.",
+			"technology": "Laravel, MySQL, jQuery, Sass/SCSS, Algolia, Illustrator, Photoshop",
 			"year": "2015",
 			"externalUrl": "https://www.envita.com"
 		},
@@ -67,7 +67,7 @@
 			"slug": "vertisis",
 			"title": "Vertisis Custom Pharmacy",
 			"role": "Development & Design",
-			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Vertisis.com as well.",
+			"description": "I built the back end in Laravel and the front end with jQuery and Sass/SCSS. I created most of the design assets for Vertisis.com as well.",
 			"technology": "Laravel, MySQL, jQuery, Illustrator, Photoshop",
 			"year": "2016-2017",
 			"externalUrl": "https://vertisis.com"
@@ -91,7 +91,7 @@
 			"slug": "unipathic",
 			"title": "Unipathic Medicine",
 			"role": "Development & Design",
-			"description": "I built the back end in Laravel and the front end with jQuery and Sass. I created most of the design assets for Unipathic.com as well.",
+			"description": "I built the back end in Laravel and the front end with jQuery and Sass/SCSS. I created most of the design assets for Unipathic.com as well.",
 			"technology": "Laravel, MySQL, jQuery, Illustrator, Photoshop",
 			"year": "2017",
 			"externalUrl": "https://www.unipathicmedicine.com"
@@ -133,7 +133,7 @@
 			"slug": "jegs",
 			"role": "Front-end Development",
 			"description": "A responsive Websphere commerce implementation. My role was Front-end Developer/UI Developer. I primarily worked on the product detail and list sections, shipping, billing, and user wishlist sections as well as wishlist dialogue popup modals. I also had a role in writing the HTML, CSS, and Javascript for the Navigation menu bar for both desktop and responsive mobile views.",
-			"technology": "Dojo Toolkit, Sass Bourbon Neat",
+			"technology": "Dojo Toolkit, Sass/SCSS Bourbon Neat",
 			"year": "2014-2015",
 			"externalUrl": "https://www.jegs.com"
 		},
@@ -286,10 +286,10 @@
             "parent": "side-projects",
             "slug": "portfolio",
             "title": "Portfolio",
-            "subtitle": "The BobbyPatterson.me site redesign was built with React.js, Redux, Express.js and styled with Sass",
+            "subtitle": "The BobbyPatterson.me site redesign was built with React.js, Redux, Express.js and styled with Sass/SCSS",
             "role": "Development & Design",
-            "description": "The BobbyPatterson.me site redesign was built with React.js, Redux, Express.js and styled with Sass. View my recent side projects, my featured work projects, and my Instagram Viewer on the About page. Autoplaying videos will only play while visible in the viewport.",
-            "technology": "React.js, Redux, Express.js, Sass",
+            "description": "The BobbyPatterson.me site redesign was built with React.js, Redux, Express.js and styled with Sass/SCSS. View my recent side projects, my featured work projects, and my Instagram Viewer on the About page. Autoplaying videos will only play while visible in the viewport.",
+            "technology": "React.js, Redux, Express.js, Sass/SCSS",
             "year": "2018",
             "externalUrl": "",
             "gitHubUrl": "https://github.com/bpat86/react-portfolio"

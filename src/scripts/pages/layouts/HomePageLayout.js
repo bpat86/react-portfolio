@@ -77,8 +77,8 @@ class HomePageLayout extends Component {
                     <section id="projects" className="flex flex-wrap w-full bg-white">
                         <div className="container mx-auto">
                             <div className="projects mtb-6">
-                                <h2 className="lrg-text-size bold flex">Recent Side Projects</h2>
-                                <div className="md-text-size flex faded mb-1">{`2017 – ${ getCurrentYear() }`}</div>
+                                <h2 className="xl-text-size text-black fw-bold flex">Recent Side Projects</h2>
+                                <div className="md-text-size flex text-light-gray fw-semi-bold mb-1">{`2017 – ${ getCurrentYear() }`}</div>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
                                 <SideProjectThumbnails history={history} />
                             </div>
@@ -87,8 +87,8 @@ class HomePageLayout extends Component {
                     <section id="work" className="flex flex-wrap w-full bg-light-gray slant-top-reverse">
                         <div className="container mx-auto">
                             <div className="projects mtb-6">
-                                <h2 className="lrg-text-size bold flex">Featured Work Projects</h2>
-                                <div className="md-text-size flex faded mb-1">{`2014 – ${ getCurrentYear() }`}</div>
+                                <h2 className="xl-text-size text-black fw-bold flex">Featured Work Projects</h2>
+                                <div className="md-text-size flex text-light-gray fw-semi-bold mb-1">{`2014 – ${ getCurrentYear() }`}</div>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
                 				<ProjectThumbnails
                                     history={history}

@@ -176,9 +176,8 @@ a, div, span {
     }
 }
 p, .label, .sm-text-size, .md-text-size, .lrg-text-size, .xl-text-size {
-    @include font($sourceSans, 400);
+    @include font-family($sourceSans);
     letter-spacing: .02em;
-    color: $black;
     p {
         font-family: inherit;
         font-size: inherit;
@@ -212,19 +211,13 @@ p {
     }
 }
 .lrg-text-size {
-    @include font-size(17px);
-    @include tablet {
-        @include font-size(15px);
-    }
+    @include font-size(16px);
     @include mobile-xs {
         @include font-size(15px);
     }
 }
 .xl-text-size {
     @include font-size(19px);
-    @include tablet {
-        @include font-size(17px);
-    }
     @include mobile-xs {
         @include font-size(15px);
     }
@@ -235,7 +228,7 @@ p {
 .slightly-faded {
     opacity: .9;
 }
-strong, .bold {
+strong {
     font-weight: 600;
 }
 mark {
