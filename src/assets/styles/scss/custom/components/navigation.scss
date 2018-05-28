@@ -69,7 +69,7 @@
             &.navigation-link {
                 display: inline-flex;
                 text-decoration: none;
-                @include font($sourceSans, 400);
+                @include font-family($sourceSans);
                 @include font-size(18px);
                 height: inherit;
                 line-height: inherit;

@@ -109,7 +109,7 @@ export default class BlogPost extends Component {
                                 </div>
                             </div>
                             <div
-                                className="lrg-text-size lh-normal mb-1"
+                                className="lrg-text-size text-black lh-normal mb-1"
                                 dangerouslySetInnerHTML={{__html: post.content.rendered}}
                                 >
                             </div>

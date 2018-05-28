@@ -24,8 +24,8 @@ $downArrow: url(../../../assets/images/buttons/down-arrow.svg);
 
 /* Font variables */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Fira+Mono:500');
-$sourceSans: 'Source Sans Pro', sans-serif;
-$fira: 'Fira Mono', Menlo-Regular, Menlo, monospace;
+$sourceSans: Source Sans Pro,Harmonia Sans W01,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Fira Sans,sans-serif;
+$fira: Fira Mono, Menlo-Regular, Menlo, monospace;
 
 /* Media Queries */
 $mobile: "only screen and (max-width: 40em)";

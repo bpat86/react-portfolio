@@ -2,10 +2,9 @@
     @include tablet {
         margin-top: 5rem;
         margin-bottom: 2rem;
-        transform: scale(.8);
     }
     @include mobile-xs {
-        transform: scale(.7);
+        transform: scale(.85);
     }
 }
 .heroName {

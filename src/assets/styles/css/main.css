@@ -2558,6 +2558,9 @@
     .nmt-10 {
       margin-top: 0; } }
 
+.mr-05 {
+  margin-right: .5rem; }
+
 .mr-1 {
   margin-right: 1rem; }
 
@@ -2598,6 +2601,9 @@
 
 .text-uppercase {
   text-transform: uppercase; }
+
+.text-lowercase {
+  text-transform: lowercase; }
 
 .italic {
   font-style: italic;
@@ -2796,7 +2802,7 @@
   border-radius: 0.5rem; }
 
 .shadow-lg {
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08); }
+  box-shadow: 0 15px 32px 0 rgba(33, 40, 53, 0.12), 0 5px 15px 0 rgba(33, 40, 53, 0.06); }
 
 .reverse {
   transform: scaleX(-1); }
@@ -2919,7 +2925,7 @@ body, html {
 
 body {
   background: #f6f9fe;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
   overflow-x: hidden;
   font-size: 16px;
   width: 100%;
@@ -2959,7 +2965,7 @@ a {
   a.paragraph-link, a.button, a.back-button {
     display: inline-flex;
     align-items: center;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -3068,7 +3074,7 @@ a .cta-pill, div .cta-pill, span .cta-pill {
       top: 50px; } }
 
 p, .label, .sm-text-size, .md-text-size, .lrg-text-size, .xl-text-size {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3155,7 +3161,7 @@ img.responsive-img {
   .loading-container .loading .text {
     position: absolute;
     left: 999%;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -3312,8 +3318,7 @@ img.responsive-img {
   @media only screen and (max-width: 1024px) {
     .BlogPosts .wh-blog-img, .BlogPost .wh-blog-img {
       width: 100%;
-      height: 18rem !important;
-      margin-bottom: 1rem; } }
+      height: 18rem !important; } }
 .BlogPosts .blog-post p, .BlogPost .blog-post p {
   margin-bottom: 2rem; }
   .BlogPosts .blog-post p:first-of-type, .BlogPost .blog-post p:first-of-type {
@@ -3399,8 +3404,7 @@ img.responsive-img {
     .navigation-bar ul.navigation a.navigation-link, .navigation-bar ul.navigation div.navigation-link {
       display: inline-flex;
       text-decoration: none;
-      font-family: "Source Sans Pro", sans-serif;
-      font-weight: 400;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -3418,7 +3422,7 @@ img.responsive-img {
     .navigation-bar ul.navigation li.navigation-section {
       height: 64px;
       line-height: 64px;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -3431,7 +3435,7 @@ img.responsive-img {
       .navigation-bar ul.navigation li.navigation-section .logo .name-logo {
         font-size: 19px;
         font-size: 1.1875rem;
-        font-family: "Fira Mono", Menlo-Regular, Menlo, monospace;
+        font-family: Fira Mono, Menlo-Regular, Menlo, monospace;
         font-weight: 500;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -3475,7 +3479,7 @@ img.responsive-img {
         height: 20px;
         margin-right: 8px; }
       .navigation-bar ul.navigation li.navigation-section .tagline {
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
         font-weight: 600;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -3504,6 +3508,8 @@ img.responsive-img {
         top: 0;
         right: 0; }
 
+.fixed-bg .bg-gradient {
+  background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%); }
 .fixed-bg .bg-image {
   position: fixed;
   background-color: #f6f9fe;
@@ -3726,11 +3732,10 @@ header .scroll-down.animate {
 @media only screen and (max-width: 1024px) {
   .hero {
     margin-top: 5rem;
-    margin-bottom: 2rem;
-    transform: scale(0.8); } }
+    margin-bottom: 2rem; } }
 @media only screen and (max-width: 320px) {
   .hero {
-    transform: scale(0.7); } }
+    transform: scale(0.85); } }
 
 .heroName {
   margin: 0.25rem 0; }
@@ -3744,7 +3749,7 @@ header .scroll-down.animate {
 .heroTitle {
   height: 24px;
   margin: 0.25rem 0;
-  font-family: "Fira Mono", Menlo-Regular, Menlo, monospace;
+  font-family: Fira Mono, Menlo-Regular, Menlo, monospace;
   font-weight: 500;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -3994,7 +3999,7 @@ header .scroll-down.animate {
     /* Likely future */
     opacity: 0; }
     .instagramFeed .post .postLinks .info .likes {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4227,7 +4232,7 @@ article.contentModal {
   article.contentModal .mediaContainer {
     user-select: none; }
     article.contentModal .mediaContainer .likes {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4249,7 +4254,7 @@ article.contentModal {
         font-size: 14px;
         font-size: 0.875rem; }
     article.contentModal .mediaContainer .captions, article.contentModal .mediaContainer .comments {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4399,7 +4404,7 @@ article.contentModal {
       article.contentModal .mediaContainer .videoContainer .numberOfPosts, article.contentModal .mediaContainer .carouselContainer .numberOfPosts, article.contentModal .mediaContainer .mediaContainer .numberOfPosts {
         display: inline-block;
         position: absolute;
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
         font-weight: 600;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -4506,7 +4511,7 @@ article.contentModal {
             height: 38px;
             border-radius: 50%; }
         article.contentModal .contentSideBar .sideBarInfo header.profileInfo .username {
-          font-family: "Source Sans Pro", sans-serif;
+          font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
           font-weight: 600;
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
@@ -4518,7 +4523,7 @@ article.contentModal {
           height: 40px;
           line-height: 40px; }
     article.contentModal .contentSideBar .sideBarInfo .username {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4532,7 +4537,7 @@ article.contentModal {
       margin-right: 10px;
       float: left; }
     article.contentModal .contentSideBar .sideBarInfo .postedDate {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4547,7 +4552,7 @@ article.contentModal {
       line-height: 1.7;
       opacity: 0.7; }
     article.contentModal .contentSideBar .sideBarInfo .postedLocation {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4565,7 +4570,7 @@ article.contentModal {
         font-size: 13px;
         font-size: 0.8125rem; }
     article.contentModal .contentSideBar .sideBarInfo .likes {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4584,7 +4589,7 @@ article.contentModal {
         font-size: 13px;
         font-size: 0.8125rem; }
     article.contentModal .contentSideBar .sideBarInfo .captions, article.contentModal .contentSideBar .sideBarInfo .comments {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4605,7 +4610,7 @@ article.contentModal {
         font-size: 14px;
         font-size: 0.875rem; }
     article.contentModal .contentSideBar .sideBarInfo .caption, article.contentModal .contentSideBar .sideBarInfo .comment {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4636,7 +4641,7 @@ article.contentContainer {
   overflow: hidden;
   border: 1px solid #efefef; }
   article.contentContainer .mediaContainer .likes {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
     font-weight: 600;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -4658,7 +4663,7 @@ article.contentContainer {
       font-size: 14px;
       font-size: 0.875rem; }
   article.contentContainer .mediaContainer .captions, article.contentContainer .mediaContainer .comments {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -4808,7 +4813,7 @@ article.contentContainer {
     article.contentContainer .mediaContainer .videoContainer .numberOfPosts, article.contentContainer .mediaContainer .carouselContainer .numberOfPosts, article.contentContainer .mediaContainer .mediaContainer .numberOfPosts {
       display: inline-block;
       position: absolute;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4911,7 +4916,7 @@ article.contentContainer {
             height: 38px;
             border-radius: 50%; }
         article.contentContainer .contentSideBar .sideBarInfo header.profileInfo .username {
-          font-family: "Source Sans Pro", sans-serif;
+          font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
           font-weight: 600;
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
@@ -4923,7 +4928,7 @@ article.contentContainer {
           height: 40px;
           line-height: 40px; }
     article.contentContainer .contentSideBar .sideBarInfo .username {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4937,7 +4942,7 @@ article.contentContainer {
       margin-right: 10px;
       float: left; }
     article.contentContainer .contentSideBar .sideBarInfo .postedDate {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4952,7 +4957,7 @@ article.contentContainer {
       line-height: 1.7;
       opacity: 0.7; }
     article.contentContainer .contentSideBar .sideBarInfo .postedLocation {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4971,7 +4976,7 @@ article.contentContainer {
         font-size: 13px;
         font-size: 0.8125rem; }
     article.contentContainer .contentSideBar .sideBarInfo .likes {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 600;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -4990,7 +4995,7 @@ article.contentContainer {
         font-size: 13px;
         font-size: 0.8125rem; }
     article.contentContainer .contentSideBar .sideBarInfo .captions, article.contentContainer .contentSideBar .sideBarInfo .comments {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -5011,7 +5016,7 @@ article.contentContainer {
         font-size: 14px;
         font-size: 0.875rem; }
     article.contentContainer .contentSideBar .sideBarInfo .caption, article.contentContainer .contentSideBar .sideBarInfo .comment {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -5135,8 +5140,7 @@ html.mobile-navigation-menu-visible {
     user-select: none; }
     .mobile-navigation-menu ul.mobile-navigation li.mobile-navigation-section {
       height: 100vh;
-      font-family: "Source Sans Pro", sans-serif;
-      font-weight: 400;
+      font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;

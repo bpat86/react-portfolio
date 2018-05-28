@@ -245,15 +245,15 @@ export default class Project extends Component {
                                                 {project.description}
                                             </div>
                                             <div className="md-text-size fw-regular text-black lh-normal">
-                                                <span class="label inline">Technology:</span>
+                                                <span className="label inline">Technology:</span>
                                                 {project.technology}
                                             </div>
                                             <div className="md-text-size fw-regular text-black lh-normal">
-                                                <span class="label inline">Role:</span>
+                                                <span className="label inline">Role:</span>
                                                 {project.role}
                                             </div>
                                             <div className="md-text-size fw-regular text-black lh-normal">
-                                                <span class="label inline">Year:</span>
+                                                <span className="label inline">Year:</span>
                                                 {project.year}
                                             </div>
                                         </div>
