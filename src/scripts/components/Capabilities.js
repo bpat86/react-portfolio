@@ -4,7 +4,7 @@ export default class Capabilities extends Component {
     render() {
         return (
             <div className="container mx-auto">
-                <div className="capabilities mtb-6">
+                <div className="capabilities mt-4 mb-6">
                     <h2 className="xl-text-size text-black fw-bold">Capabilities</h2>
                     <div className="md-text-size text-light-gray fw-semi-bold mb-1">I Do Things Like</div>
                     <div className="line-seperator mb-2 bg-black faded">

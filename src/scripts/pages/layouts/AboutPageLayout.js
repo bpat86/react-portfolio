@@ -71,7 +71,7 @@ class AboutPageLayout extends Component {
                 </header>
                 <section className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
                     <Navigation {...this.props} />
-                    <div className="container mx-auto mtb-6">
+                    <div className="container mx-auto mt-4 mb-6">
                         <div>
                             <h2 className="xl-text-size text-black fw-bold flex">My Life As It Appears on Instagram</h2>
                             <div className="md-text-size text-light-gray fw-semi-bold flex mb-1">I don't expect you to care about my Instagram pics, I really just felt like using their soon-to-be deprecated API (deep sigh) in a project. Click one to see the overlay!</div>
