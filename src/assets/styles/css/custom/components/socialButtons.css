@@ -6,13 +6,13 @@ Error: Undefined variable: "$black".
 2:     height: 100%;
 3:     li {
 4:         display: inline-block;
-5:         margin: 1rem;
+5:         margin: 1rem 0;
 6:         color: $black;
-7:         &:hover, &:focus {
-8:             opacity: 0.8;
+7:         @include tablet {
+8:             margin: 1rem;
 9:         }
-10:         a {
-11:             svg {
+10:         &:hover, &:focus {
+11:             opacity: 0.8;
 
 Backtrace:
 src/assets/styles/scss/custom/components/socialButtons.scss:6
@@ -80,4 +80,4 @@ src/assets/styles/scss/custom/components/socialButtons.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 6 of src/assets/styles/scss/custom/components/socialButtons.scss\A \A 1: ul.social {\A 2:     height: 100%;\A 3:     li {\A 4:         display: inline-block;\A 5:         margin: 1rem;\A 6:         color: $black;\A 7:         &:hover, &:focus {\A 8:             opacity: 0.8;\A 9:         }\A 10:         a {\A 11:             svg {"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 6 of src/assets/styles/scss/custom/components/socialButtons.scss\A \A 1: ul.social {\A 2:     height: 100%;\A 3:     li {\A 4:         display: inline-block;\A 5:         margin: 1rem 0;\A 6:         color: $black;\A 7:         @include tablet {\A 8:             margin: 1rem;\A 9:         }\A 10:         &:hover, &:focus {\A 11:             opacity: 0.8;"; }

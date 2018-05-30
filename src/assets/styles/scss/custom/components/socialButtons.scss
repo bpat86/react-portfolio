@@ -2,8 +2,11 @@ ul.social {
     height: 100%;
     li {
         display: inline-block;
-        margin: 1rem;
+        margin: 1rem 0;
         color: $black;
+        @include tablet {
+            margin: 1rem;
+        }
         &:hover, &:focus {
             opacity: 0.8;
         }

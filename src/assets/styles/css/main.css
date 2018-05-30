@@ -2586,7 +2586,6 @@
   padding: 1rem; }
 
 .pr-3 {
-  top: 4rem;
   padding-right: 8rem; }
   @media only screen and (max-width: 1024px) {
     .pr-3 {
@@ -5060,8 +5059,11 @@ ul.social {
   height: 100%; }
   ul.social li {
     display: inline-block;
-    margin: 1rem;
+    margin: 1rem 0;
     color: #212835; }
+    @media only screen and (max-width: 1024px) {
+      ul.social li {
+        margin: 1rem; } }
     ul.social li:hover, ul.social li:focus {
       opacity: 0.8; }
     ul.social li a svg {
