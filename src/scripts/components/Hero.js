@@ -76,7 +76,7 @@ export default class Hero extends Component {
         const { print, isComplete } = this.state;
 
         return (
-        	<div className="hero flex-align-center w-full flex-column mt-4 px-3">
+        	<div className="hero flex-align-center w-full flex-column mt-1 px-3">
 			    <div className="heroName">
                     <Name />
                 </div>

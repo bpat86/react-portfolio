@@ -321,6 +321,13 @@
 }
 .vh-100 {
     height: auto;
+    min-height: 96vh;
+    @include tablet {
+        min-height: 100vh;
+    }
+}
+.vh-108 {
+    height: auto;
     min-height: 108vh;
     @include tablet {
         min-height: 104vh;

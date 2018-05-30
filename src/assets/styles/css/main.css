@@ -2645,9 +2645,16 @@
 
 .vh-100 {
   height: auto;
-  min-height: 108vh; }
+  min-height: 96vh; }
   @media only screen and (max-width: 1024px) {
     .vh-100 {
+      min-height: 100vh; } }
+
+.vh-108 {
+  height: auto;
+  min-height: 108vh; }
+  @media only screen and (max-width: 1024px) {
+    .vh-108 {
       min-height: 104vh; } }
 
 .vh-110 {
@@ -3693,7 +3700,7 @@ header .image {
     background-image: url(../../../assets/images/themes/static.gif); }
 header .scroll-down.animate {
   position: absolute;
-  bottom: 4.5rem;
+  bottom: 7rem;
   left: calc(50% - 3rem);
   width: 6rem;
   z-index: 1; }
