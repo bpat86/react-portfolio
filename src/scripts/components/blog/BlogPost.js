@@ -113,10 +113,10 @@ export default class BlogPost extends Component {
                                 dangerouslySetInnerHTML={{__html: post.content.rendered}}
                                 >
                             </div>
-                            <div className="line-seperator mtb-2 bg-black faded"></div>
+                            <div className="line-seperator mt-3 mb-1 bg-black faded"></div>
                             <Link
                                 title="Go back"
-                                className="back-button mb-1"
+                                className="back-button"
                                 to="/blog"
                                 >
                                 <LinkArrowBack />
