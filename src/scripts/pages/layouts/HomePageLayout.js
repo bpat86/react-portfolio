@@ -76,7 +76,7 @@ class HomePageLayout extends Component {
                     <Navigation {...this.props} />
                     <section id="projects" className="flex flex-wrap w-full bg-white">
                         <div className="container mx-auto">
-                            <div className="projects mt-4 mb-6">
+                            <div className="projects mt-3 mb-8">
                                 <h2 className="xl-text-size text-black fw-bold flex">Recent Side Projects</h2>
                                 <div className="md-text-size flex text-light-gray fw-semi-bold mb-1">{`2017 – ${ getCurrentYear() }`}</div>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
@@ -86,7 +86,7 @@ class HomePageLayout extends Component {
                     </section>
                     <section id="work" className="flex flex-wrap w-full bg-light-gray slant-top-reverse">
                         <div className="container mx-auto">
-                            <div className="projects mtb-6">
+                            <div className="projects mt-6 mb-8">
                                 <h2 className="xl-text-size text-black fw-bold flex">Featured Work Projects</h2>
                                 <div className="md-text-size flex text-light-gray fw-semi-bold mb-1">{`2014 – ${ getCurrentYear() }`}</div>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
