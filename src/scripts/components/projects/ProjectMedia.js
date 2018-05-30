@@ -286,10 +286,11 @@ export default class Project extends Component {
                                             { this.getVideosInProject(project) }
                                             { this.getImagesInProject(project) }
                                         </div>
+                                        <div className="line-seperator mt-3 mb-1 bg-black faded"></div>
                                         <Link
-                                            title="Go back to home"
-                                            className="back-button mt-2"
-                                            to="/"
+                                            title="Go back"
+                                            className="back-button"
+                                            to="/blog"
                                             >
                                             <LinkArrowBack />
                                             Go back
