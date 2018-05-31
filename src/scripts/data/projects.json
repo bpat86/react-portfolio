@@ -27,7 +27,7 @@
 			"slug": "envita",
 			"title": "Envita Medical Center",
 			"role": "Development & Design",
-			"description": "I built the back end in Laravel and the front end with jQuery and Sass/SCSS. I created most of the design assets for Envita.com as well. The goal of the redesign was to improve the user experience with a more responsive and open UI as well as making the content searchable with Algolia.",
+			"description": "I built the back-end in Laravel and the front-end with jQuery and Sass/SCSS. I created most of the design assets for Envita.com as well. The goal of the redesign was to improve the user experience with a more responsive and open UI as well as making the content searchable with Algolia.",
 			"technology": "Laravel, MySQL, jQuery, Sass/SCSS, Algolia, Illustrator, Photoshop",
 			"year": "2015",
 			"externalUrl": "https://www.envita.com"
@@ -67,7 +67,7 @@
 			"slug": "vertisis",
 			"title": "Vertisis Custom Pharmacy",
 			"role": "Development & Design",
-			"description": "I built the back end in Laravel and the front end with jQuery and Sass/SCSS. I created most of the design assets for Vertisis.com as well.",
+			"description": "I built the back-end in Laravel and the front-end with jQuery and Sass/SCSS. I created most of the design assets for Vertisis.com as well.",
 			"technology": "Laravel, MySQL, jQuery, Illustrator, Photoshop",
 			"year": "2016-2017",
 			"externalUrl": "https://vertisis.com"
@@ -91,7 +91,7 @@
 			"slug": "unipathic",
 			"title": "Unipathic Medicine",
 			"role": "Development & Design",
-			"description": "I built the back end in Laravel and the front end with jQuery and Sass/SCSS. I created most of the design assets for Unipathic.com as well.",
+			"description": "I built the back-end in Laravel and the front-end with jQuery and Sass/SCSS. I created most of the design assets for Unipathic.com as well.",
 			"technology": "Laravel, MySQL, jQuery, Illustrator, Photoshop",
 			"year": "2017",
 			"externalUrl": "https://www.unipathicmedicine.com"
@@ -338,7 +338,7 @@
             "title": "Instagram Media Viewer",
             "subtitle": "A Simple Instagram Media Viewer built with React.js",
             "role": "Development & Design",
-            "description": "A Simple Instagram Media Viewer built with React.js. Similar to viewing your own user profile via the desktop web version of Instagram.com, click on a thumbnail to view it in the modal pop up window. From there you can view the next post as well as the previous post. If the post is a carousel, you'll see the dots at the bottom of the image as well as additional \"next\" and \"previous\" buttons within the edges of the image/carousel. If the post is a video, you can click to play the video. Video sounds are muted by default, however if you click the unmute button on the top right of the video, you'll enable the sound. Each post has a dedicated media page for when a user is linked directly to the post. All Autoplaying video thumbnails will only play while visible in the viewport.",
+            "description": "A Simple Instagram Media Viewer built with React.js. Similar to viewing your own user profile via the desktop web version of Instagram.com, click on a thumbnail to view it in the modal pop up window. From there you can view the next post as well as the previous post. If the post is a carousel, you'll see the dots at the bottom of the image as well as additional \"next\" and \"previous\" buttons within the edges of the image/carousel. If the post is a video, you can click to play the video. Video sounds are muted by default, however if you click the unmute button on the top right of the video, you'll enable the sound. Each post has a dedicated media page for when a user is linked directly to the post. All Autoplaying video thumbnails will only play while visible in the viewport. See this project in action on my About page! The Instagram Media Viewer implementation on my About page uses React.js and Redux.",
             "technology": "React.js",
             "year": "2017",
             "externalUrl": "",
