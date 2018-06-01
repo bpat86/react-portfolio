@@ -76,7 +76,7 @@ export default class VideoBackground extends Component {
                         <source src="https://giant.gfycat.com/FancyBrilliantDugong.webm" type="video/webm"/>
                         <source src="https://giant.gfycat.com/FancyBrilliantDugong.mp4" type="video/mp4"/>
                     </video>
-                    <div className="image home"></div>
+                    <div className="image"></div>
                 </div>
             );
         }

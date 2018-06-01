@@ -379,6 +379,29 @@ img {
     }
 }
 
+.fw-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.bg-image-pattern {
+    background-image: url(../../images/hero-pattern.svg);
+}
+
 .shake {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
