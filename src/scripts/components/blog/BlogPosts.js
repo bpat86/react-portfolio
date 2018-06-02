@@ -81,13 +81,13 @@ export default class BlogPosts extends Component {
                                         </Link>
                                         <div className="w-full p-6">
                                             <h2
-                                                className="xl-text-size lh-normal text-black fw-bold"
+                                                className="xl-text-size lh-normal text-black fw-bold mb-025"
                                                 dangerouslySetInnerHTML={{__html: post.title.rendered}}
                                                 >
                                             </h2>
-                                            <div className="lrg-text-size lh-normal text-gray fw-semi-bold">{post.acf.subtitle}</div>
+                                            <div className="lrg-text-size lh-tight text-gray fw-semi-bold">{post.acf.subtitle}</div>
                                             <div
-                                                className="md-text-size text-light-gray fw-regular lh-normal mb-1"
+                                                className="md-text-size text-light-gray fw-regular lh-normal mt-025 mb-1"
                                                 >
                                                 {"Published " + this.showDate(post.date)}
                                             </div>

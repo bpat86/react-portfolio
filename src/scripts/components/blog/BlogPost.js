@@ -96,13 +96,13 @@ export default class BlogPost extends Component {
                                 <img className="blog-post-image col-3" src={post.acf.media.url} />
                                 <div className="col-9">
                                     <h2
-                                        className="xl-text-size lh-normal text-black fw-bold"
+                                        className="xl-text-size lh-normal text-black fw-bold mb-025"
                                         dangerouslySetInnerHTML={{__html: post.title.rendered}}
                                         >
                                     </h2>
-                                    <div className="lrg-text-size text-gray fw-semi-bold lh-normal">{post.acf.subtitle}</div>
+                                    <div className="lrg-text-size text-gray fw-semi-bold lh-tight">{post.acf.subtitle}</div>
                                     <div
-                                        className="md-text-size text-light-gray fw-regular lh-normal"
+                                        className="md-text-size text-light-gray fw-regular lh-normal mtb-025"
                                         >
                                         {"Published " + this.showDate(post.date)}
                                     </div>

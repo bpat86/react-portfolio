@@ -137,6 +137,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+.mt-025 {
+    margin-top: 0.25rem;
+}
+.mt-05 {
+    margin-top: 0.5rem;
+}
 .mt-1 {
     margin-top: 1rem;
 }
@@ -170,6 +176,12 @@
 .mt-8 {
     margin-top: 8rem;
 }
+.mtb-025 {
+    margin: 0.25rem 0;
+}
+.mtb-05 {
+    margin: 0.5rem 0;
+}
 .mtb-1 {
     margin: 1rem 0;
 }
@@ -191,6 +203,12 @@
     margin-bottom: 8rem;
 }
 
+.mb-025 {
+    margin-bottom: 0.25rem;
+}
+.mb-05 {
+    margin-bottom: 0.5rem;
+}
 .mb-1 {
     margin-bottom: 1rem;
 }
@@ -450,14 +468,17 @@
     text-align: center;
 }
 
+.lh-none {
+    line-height: 1;
+}
 .lh-tight {
-    line-height: 1.4;
+    line-height: 1.25;
 }
 .lh-normal {
-    line-height: 1.6;
+    line-height: 1.5;
 }
 .lh-roomy {
-    line-height: 1.8;
+    line-height: 2;
     @include tablet {
         line-height: 1.5;
     }
