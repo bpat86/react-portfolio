@@ -11,18 +11,18 @@ class BlogPostsPageLayout extends Component {
             <Helmet>
                 <title>Bobby Patterson | Blog</title>
                 <meta name="robots" content="index, follow" />
-                <meta name="description" content="I don't expect you to care about my ramblings about life & technology, I really just felt like using the Wordpress REST API in a project and I got a little carried away." />
+                <meta name="description" content="I don't expect you to care about my ramblings about life & technology, I really just felt like using Wordpress' REST API in a project" />
                 <meta name="keywords" content="Blog, Bobby Patterson, Full Stack Developer, Front-end Developer, UI designer, Tempe, Phoenix, Scottsdale" />
                 <meta property="og:url" content="https://bobbypatterson.me/blog" />
                 <meta property="og:title" content="Bobby Patterson | Blog" />
                 <meta property="og:site_name" content="Bobby Patterson | Blog" />
-                <meta property="og:description" content="I don't expect you to care about my ramblings about life & technology, I really just felt like using the Wordpress REST API in a project and I got a little carried away." />
+                <meta property="og:description" content="I don't expect you to care about my ramblings about life & technology, I really just felt like using Wordpress' REST API in a project" />
                 <meta property="og:image" content="https://bobbypatterson.me/aboutme.jpg" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@bobbypatterson" />
                 <meta name="twitter:creator" content="@bobbypatterson" />
                 <meta name="twitter:title" content="Bobby Patterson | Blog" />
-                <meta name="twitter:description" content="I don't expect you to care about my ramblings about life & technology, I really just felt like using the Wordpress REST API in a project and I got a little carried away." />
+                <meta name="twitter:description" content="I don't expect you to care about my ramblings about life & technology, I really just felt like using Wordpress' REST API in a project" />
                 <meta name="twitter:image" content="https://bobbypatterson.me/aboutme.jpg" />
                 <link rel="canonical" href="https://bobbypatterson.me/blog" />
             </Helmet>
