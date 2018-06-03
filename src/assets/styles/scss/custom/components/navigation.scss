@@ -86,7 +86,7 @@
         li.navigation-section {
             height: 64px;
             line-height: 64px;
-            @include font($sourceSans, 400);
+            @include font($fira, 600);
             @include tablet {
                 height: 50px;
                 line-height: 50px;
@@ -94,7 +94,7 @@
             .logo {
                 .name-logo {
                     @include font-size(19px);
-                    @include font($fira, 500);
+                    @include font($fira, 600);
                     letter-spacing: 0.02em;
                     margin: 0;
                     top: 0.75rem;
@@ -106,7 +106,7 @@
                     &.animate {
                         &:after {
                             content:"_";
-                            font-weight: 500;
+                            font-weight: 700;
                             opacity: 0;
                             margin-left: 0.5rem;
                             animation: nav-cursor 1.2s infinite;
