@@ -3,16 +3,15 @@ import React, { Component } from 'react';
 import Name from './Name';
 
 export default class Hero extends Component {
-    constructor () {
-        super()
-
+    constructor(props) {
+        super(props);
         this.state = {
             text: "1Full2 1Stack2 1Developer2 1&2 1Designer2",
             print: "",
             interval: null,
             timer: null,
             isComplete: false
-        }
+        };
     }
 
     writeText = () => {

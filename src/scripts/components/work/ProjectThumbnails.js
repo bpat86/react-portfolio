@@ -5,7 +5,7 @@ import LinkArrow from '../LinkArrow';
 import { truncate } from 'lodash';
 
 export default class ProjectThumbnails extends Component {
-	constructor(props){
+	constructor(props) {
         super(props);
         this.state = {
             projects: []

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import routes from '../../data/routes';
 
 export default class MobileNavigation extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             primaryRoutes: []
