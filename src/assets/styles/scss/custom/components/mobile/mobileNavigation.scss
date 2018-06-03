@@ -37,7 +37,7 @@ html.mobile-navigation-menu-visible {
         user-select: none;
         li.mobile-navigation-section {
             height: 100vh;
-            @include font-family($fira);
+            @include font($sourceSans, 600);
             .mobile-navigation-link {
                 font-size: 150%;
                 line-height: 2;

@@ -69,7 +69,7 @@
             &.navigation-link {
                 display: inline-flex;
                 text-decoration: none;
-                @include font-family($sourceSans);
+                @include font($sourceSans, 600);
                 @include font-size(18px);
                 height: inherit;
                 line-height: inherit;
@@ -86,7 +86,6 @@
         li.navigation-section {
             height: 64px;
             line-height: 64px;
-            @include font($fira, 600);
             @include tablet {
                 height: 50px;
                 line-height: 50px;
@@ -94,7 +93,7 @@
             .logo {
                 .name-logo {
                     @include font-size(19px);
-                    @include font($fira, 600);
+                    @include font($fira, 700);
                     letter-spacing: 0.02em;
                     margin: 0;
                     top: 0.75rem;
