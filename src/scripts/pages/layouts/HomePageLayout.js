@@ -59,7 +59,7 @@ class HomePageLayout extends Component {
 
 	render() {
         const { height } = this.state;
-        const { history, isScrolled } = this.props;
+        const { history, isScrolled, isMobile } = this.props;
 
 		return (
 			<div className="Home">
@@ -109,6 +109,7 @@ class HomePageLayout extends Component {
 }
 
 const mapStateToProps = state => ({
+    isMobile: state.environmentReducer.isMobile,
     isHidden: state.navigationReducer.isHidden,
     isScrolled: state.navigationReducer.isScrolled
 });

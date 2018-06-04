@@ -8,7 +8,7 @@ export default class About extends Component {
         return (
             <div className="container mx-auto mt-4 flex-align-center">
             	<div className="flex-align-center flex-row-reverse">
-                    <div className="col-3 flex-align-vertical-center mb-1">
+                    <div className="col-3 flex-align-center mb-1">
                         <SocialButtons />
                     </div>
                     <div className="col-9 pr-3">

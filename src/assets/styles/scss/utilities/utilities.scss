@@ -551,16 +551,16 @@
 }
 
 .col-3 {
-    flex-basis: 10%;
-    max-width: 10%;
+    flex-basis: 15%;
+    max-width: 15%;
     @include tablet {
         flex-basis: 100%;
         max-width: 100%;
     }
 }
 .col-9 {
-    flex-basis: 90%;
-    max-width: 90%;
+    flex-basis: 85%;
+    max-width: 85%;
     @include tablet {
         flex-basis: 100%;
         max-width: 100%;

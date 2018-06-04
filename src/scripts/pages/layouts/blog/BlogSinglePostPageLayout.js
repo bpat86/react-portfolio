@@ -7,7 +7,7 @@ import BlogPost from '../../../components/blog/BlogPost';
 
 class BlogSinglePostPageLayout extends Component {
     render() {
-        const { match, history } = this.props;
+        const { match, history, isMobile } = this.props;
 
         return (
             <div>

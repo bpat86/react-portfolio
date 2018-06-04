@@ -58,7 +58,7 @@ class ErrorPageLayout extends Component {
 
     render() {
         const { height } = this.state;
-        const { history } = this.props;
+        const { history, isMobile } = this.props;
 
         return (
             <div className="Home">
@@ -106,6 +106,7 @@ class ErrorPageLayout extends Component {
 }
 
 const mapStateToProps = state => ({
+    isMobile: state.environmentReducer.isMobile,
     isHidden: state.navigationReducer.isHidden,
     isScrolled: state.navigationReducer.isScrolled
 });

@@ -6,7 +6,7 @@ import ProjectMedia from '../../../components/work/ProjectMedia';
 
 class ProjectPageLayout extends Component {
     render() {
-        const { match, history } = this.props;
+        const { match, history, isMobile } = this.props;
 
         return (
             <div>

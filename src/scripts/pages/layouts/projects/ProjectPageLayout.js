@@ -6,7 +6,7 @@ import SideProjectMedia from '../../../components/projects/ProjectMedia';
 
 class ProjectPageLayout extends Component {
 	render() {
-        const { match, history } = this.props;
+        const { match, history, isMobile } = this.props;
 
 		return (
 			<div>

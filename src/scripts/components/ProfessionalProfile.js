@@ -9,7 +9,7 @@ export default class ProfessionalProfile extends Component {
         return (
             <div className="container mx-auto flex-align-center nmt-8">
             	<div className="flex-align-center w-full flex-row-reverse">
-                    <div className="col-3 flex-align-vertical-center mb-1">
+                    <div className="col-3 flex-align-center mb-1">
                         <SocialButtons />
                     </div>
                     <div className="col-9 pr-3">

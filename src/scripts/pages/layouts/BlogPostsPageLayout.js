@@ -30,7 +30,7 @@ class BlogPostsPageLayout extends Component {
     }
 
     render() {
-        const { match, history, isScrolled } = this.props;
+        const { match, history, isScrolled, isMobile } = this.props;
 
         return (
             <div className="Blog">
@@ -56,6 +56,7 @@ class BlogPostsPageLayout extends Component {
 }
 
 const mapStateToProps = state => ({
+    isMobile: state.environmentReducer.isMobile,
     isHidden: state.navigationReducer.isHidden,
     isScrolled: state.navigationReducer.isScrolled
 });

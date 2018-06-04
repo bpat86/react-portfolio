@@ -5,7 +5,7 @@ export const changeIsMobile = (isMobile) => {
 		type: types.IS_MOBILE,
 		isMobile,
 	};
-}
+};
 
 export const changeWidthAndHeight = (height, width) => {
 	return {
@@ -13,7 +13,7 @@ export const changeWidthAndHeight = (height, width) => {
 		height,
 		width,
 	};
-}
+};
 
 export const initEnvironment = () => {
 	return dispatch => {
@@ -33,4 +33,4 @@ export const initEnvironment = () => {
 			dispatch(changeWidthAndHeight(window.innerHeight, window.innerWidth));
 		};
 	};
-}
+};

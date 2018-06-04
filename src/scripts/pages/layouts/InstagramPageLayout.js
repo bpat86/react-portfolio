@@ -6,6 +6,8 @@ import InstagramSinglePageContainer from '../../containers/InstagramSinglePageCo
 
 class InstagramPageLayout extends Component {
 	render() {
+		const { isMobile } = this.props;
+
 		return (
 			<div className="Instagram">
 				<Navigation {...this.props} />
@@ -19,6 +21,7 @@ class InstagramPageLayout extends Component {
 }
 
 const mapStateToProps = state => ({
+	isMobile: state.environmentReducer.isMobile,
     isHidden: state.navigationReducer.isHidden,
     isScrolled: state.navigationReducer.isScrolled
 });
