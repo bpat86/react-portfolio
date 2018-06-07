@@ -75,7 +75,7 @@ class ErrorPageLayout extends Component {
                         <div className="container mx-auto">
                             <div className="projects mt-3 mb-8">
                                 <h2 className="xl-text-size text-black fw-bold flex">Recent Side Projects</h2>
-                                <div className="md-text-size flex text-light-gray fw-semi-bold mb-1">{`2017 – ${ getCurrentYear() }`}</div>
+                                <div className="md-text-size flex text-gray mb-1">{`2017 – ${ getCurrentYear() }`}</div>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
                                 <SideProjectThumbnails history={history} />
                             </div>
@@ -85,7 +85,7 @@ class ErrorPageLayout extends Component {
                         <div className="container mx-auto">
                             <div className="projects mt-6 mb-8">
                                 <h2 className="xl-text-size text-black fw-bold flex">Featured Work Projects</h2>
-                                <div className="md-text-size flex text-light-gray fw-semi-bold mb-1">{`2014 – ${ getCurrentYear() }`}</div>
+                                <div className="md-text-size flex text-gray mb-1">{`2014 – ${ getCurrentYear() }`}</div>
                                 <div className="line-seperator mb-2 bg-black faded"></div>
                                 <ProjectThumbnails
                                     history={history}

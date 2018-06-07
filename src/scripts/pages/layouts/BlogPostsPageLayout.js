@@ -39,7 +39,7 @@ class BlogPostsPageLayout extends Component {
                 <div className="container width-sm mx-auto">
                     <div className="blog-posts mt-7">
                         <h2 className="xl-text-size text-black fw-bold flex">Yeah, I Made a Blog</h2>
-                        <div className="md-text-size text-light-gray fw-semi-bold flex mb-1">I don't expect you to care about my ramblings about life & technology, I really just felt like using Wordpress' REST API in a project</div>
+                        <div className="md-text-size text-gray flex mb-1">I don't expect you to care about my ramblings about life & technology, I really just felt like using Wordpress' REST API in a project</div>
                         <div className="line-seperator bg-black faded mb-2"></div>
                         <BlogPosts
                             match={match}

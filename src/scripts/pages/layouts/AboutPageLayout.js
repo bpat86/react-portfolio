@@ -74,7 +74,7 @@ class AboutPageLayout extends Component {
                     <div className="container mx-auto mt-3 mb-6">
                         <div>
                             <h2 className="xl-text-size text-black fw-bold flex">My Life As It Appears on Instagram</h2>
-                            <div className="md-text-size text-light-gray fw-semi-bold flex mb-1">I don't expect you to care about my Instagram pics, I really just felt like using their soon-to-be deprecated API (deep sigh) in a project. Click one to see the overlay!</div>
+                            <div className="md-text-size text-gray flex mb-1">I don't expect you to care about my Instagram pics, I really just felt like using their soon-to-be deprecated API (deep sigh) in a project. Click one to see the overlay!</div>
                             <div className="line-seperator mb-2 bg-black faded"></div>
                         </div>
 					   <InstagramFeedContainer history={history} />

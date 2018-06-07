@@ -3469,7 +3469,7 @@ img.responsive-img {
       display: inline-flex;
       text-decoration: none;
       font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
-      font-weight: 600;
+      font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -5203,7 +5203,7 @@ html.mobile-navigation-menu-visible {
     .mobile-navigation-menu ul.mobile-navigation li.mobile-navigation-section {
       height: 100vh;
       font-family: Source Sans Pro, Harmonia Sans W01, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
-      font-weight: 600;
+      font-weight: 400;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
