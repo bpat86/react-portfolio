@@ -290,7 +290,7 @@ export default class Project extends Component {
                                         <Link
                                             title="Go back"
                                             className="back-button"
-                                            to="/blog"
+                                            to="/"
                                             >
                                             <LinkArrowBack />
                                             Go back

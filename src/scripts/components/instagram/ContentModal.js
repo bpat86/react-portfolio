@@ -427,9 +427,30 @@ export default class ContentModal extends Component {
 		}
 	}
 
+	addEventListeners = () => {
+		document.addEventListener("keydown", this.escapeHandler, false);
+	}
+
+	removeEventListeners = () => {
+		document.removeEventListener("keydown", this.escapeHandler, false);
+	}
+
 	componentDidMount() {
 		this.resetVideo();
 		this.getMediaDimensions();
+		this.addEventListeners();
+	}
+
+	componentWillUnmount(){
+		this.removeEventListeners();
+	}
+
+	escapeHandler = (e) => {
+		const { showModal, currentPost, currentPostIndex } = this.props;
+
+		if (showModal && e.keyCode == 27) {
+            this.closeInstagramModal(types.TOGGLE_MODAL_CLOSED, currentPost, currentPostIndex);
+        }
 	}
 
 	componentDidUpdate(prevProps) {
