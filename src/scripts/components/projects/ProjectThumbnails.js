@@ -56,9 +56,9 @@ export default class ProjectThumbnails extends Component {
                                         	className="block bg-cover aspect-16x9" style={this.getStyle(project)}>
                                         </div>
                                     </Link>
-									<div className="flex flex-wrap justify-between flex-column p-6">
+									<div className="flex flex-wrap justify-between flex-column h-full p-6">
 										<h3 className="xl-text-size text-black fw-bold lh-normal mb-1">{project.title}</h3>
-										<div className="md-text-size text-gray fw-regular lh-normal mb-1">
+										<div className="md-text-size text-gray fw-regular lh-normal flex-1 mb-1">
 											{
 												truncate(project.description, {
 													'length': 85,
