@@ -48,7 +48,7 @@ export default class BlogPosts extends Component {
 
     rowReverse = (index) => {
         if (index % 2 !== 0) {
-            return "flex-row";
+            return "row-reverse";
         } else {
             return "flex-row";
         }
