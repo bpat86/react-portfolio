@@ -33,8 +33,6 @@ export default class BlogPosts extends Component {
     }
 
     showDate = (time) => {
-        //const days = moment(post.date).startOf('day').fromNow()[0];
-        //const daysAgo = moment(post.date).startOf('day').fromNow();
         const date = moment(time).calendar();
 
         return date;
@@ -50,7 +48,7 @@ export default class BlogPosts extends Component {
 
     rowReverse = (index) => {
         if (index % 2 !== 0) {
-            return "row-reverse";
+            return "flex-row";
         } else {
             return "flex-row";
         }
