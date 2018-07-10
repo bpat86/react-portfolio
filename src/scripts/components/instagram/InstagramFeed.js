@@ -35,11 +35,11 @@ export default class InstagramFeed extends Component {
             return (
                 <div className="videoContainer">
                     <video
-                        muted
                         ref="video"
-                        playsInline
                         type="video/mp4"
+                        muted={true.toString()}
                         preload={true.toString()}
+                        playsInline={true.toString()}
                         src={post.videos.low_resolution.url}
                         poster={post.images.standard_resolution.url}
                         >
@@ -116,7 +116,7 @@ export default class InstagramFeed extends Component {
         });
 
         videoTag.classList.remove("playing");
-        videoTag.muted = false;
+        videoTag.muted = true;
         videoTag.loop = false;
         videoTag.pause();
     }
