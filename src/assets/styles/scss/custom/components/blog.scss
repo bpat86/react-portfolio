@@ -81,6 +81,7 @@
 }
 .BlogPosts {
     .blog-post {
+        background-color: #fff;
         transition: all 0.4s;
         transform: translate3d(0, 0, 0);
         &:hover {

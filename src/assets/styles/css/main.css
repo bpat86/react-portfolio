@@ -3417,6 +3417,7 @@ img.responsive-img {
       max-width: 90%; } }
 
 .BlogPosts .blog-post {
+  background-color: #fff;
   transition: all 0.4s;
   transform: translate3d(0, 0, 0); }
   .BlogPosts .blog-post:hover {
