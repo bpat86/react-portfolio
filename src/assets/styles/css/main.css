@@ -2379,6 +2379,9 @@
 .bg-white {
   background-color: #f6f9fe; }
 
+.bg-white-lightest {
+  background-color: #ffffff; }
+
 .bg-light-gray {
   background-color: #edf2f7; }
 
@@ -3417,7 +3420,6 @@ img.responsive-img {
       max-width: 90%; } }
 
 .BlogPosts .blog-post {
-  background-color: #fff;
   transition: all 0.4s;
   transform: translate3d(0, 0, 0); }
   .BlogPosts .blog-post:hover {

@@ -12,7 +12,7 @@ Error: Undefined variable: "$intro".
 44: .bg-white {
 45:     background-color: $white;
 46: }
-47: .bg-light-gray {
+47: .bg-white-lightest {
 
 Backtrace:
 src/assets/styles/scss/utilities/utilities.scss:42
@@ -69,4 +69,4 @@ src/assets/styles/scss/utilities/utilities.scss:42
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$intro\".\A         on line 42 of src/assets/styles/scss/utilities/utilities.scss\A \A 37: \A 38: .bg-transparent {\A 39:     background-color: transparent;\A 40: }\A 41: .bg-intro {\A 42:     background-color: $intro;\A 43: }\A 44: .bg-white {\A 45:     background-color: $white;\A 46: }\A 47: .bg-light-gray {"; }
+  content: "Error: Undefined variable: \"$intro\".\A         on line 42 of src/assets/styles/scss/utilities/utilities.scss\A \A 37: \A 38: .bg-transparent {\A 39:     background-color: transparent;\A 40: }\A 41: .bg-intro {\A 42:     background-color: $intro;\A 43: }\A 44: .bg-white {\A 45:     background-color: $white;\A 46: }\A 47: .bg-white-lightest {"; }
