@@ -69,7 +69,7 @@ class AboutPageLayout extends Component {
                         isMobile={isMobile}
                         />
                 </header>
-                <section className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
+                <section className="flex flex-wrap w-full bg-white slant-top slant-top-bottom will-change">
                     <Navigation {...this.props} />
                     <div className="container mx-auto mt-3 mb-6">
                         <div>

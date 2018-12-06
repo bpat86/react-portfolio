@@ -23,7 +23,9 @@
         transform: scale(.75);
     }
 }
-
+.will-change {
+    will-change: transform;
+}
 .line-seperator {
     height: 1px;
     background-color: transparent;

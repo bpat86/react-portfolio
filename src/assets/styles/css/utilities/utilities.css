@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$intro".
-        on line 42 of src/assets/styles/scss/utilities/utilities.scss
+        on line 44 of src/assets/styles/scss/utilities/utilities.scss
 
-37: 
-38: .bg-transparent {
-39:     background-color: transparent;
-40: }
-41: .bg-intro {
-42:     background-color: $intro;
-43: }
-44: .bg-white {
-45:     background-color: $white;
-46: }
-47: .bg-white-lightest {
+39: 
+40: .bg-transparent {
+41:     background-color: transparent;
+42: }
+43: .bg-intro {
+44:     background-color: $intro;
+45: }
+46: .bg-white {
+47:     background-color: $white;
+48: }
+49: .bg-white-lightest {
 
 Backtrace:
-src/assets/styles/scss/utilities/utilities.scss:42
+src/assets/styles/scss/utilities/utilities.scss:44
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -69,4 +69,4 @@ src/assets/styles/scss/utilities/utilities.scss:42
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$intro\".\A         on line 42 of src/assets/styles/scss/utilities/utilities.scss\A \A 37: \A 38: .bg-transparent {\A 39:     background-color: transparent;\A 40: }\A 41: .bg-intro {\A 42:     background-color: $intro;\A 43: }\A 44: .bg-white {\A 45:     background-color: $white;\A 46: }\A 47: .bg-white-lightest {"; }
+  content: "Error: Undefined variable: \"$intro\".\A         on line 44 of src/assets/styles/scss/utilities/utilities.scss\A \A 39: \A 40: .bg-transparent {\A 41:     background-color: transparent;\A 42: }\A 43: .bg-intro {\A 44:     background-color: $intro;\A 45: }\A 46: .bg-white {\A 47:     background-color: $white;\A 48: }\A 49: .bg-white-lightest {"; }
