@@ -72,7 +72,7 @@ class HomePageLayout extends Component {
                         <div className="image about-me"></div>
                     </div>
                 </header>
-                <section className="flex flex-wrap w-full will-change">
+                <section className="flex flex-wrap w-full">
                     <Navigation {...this.props} />
                     <section id="projects" className="flex flex-wrap w-full bg-white slant-top slant-top-bottom">
                         <div className="container mx-auto">
