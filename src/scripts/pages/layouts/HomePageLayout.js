@@ -64,7 +64,7 @@ class HomePageLayout extends Component {
 		return (
 			<div className="Home">
                 { this.addMetaTags() }
-                <header style={height} className="flex flex-wrap vh-100 will-change">
+                <header style={height} className="flex flex-wrap vh-100">
                     <Hero />
                     <ProfessionalProfile />
                     <span title="Keep scrolling :)" className={`scroll-down ${isScrolled ? "" : "animate"}`}></span>
